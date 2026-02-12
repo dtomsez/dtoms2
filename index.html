@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jakkrit Lekprasan's portfolio showcasing Full-Stack Web Development, Data Science, and Machine Learning skills. A Computer Engineering student seeking an internship.">
-    <meta name="keywords" content="Jakkrit Lekprasan, portfolio, full-stack developer, data scientist, machine learning, computer engineering, Chiang Mai University, React, Node.js, Python, internship, web development, software engineer">
+    <title>Jakkrit Lekprasan | Strategic Project Coordinator Portfolio</title>
+    <meta name="description" content="Jakkrit Lekprasan's professional portfolio. A Strategic Project Coordinator driving operational efficiency and strategic initiatives in public and private sectors.">
+    <meta name="keywords" content="Jakkrit Lekprasan, Strategic Project Coordinator, Project Management, Operational Efficiency, MBA, Accountancy, Thailand, Strategic Planning, Cross-functional Leadership">
     <meta name="author" content="Jakkrit Lekprasan">
-
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourportfolio.com/"> <!-- Replace with actual URL -->
-    <meta property="og:title" content="Jakkrit Lekprasan - Full-Stack Developer | Data Scientist Portfolio">
-    <meta property="og:description" content="Jakkrit Lekprasan's portfolio showcasing Full-Stack Web Development, Data Science, and Machine Learning skills. A Computer Engineering student seeking an internship.">
-    <meta property="og:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DA99.jpg">
+    <meta property="og:title" content="Jakkrit Lekprasan | Strategic Project Coordinator Portfolio">
+    <meta property="og:description" content="Jakkrit Lekprasan's professional portfolio. A Strategic Project Coordinator driving operational efficiency and strategic initiatives in public and private sectors.">
+    <meta property="og:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DAF.jpg"> <!-- Profile image -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://yourportfolio.com/"> <!-- Replace with actual URL -->
-    <meta property="twitter:title" content="Jakkrit Lekprasan - Full-Stack Developer | Data Scientist Portfolio">
-    <meta property="twitter:description" content="Jakkrit Lekprasan's portfolio showcasing Full-Stack Web Development, Data Science, and Machine Learning skills. A Computer Engineering student seeking an internship.">
-    <meta property="twitter:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DA99.jpg">
+    <meta property="twitter:title" content="Jakkrit Lekprasan | Strategic Project Coordinator Portfolio">
+    <meta property="twitter:description" content="Jakkrit Lekprasan's professional portfolio. A Strategic Project Coordinator driving operational efficiency and strategic initiatives in public and private sectors.">
+    <meta property="twitter:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DAF.jpg"> <!-- Profile image -->
 
-    <title>Jakkrit Lekprasan - Full-Stack Developer | Data Scientist Portfolio</title>
+    <!-- Theme Color for browsers -->
+    <meta name="theme-color" content="#2C3E50">
 
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
-
-    <!-- Google Fonts: Inter for headings, Lato for body text -->
+    <!-- Google Fonts: Montserrat and Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0pReP/z8/o4vB71O1z1E/0c8X96N2fR3nQ0+Qy1x4z0y1z1B7G4y5x2JzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        /* CSS Variables for Color Palette */
+        /* CSS Reset & Variables */
         :root {
-            --primary-blue: #007BFF;
-            --secondary-blue: #0056B3;
-            --dark-text: #343A40;
-            --light-gray-bg: #F8F9FA;
-            --white-bg: #FFFFFF;
-            --border-gray: #E9ECEF;
-            --gray-text: #6C757D;
+            --color-primary-bg: #2C3E50;
+            --color-secondary-bg: #34495E;
+            --color-accent: #E74C3C;
+            --color-text-light: #ECF0F1;
+            --color-text-subtle: #BDC3C7;
 
-            /* Font families */
-            --font-heading: 'Inter', sans-serif;
-            --font-body: 'Lato', sans-serif;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+
+            --spacing-unit: 1rem; /* Base spacing unit */
+            --header-height: 60px;
         }
 
-        /* Base Styles & Reset */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -60,9 +61,10 @@
 
         body {
             font-family: var(--font-body);
+            color: var(--color-text-light);
+            background-color: var(--color-primary-bg);
             line-height: 1.6;
-            color: var(--dark-text);
-            background-color: var(--white-bg);
+            overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -70,110 +72,83 @@
         /* Typography */
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-heading);
-            color: var(--dark-text);
-            margin-bottom: 1rem;
+            color: var(--color-text-light);
             line-height: 1.2;
+            margin-bottom: var(--spacing-unit);
+            letter-spacing: 0.02em;
         }
 
-        h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; }
-        h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; }
-        h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 600; }
-        h4 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 500; }
-        p { font-size: clamp(1rem, 2vw, 1.125rem); margin-bottom: 1rem; }
-        small { font-size: 0.875rem; font-weight: 300; color: var(--gray-text); }
+        h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700; }
+        h2 { font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 600; margin-bottom: calc(var(--spacing-unit) * 1.5); }
+        h3 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 500; margin-bottom: var(--spacing-unit); }
+        p { font-size: clamp(1rem, 2.5vw, 1.15rem); margin-bottom: var(--spacing-unit); }
 
-        .text-primary { color: var(--primary-blue); }
-        .text-center { text-align: center; }
-        .ml-2 { margin-left: 0.5rem; }
-
-        /* Links & Buttons */
         a {
-            color: var(--primary-blue);
+            color: var(--color-accent);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         a:hover {
-            color: var(--secondary-blue);
+            color: var(--color-text-light);
+            text-decoration: underline;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 0.8em 1.5em;
-            border-radius: 5px;
-            font-weight: 500;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            font-size: clamp(0.9rem, 1.5vw, 1rem);
-            border: 2px solid transparent;
-        }
-
-        .btn--primary {
-            background-color: var(--primary-blue);
-            color: var(--white-bg);
-            border-color: var(--primary-blue);
-        }
-
-        .btn--primary:hover {
-            background-color: var(--secondary-blue);
-            border-color: var(--secondary-blue);
-            color: var(--white-bg);
-        }
-
-        .btn--secondary {
-            background-color: var(--dark-text);
-            color: var(--white-bg);
-            border-color: var(--dark-text);
-        }
-
-        .btn--secondary:hover {
-            background-color: transparent;
-            color: var(--dark-text);
-            border-color: var(--dark-text);
-        }
-        
-        .btn--outline {
-            background-color: transparent;
-            color: var(--dark-text);
-            border-color: var(--dark-text);
-        }
-
-        .btn--outline:hover {
-            background-color: var(--dark-text);
-            color: var(--white-bg);
-        }
-
-        /* Utilities */
+        /* Utility Classes */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 1.5rem;
+            padding: calc(var(--spacing-unit) * 2);
         }
 
-        .section-padding {
-            padding: 4rem 0;
-        }
+        .text-center { text-align: center; }
+        .text-accent { color: var(--color-accent); }
+        .flex { display: flex; }
+        .flex-center { justify-content: center; align-items: center; }
+        .grid { display: grid; }
 
-        .grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .flex {
-            display: flex;
+        /* Buttons */
+        .btn {
+            display: inline-flex;
             align-items: center;
-            gap: 1rem;
+            justify-content: center;
+            padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
-        .flex--column {
-            flex-direction: column;
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-text-light);
         }
 
-        .justify-center { justify-content: center; }
-        .justify-between { justify-content: space-between; }
-        .items-center { align-items: center; }
+        .btn-primary:hover {
+            background-color: darken(var(--color-accent), 10%); /* This won't work in pure CSS, need to manually darken */
+            background-color: #c93e31; /* Manual darken */
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+            margin-left: var(--spacing-unit);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-accent);
+            color: var(--color-primary-bg);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
 
         /* Header */
         .header {
@@ -181,1378 +156,1152 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 1000;
-            padding: 1rem 0;
-            background-color: transparent;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .header.scrolled {
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header__nav {
+            background-color: rgba(44, 62, 80, 0.95); /* Semi-transparent */
+            padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            height: var(--header-height);
         }
 
-        .header__logo {
+        .logo {
             font-family: var(--font-heading);
-            font-size: 1.8rem;
             font-weight: 700;
-            color: var(--dark-text);
+            font-size: 1.5rem;
+            color: var(--color-text-light);
+            text-decoration: none;
+            letter-spacing: 0.05em;
         }
 
-        .header__logo .text-primary {
-            font-size: 1.8rem; /* Maintain size */
-        }
-
-        .header__nav-list {
+        .nav-menu {
             list-style: none;
             display: flex;
-            gap: 2rem;
         }
 
-        .header__nav-list a {
+        .nav-menu li {
+            margin-left: calc(var(--spacing-unit) * 2);
+        }
+
+        .nav-menu a {
+            color: var(--color-text-light);
             font-weight: 500;
-            color: var(--dark-text);
-            transition: color 0.3s ease;
+            font-size: 1rem;
+            position: relative;
+            padding-bottom: 5px; /* Space for underline effect */
         }
 
-        .header__nav-list a:hover,
-        .header__nav-list a.active {
-            color: var(--primary-blue);
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
         }
 
-        .nav-toggle {
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+
+        .hamburger {
             display: none;
             flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 21px;
             cursor: pointer;
-            z-index: 1001;
-            padding: 0;
-            background: none;
-            border: none;
+            padding: 5px;
+            z-index: 1001; /* Above header */
         }
 
-        .nav-toggle span {
-            display: block;
-            width: 100%;
+        .hamburger .bar {
+            width: 25px;
             height: 3px;
-            background-color: var(--dark-text);
-            border-radius: 3px;
+            background-color: var(--color-text-light);
+            margin: 4px 0;
             transition: all 0.3s ease;
         }
 
-        .nav-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
-        .nav-toggle.active span:nth-child(2) { opacity: 0; }
-        .nav-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+        .lang-switch-container {
+            display: flex;
+            align-items: center;
+            margin-left: calc(var(--spacing-unit) * 2);
+        }
+        
+        .lang-switch {
+            background-color: var(--color-secondary-bg);
+            color: var(--color-text-light);
+            border: 1px solid var(--color-text-subtle);
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
 
-        .mobile-nav {
-            display: none;
+        .lang-switch:hover {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            color: var(--color-primary-bg);
+        }
+
+        /* Mobile Nav Menu */
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.98);
-            flex-direction: column;
+            background-color: var(--color-primary-bg);
             justify-content: center;
             align-items: center;
             z-index: 999;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+            padding-top: var(--header-height); /* push content down from header */
+        }
+
+        .nav-menu.active.open {
+            transform: translateX(0);
+        }
+
+        .nav-menu.active li {
+            margin: var(--spacing-unit) 0;
+        }
+        
+        .nav-menu.active a {
+            font-size: 2rem;
+            padding: 10px 0;
+            color: var(--color-text-light);
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(2) {
             opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
         }
 
-        .mobile-nav.active {
-            opacity: 1;
-            visibility: visible;
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
         }
 
-        .mobile-nav__list {
-            list-style: none;
-            text-align: center;
+        /* Sections */
+        section {
+            padding: calc(var(--spacing-unit) * 6) 0;
+            position: relative;
         }
 
-        .mobile-nav__list li {
-            margin-bottom: 1.5rem;
-        }
-
-        .mobile-nav__list a {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--dark-text);
-            transition: color 0.3s ease;
-        }
-
-        .mobile-nav__list a:hover {
-            color: var(--primary-blue);
+        section:nth-child(even) {
+            background-color: var(--color-secondary-bg);
         }
 
         /* Hero Section */
-        .hero {
-            background-color: var(--light-gray-bg);
-            text-align: center;
-            padding: 8rem 0 6rem;
+        #hero {
+            background: linear-gradient(135deg, var(--color-primary-bg) 0%, var(--color-secondary-bg) 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
+            text-align: center;
+            padding-top: var(--header-height);
             position: relative;
             overflow: hidden;
-            flex-direction: column; /* For proper alignment with padding */
         }
 
-        .hero__content {
-            max-width: 800px;
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(231, 76, 60, 0.2) 0%, transparent 70%);
+            animation: moveGradient 15s infinite alternate ease-in-out;
+            z-index: 0;
+        }
+        
+        #hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(231, 76, 60, 0.15) 0%, transparent 70%);
+            animation: moveGradient 18s infinite alternate-reverse ease-in-out;
+            z-index: 0;
+        }
+
+        @keyframes moveGradient {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(100px, 100px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        #hero .container {
+            position: relative;
             z-index: 1;
         }
 
-        .hero__title {
-            margin-bottom: 1rem;
-            color: var(--dark-text);
-            font-size: clamp(2.8rem, 7vw, 4.5rem);
-        }
-        .hero__title span[lang="th"] {
-             font-size: clamp(1.5rem, 3vw, 2.5rem); /* Smaller for Thai name */
-             font-weight: 500;
-             color: var(--gray-text);
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
         }
 
-        .hero__subtitle {
-            font-size: clamp(1.4rem, 3.5vw, 2.2rem);
-            font-weight: 400;
-            color: var(--primary-blue);
-            margin-bottom: 1.5rem;
-        }
-        .hero__subtitle span[lang="th"] {
-             font-size: clamp(1rem, 2vw, 1.5rem); /* Smaller for Thai name */
-             font-weight: 300;
-             color: var(--gray-text);
+        .hero-content p {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            color: var(--color-text-subtle);
         }
 
-        .hero__tagline {
-            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-            margin-bottom: 2rem;
-            color: var(--gray-text);
-            font-weight: 300;
-        }
-
-        .hero__ctas {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        
-        .hero__social-links {
-            margin-top: 2.5rem;
+        .hero-buttons {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-        }
-
-        .hero__social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: var(--dark-text);
-            color: var(--white-bg);
-            font-size: 1.5rem;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .hero__social-links a:hover {
-            background-color: var(--primary-blue);
-            transform: translateY(-3px);
+            gap: var(--spacing-unit);
+            margin-top: calc(var(--spacing-unit) * 2);
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
         }
 
         /* About Section */
-        .about {
-            background-color: var(--white-bg);
-        }
-
-        .about__content {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+        #about .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(var(--spacing-unit) * 4);
             align-items: center;
         }
 
-        .about__image-wrapper {
-            flex-shrink: 0;
+        .profile-img {
             width: 250px;
             height: 250px;
             border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-            border: 5px solid var(--primary-blue);
-            transition: transform 0.3s ease;
-        }
-
-        .about__image-wrapper:hover {
-            transform: scale(1.03);
-        }
-
-        .about__image {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
+            border: 5px solid var(--color-accent);
+            box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
+            margin: 0 auto calc(var(--spacing-unit) * 2);
+            display: block;
+            transition: transform 0.5s ease-in-out;
         }
-
-        .about__text {
-            max-width: 700px;
-            text-align: center;
-        }
-        
-        .about__text p {
-            font-weight: 300;
-            color: var(--dark-text);
-        }
-
-        .about__highlights {
-            margin-top: 1.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-            font-size: 0.95rem;
-            color: var(--gray-text);
-        }
-
-        .about__highlights span {
-            background-color: var(--light-gray-bg);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-gray);
-            font-weight: 500;
-        }
-
-
-        /* Skills Section */
-        .skills {
-            background-color: var(--light-gray-bg);
-        }
-
-        .skills__grid {
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            margin-top: 2rem;
-        }
-
-        .skills__category {
-            background-color: var(--white-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .skills__category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .skills__category h3 {
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .skills__list {
-            list-style: none;
-        }
-
-        .skills__list li {
-            padding: 0.5rem 0;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            border-bottom: 1px dashed var(--border-gray);
-            font-weight: 400;
-            color: var(--dark-text);
-        }
-        .skills__list li:last-child {
-            border-bottom: none;
-        }
-        .skills__list li svg {
-            color: var(--primary-blue);
-            width: 1.2em;
-            height: 1.2em;
-        }
-        .skills__list li.core svg { color: #28a745; } /* Green for core */
-        .skills__list li.proficient svg { color: #ffc107; } /* Yellow for proficient */
-        .skills__list li.familiar svg { color: #17a2b8; } /* Cyan for familiar */
-
-
-        /* Projects Section */
-        .projects {
-            background-color: var(--white-bg);
-        }
-
-        .projects__grid {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            margin-top: 2rem;
-        }
-
-        .project-card {
-            background-color: var(--white-bg);
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%; /* Ensure cards are same height in a row */
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .project-card__image-wrapper {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .project-card__image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .project-card:hover .project-card__image {
+        .profile-img:hover {
             transform: scale(1.05);
         }
 
-        .project-card__content {
-            padding: 1.5rem;
-            flex-grow: 1;
+        .about-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Skills Section */
+        #skills .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin-top: calc(var(--spacing-unit) * 3);
+        }
+
+        .skill-category {
+            background-color: var(--color-primary-bg);
+            padding: calc(var(--spacing-unit) * 2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
         }
 
-        .project-card__content h3 {
-            margin-bottom: 0.75rem;
-            font-size: 1.6rem;
-        }
-        .project-card__content h3 span[lang="th"] {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: var(--gray-text);
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
 
-        .project-card__content p {
-            font-size: 0.95rem;
-            color: var(--gray-text);
-            margin-bottom: 1rem;
-            flex-grow: 1; /* Allow description to take space */
-        }
-
-        .project-card__tech-stack {
-            font-size: 0.85rem;
-            color: var(--primary-blue);
-            font-weight: 500;
-            margin-bottom: 1.2rem;
-        }
-
-        .project-card__ctas {
+        .skill-category h3 {
+            color: var(--color-accent);
+            margin-bottom: var(--spacing-unit);
             display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-top: 1rem;
+            align-items: center;
+            gap: var(--spacing-unit);
+            font-size: 1.3rem;
+        }
+        .skill-category h3 i {
+            font-size: 1.5rem;
         }
 
-        .project-card__ctas .btn {
-            padding: 0.6em 1em;
-            font-size: 0.9rem;
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            background-color: var(--color-secondary-bg);
+            padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.5);
+            margin-bottom: 8px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-unit);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-list li:hover {
+            background-color: #3f5872; /* Slightly lighter secondary bg */
+        }
+        .skill-list li i {
+            color: var(--color-accent);
+        }
+
+
+        /* Projects Section */
+        #projects .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 3);
+            margin-top: calc(var(--spacing-unit) * 3);
+        }
+
+        .project-card {
+            background-color: var(--color-primary-bg);
+            padding: calc(var(--spacing-unit) * 2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h3 {
+            color: var(--color-accent);
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .project-card p {
+            color: var(--color-text-subtle);
+            font-size: 0.95rem;
+            margin-bottom: var(--spacing-unit);
+            flex-grow: 1; /* Allow content to grow */
+        }
+
+        .project-card .btn {
+            margin-top: calc(var(--spacing-unit) * 1.5);
+            align-self: flex-start; /* Align button to start */
         }
 
         /* Experience Section */
-        .experience {
-            background-color: var(--light-gray-bg);
-        }
-
-        .experience__timeline {
+        #experience .timeline {
             position: relative;
-            max-width: 900px;
-            margin: 2rem auto;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 2) 0;
         }
 
-        .experience__timeline::after {
+        #experience .timeline::after {
             content: '';
             position: absolute;
             width: 4px;
-            background-color: var(--border-gray);
+            background-color: var(--color-text-subtle);
             top: 0;
             bottom: 0;
             left: 50%;
             margin-left: -2px;
+            z-index: 0;
         }
 
-        .experience__item {
+        .timeline-item {
             padding: 10px 40px;
             position: relative;
             background-color: inherit;
             width: 50%;
+            opacity: 0; /* For scroll animation */
+            transform: translateY(20px); /* For scroll animation */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            z-index: 1;
         }
 
-        .experience__item::after {
+        .timeline-item.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-item::after {
             content: '';
             position: absolute;
             width: 25px;
             height: 25px;
             right: -17px;
-            background-color: var(--primary-blue);
-            border: 4px solid var(--white-bg);
+            background-color: var(--color-primary-bg);
+            border: 4px solid var(--color-accent);
             top: 15px;
             border-radius: 50%;
             z-index: 1;
         }
 
-        .experience__item--left {
+        .timeline-left {
             left: 0;
+            text-align: right;
         }
 
-        .experience__item--right {
+        .timeline-right {
             left: 50%;
-        }
-
-        .experience__item--left::after {
-            left: unset;
-            right: -12px; /* Adjusted from -17px for correct alignment */
-        }
-        .experience__item--right::after {
-            left: -12px; /* Adjusted from -17px for correct alignment */
-        }
-
-        .experience__item-content {
-            padding: 20px 30px;
-            background-color: var(--white-bg);
-            position: relative;
-            border-radius: 6px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .experience__item-content:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .experience__item-content h3 {
-            color: var(--primary-blue);
-            margin-bottom: 0.5rem;
-            font-size: 1.4rem;
-        }
-        .experience__item-content h3 span[lang="th"] {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: var(--gray-text);
-        }
-
-        .experience__item-content h4 {
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-        }
-
-        .experience__item-content small {
-            display: block;
-            margin-bottom: 0.75rem;
-            color: var(--gray-text);
-        }
-
-        .experience__item-content ul {
-            list-style: disc;
-            margin-left: 1.2rem;
-            color: var(--dark-text);
-            font-size: 0.95rem;
-        }
-
-        .experience__item-content ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .experience__item-content .skills-demonstrated {
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--gray-text);
-            margin-top: 1rem;
-        }
-        
-        .experience__item-content .skills-demonstrated span {
-            color: var(--primary-blue);
-        }
-
-        /* Education Section */
-        .education {
-            background-color: var(--white-bg);
-            text-align: center;
-        }
-
-        .education__item {
-            background-color: var(--light-gray-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 600px;
-            margin: 2rem auto 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .education__item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .education__item h3 {
-            color: var(--primary-blue);
-            margin-bottom: 0.5rem;
-            font-size: 1.8rem;
-        }
-
-        .education__item p {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .education__item small {
-            font-size: 0.95rem;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: var(--light-gray-bg);
-            text-align: center;
-        }
-
-        .contact__intro {
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            font-size: clamp(1rem, 2vw, 1.125rem);
-            color: var(--dark-text);
-        }
-
-        .contact__form {
-            background-color: var(--white-bg);
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 700px;
-            margin: 0 auto;
             text-align: left;
         }
 
-        .contact__form .form-group {
-            margin-bottom: 1.5rem;
+        .timeline-right::after {
+            left: -16px;
         }
 
-        .contact__form label {
+        .timeline-card {
+            padding: calc(var(--spacing-unit) * 1.5);
+            background-color: var(--color-primary-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .timeline-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-card h3 {
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .timeline-card h4 {
+            color: var(--color-text-light);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .timeline-card p {
+            color: var(--color-text-subtle);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-unit);
+        }
+        .timeline-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .timeline-card li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text-subtle);
+            font-size: 0.9rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline-card li::before {
+            content: "\f00c"; /* Font Awesome check icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+        }
+
+
+        /* Education Section */
+        #education .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin-top: calc(var(--spacing-unit) * 3);
+        }
+
+        .education-card {
+            background-color: var(--color-primary-bg);
+            padding: calc(var(--spacing-unit) * 2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .education-card h3 {
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+        .education-card p {
+            color: var(--color-text-subtle);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+        .education-card span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--color-text-subtle);
+        }
+
+        /* Contact Section */
+        #contact .contact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(var(--spacing-unit) * 3);
+            margin-top: calc(var(--spacing-unit) * 3);
+        }
+
+        .contact-form {
+            background-color: var(--color-primary-bg);
+            padding: calc(var(--spacing-unit) * 3);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form label {
             display: block;
             margin-bottom: 0.5rem;
+            color: var(--color-text-light);
             font-weight: 500;
-            color: var(--dark-text);
         }
 
-        .contact__form input[type="text"],
-        .contact__form input[type="email"],
-        .contact__form textarea {
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
-            padding: 0.8rem;
-            border: 1px solid var(--border-gray);
+            padding: var(--spacing-unit);
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+            border: 1px solid var(--color-secondary-bg);
             border-radius: 5px;
+            background-color: var(--color-secondary-bg);
+            color: var(--color-text-light);
             font-family: var(--font-body);
             font-size: 1rem;
-            color: var(--dark-text);
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
-
-        .contact__form input:focus,
-        .contact__form textarea:focus {
-            border-color: var(--primary-blue);
-            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        .contact-form input:focus,
+        .contact-form textarea:focus {
             outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.3);
         }
 
-        .contact__form textarea {
+        .contact-form textarea {
             min-height: 120px;
             resize: vertical;
         }
 
-        .contact__info {
-            margin-top: 2.5rem;
+        .contact-info {
+            background-color: var(--color-primary-bg);
+            padding: calc(var(--spacing-unit) * 3);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            gap: 1.5rem 3rem;
-            font-size: 1rem;
         }
 
-        .contact__info-item {
+        .contact-info h3 {
+            color: var(--color-accent);
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: var(--spacing-unit);
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            color: var(--dark-text);
-            font-weight: 500;
+            gap: var(--spacing-unit);
+            color: var(--color-text-subtle);
         }
-        
-        .contact__info-item a {
-            color: var(--dark-text);
+        .contact-info p i {
+            color: var(--color-accent);
+            font-size: 1.2rem;
         }
-        
-        .contact__info-item a:hover {
-            color: var(--primary-blue);
+        .contact-info a {
+            color: var(--color-text-light);
         }
-
-        .contact__info-item svg {
-            color: var(--primary-blue);
-            width: 1.2em;
-            height: 1.2em;
-            flex-shrink: 0;
+        .contact-info a:hover {
+            color: var(--color-accent);
+            text-decoration: none;
         }
-
 
         /* Footer */
         .footer {
-            background-color: var(--dark-text);
-            color: var(--white-bg);
-            padding: 2.5rem 0;
+            background-color: #1f2a36; /* Even darker shade */
+            color: var(--color-text-subtle);
+            padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 2);
             text-align: center;
             font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .footer__links {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
+        .footer .social-links {
+            margin-top: var(--spacing-unit);
         }
 
-        .footer__links a {
-            color: var(--white-bg);
+        .footer .social-links a {
+            color: var(--color-text-light);
+            margin: 0 10px;
+            font-size: 1.5rem;
             transition: color 0.3s ease;
         }
 
-        .footer__links a:hover {
-            color: var(--primary-blue);
+        .footer .social-links a:hover {
+            color: var(--color-accent);
+            transform: translateY(-2px);
+        }
+        
+        /* Language Specific Display */
+        [data-lang="th"] [data-lang-en],
+        [data-lang="en"] [data-lang-th] {
+            display: none;
         }
 
-        .footer__social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .footer__social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            border: 1px solid var(--white-bg);
-            color: var(--white-bg);
-            font-size: 1.2rem;
-            transition: border-color 0.3s ease, background-color 0.3s ease;
-        }
-
-        .footer__social-links a:hover {
-            border-color: var(--primary-blue);
-            background-color: var(--primary-blue);
-        }
-
-
-        /* Accessibility (Keyboard Focus) */
-        :focus-visible {
-            outline: 3px solid var(--primary-blue);
-            outline-offset: 2px;
-            border-radius: 3px;
-        }
-        .btn:focus-visible {
-            outline-offset: 1px;
-        }
-
-        /* Fade-in Animation for Sections */
-        .fade-in {
+        /* Scroll-fade animations */
+        .animated-element {
             opacity: 0;
             transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
         }
-        .fade-in.active {
+
+        .animated-element.fade-in {
             opacity: 1;
             transform: translateY(0);
         }
 
 
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .header__nav-list,
-            .header .btn--secondary { /* Hide desktop nav and resume button */
-                display: none;
+        /* Media Queries for Responsiveness */
+        @media (min-width: 768px) {
+            #about .container {
+                grid-template-columns: 1fr 2fr;
+                gap: calc(var(--spacing-unit) * 6);
             }
-
-            .nav-toggle {
-                display: flex;
+            .profile-img {
+                margin: 0;
             }
-
-            .hero {
-                padding-top: 6rem;
-                min-height: auto;
-                height: auto; /* Allow content to dictate height */
+            #experience .timeline::after {
+                left: 50%;
             }
-
-            .hero__title {
-                font-size: clamp(2rem, 9vw, 3rem);
+            .timeline-item {
+                width: 50%;
+                padding-left: 0;
+                padding-right: 40px;
             }
-            .hero__title span[lang="th"] {
-                font-size: clamp(1.2rem, 5vw, 1.8rem);
-            }
-
-            .hero__subtitle {
-                font-size: clamp(1.2rem, 4.5vw, 1.8rem);
-            }
-             .hero__subtitle span[lang="th"] {
-                font-size: clamp(0.9rem, 3vw, 1.2rem);
-            }
-
-            .hero__ctas {
-                flex-direction: column;
-                gap: 0.8rem;
-            }
-            .hero__ctas .btn {
-                width: 80%; /* Make buttons wider on mobile */
-                margin: 0 auto;
-            }
-
-            .section-padding {
-                padding: 3rem 0;
-            }
-
-            .about__content {
-                flex-direction: column;
-                text-align: center;
-            }
-            .about__text {
-                padding: 0 1rem;
-            }
-
-            .skills__grid {
-                grid-template-columns: 1fr;
-            }
-
-            .projects__grid {
-                grid-template-columns: 1fr;
-            }
-
-            .experience__timeline::after {
-                left: 18px; /* Adjust timeline line position */
-            }
-
-            .experience__item {
-                width: 100%;
-                padding-left: 50px; /* Space for the line and dot */
-                padding-right: 10px;
-            }
-
-            .experience__item--left,
-            .experience__item--right {
+            .timeline-left {
                 left: 0;
+                padding-right: 40px; /* Space from line */
+                text-align: right;
             }
-
-            .experience__item--left::after,
-            .experience__item--right::after {
-                left: 10px; /* Position dot on the left line */
-                right: unset;
+            .timeline-right {
+                left: 50%;
+                padding-left: 40px; /* Space from line */
+                text-align: left;
             }
-            
-            .experience__item-content {
-                padding: 15px;
+            .timeline-right::after {
+                left: -16px;
+                right: auto;
             }
-
-            .experience__item-content h3 {
-                font-size: 1.2rem;
+            .timeline-left::after {
+                right: -16px;
+                left: auto;
             }
-            .experience__item-content h3 span[lang="th"] {
-                font-size: 0.95rem;
-            }
-            
-            .experience__item-content h4 {
-                font-size: 1rem;
-            }
-
-            .contact__form {
-                padding: 1.5rem;
-            }
-            
-            .contact__info {
-                flex-direction: column;
-                gap: 1rem;
+            #contact .contact-content {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
-        @media (min-width: 769px) {
-            .mobile-nav {
-                display: none !important; /* Hide mobile nav on larger screens */
+        @media (max-width: 767px) {
+            .header {
+                padding: var(--spacing-unit);
+            }
+            .nav-menu {
+                display: none; /* Hidden by default on mobile */
+            }
+            .hamburger {
+                display: flex;
+            }
+            .lang-switch-container {
+                margin-left: var(--spacing-unit);
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--spacing-unit);
+            }
+            .btn-secondary {
+                margin-left: 0;
+            }
+
+            #about .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .profile-img {
+                margin-bottom: var(--spacing-unit) * 2;
+            }
+
+            #skills .skills-grid,
+            #projects .projects-grid,
+            #education .education-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            #experience .timeline::after {
+                left: 18px; /* Move line to left */
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px; /* Space for line and dot */
+                padding-right: 15px;
+                text-align: left;
+            }
+            .timeline-item::after {
+                left: 11px; /* Align dot with line */
+                right: auto;
+            }
+            .timeline-left, .timeline-right {
+                left: 0;
+                padding-left: 50px;
+                padding-right: 15px;
+            }
+            .timeline-left::after {
+                left: 11px;
+            }
+            .timeline-right::after {
+                left: 11px;
             }
         }
     </style>
 </head>
-<body>
-    <header class="header" id="home">
-        <div class="container header__nav">
-            <a href="#home" class="header__logo" aria-label="Jakkrit Lekprasan's Portfolio Home">
-                Jakkrit<span class="text-primary">.</span>
-            </a>
-            <nav>
-                <ul class="header__nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn btn--secondary header__btn-resume" download="Jakkrit_Lekprasan_Resume.pdf">
-                Download Resume
-            </a>
-            <button class="nav-toggle" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<body data-lang="en">
+    <!-- Header -->
+    <header class="header">
+        <a href="#hero" class="logo" data-lang-en="Jakkrit Lekprasan" data-lang-th="จักรฤทธิ์ เล็กประสาร">Jakkrit Lekprasan</a>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" data-lang-en="Home" data-lang-th="หน้าหลัก">Home</a></li>
+                <li><a href="#about" data-lang-en="About" data-lang-th="เกี่ยวกับ">About</a></li>
+                <li><a href="#skills" data-lang-en="Skills" data-lang-th="ทักษะ">Skills</a></li>
+                <li><a href="#projects" data-lang-en="Projects" data-lang-th="โครงการ">Projects</a></li>
+                <li><a href="#experience" data-lang-en="Experience" data-lang-th="ประสบการณ์">Experience</a></li>
+                <li><a href="#education" data-lang-en="Education" data-lang-th="การศึกษา">Education</a></li>
+                <li><a href="#contact" data-lang-en="Contact" data-lang-th="ติดต่อ">Contact</a></li>
+                <li class="lang-switch-container"><button class="lang-switch" id="langSwitch" data-lang-en="ไทย" data-lang-th="EN">ไทย</button></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="lang-switch-container mobile-lang-switch">
+             <button class="lang-switch" id="mobileLangSwitch" data-lang-en="ไทย" data-lang-th="EN">ไทย</button>
         </div>
     </header>
 
-    <div class="mobile-nav" id="mobile-nav">
-        <ul class="mobile-nav__list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#" class="btn btn--primary mt-4" download="Jakkrit_Lekprasan_Resume.pdf">Download Resume</a></li>
-        </ul>
-    </div>
-
     <main>
-        <section class="hero section-padding" id="hero">
-            <div class="container hero__content fade-in">
-                <h1 class="hero__title">
-                    <span lang="en">Jakkrit Lekprasan</span>
-                    <span lang="th" class="ml-2">(จักรฤทธิ์ เล็กประสาร)</span>
-                </h1>
-                <h2 class="hero__subtitle">
-                    <span lang="en">Computer Engineering Student | Aspiring Full-Stack Developer & Data Scientist</span><br>
-                    <span lang="th" class="ml-2">(นักศึกษาวิศวกรรมคอมพิวเตอร์ | นักพัฒนา Full-Stack และ นักวิทยาศาสตร์ข้อมูล)</span>
-                </h2>
-                <p class="hero__tagline">
-                    <span lang="en">Transforming Complex Challenges into Functional, Impactful Solutions.</span><br>
-                    <span lang="th">(เปลี่ยนความท้าทายที่ซับซ้อนให้เป็นโซลูชั่นที่มีประโยชน์และสร้างผลกระทบ)</span>
-                </p>
-                <p>
-                    <span lang="en">A highly motivated Computer Engineering student at Chiang Mai University, graduating in 2025. I am passionate about leveraging diverse technical skills – from robust full-stack development to insightful data analysis and machine learning – to build innovative and practical solutions. I'm actively seeking an internship opportunity to contribute to dynamic projects and further my growth.</span><br>
-                    <span lang="th">(นักศึกษาวิศวกรรมคอมพิวเตอร์ที่มหาวิทยาลัยเชียงใหม่ กำลังจะสำเร็จการศึกษาในปี 2025 ผมมีความมุ่งมั่นที่จะใช้ทักษะทางเทคนิคที่หลากหลาย ตั้งแต่การพัฒนา Full-Stack ไปจนถึงการวิเคราะห์ข้อมูลเชิงลึกและการเรียนรู้ของเครื่องจักร เพื่อสร้างสรรค์โซลูชั่นที่เป็นนวัตกรรมและใช้งานได้จริง ผมกำลังมองหาโอกาสในการฝึกงานเพื่อร่วมสร้างโปรเจกต์ที่มีพลวัตและพัฒนาตนเองต่อไป)</span>
-                </p>
-                <div class="hero__ctas">
-                    <a href="#projects" class="btn btn--primary">Explore My Projects</a>
-                    <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Connect on LinkedIn</a>
-                </div>
-                <div class="hero__social-links">
-                    <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </a>
-                    <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/></svg>
-                    </a>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container animated-element">
+                <div class="hero-content">
+                    <h1 data-lang-en="Jakkrit Lekprasan: Driving Strategic Impact & Operational Excellence"
+                        data-lang-th="จักรฤทธิ์ เล็กประสาร: ผู้ขับเคลื่อนผลกระทบเชิงกลยุทธ์และความเป็นเลิศในการดำเนินงาน">
+                        Jakkrit Lekprasan: Driving Strategic Impact & Operational Excellence
+                    </h1>
+                    <p data-lang-en="Strategic Project Coordinator with a robust background in steering strategic initiatives, leading cross-functional teams, and significantly enhancing operational efficiency across diverse environments."
+                       data-lang-th="ผู้ประสานงานโครงการเชิงกลยุทธ์ที่มีประสบการณ์สูงในการนำร่องโครงการเชิงกลยุทธ์, การเป็นผู้นำทีมข้ามสายงาน และการเพิ่มประสิทธิภาพการดำเนินงานในสภาพแวดล้อมที่หลากหลาย">
+                        Strategic Project Coordinator with a robust background in steering strategic initiatives, leading cross-functional teams, and significantly enhancing operational efficiency across diverse environments.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" data-lang-en="View My Work" data-lang-th="ดูผลงานของฉัน">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary" data-lang-en="Connect with Jakkrit" data-lang-th="ติดต่อจักรฤทธิ์">Connect with Jakkrit</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="about section-padding" id="about">
-            <div class="container fade-in">
-                <h2 class="text-center">
-                    <span lang="en">About Me</span>
-                    <span lang="th" class="ml-2">(เกี่ยวกับฉัน)</span>
-                </h2>
-                <div class="about__content">
-                    <div class="about__image-wrapper">
-                        <img src="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DA99.jpg" alt="Jakkrit Lekprasan's professional profile picture" class="about__image" width="250" height="250">
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="container animated-element">
+                <img src="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DAF.jpg" alt="Jakkrit Lekprasan Profile" class="profile-img">
+                <div class="about-text">
+                    <h2 class="text-center" data-lang-en="Strategic Vision. Tangible Results." data-lang-th="วิสัยทัศน์เชิงกลยุทธ์ ผลลัพธ์ที่จับต้องได้">Strategic Vision. Tangible Results.</h2>
+                    <p data-lang-en="Jakkrit Lekprasan is a highly experienced Strategic Project Coordinator with a robust background in steering strategic initiatives, leading cross-functional teams, and significantly enhancing operational efficiency across diverse environments. Armed with a Master's in Business Administration and a Bachelor's in Accountancy, Jakkrit possesses a refined ability to define clear objectives, meticulously monitor progress, and ensure every project precisely aligns with overarching corporate priorities."
+                       data-lang-th="จักรฤทธิ์ เล็กประสาร เป็นผู้ประสานงานโครงการเชิงกลยุทธ์ที่มีประสบการณ์สูง พร้อมพื้นฐานที่แข็งแกร่งในการขับเคลื่อนโครงการเชิงกลยุทธ์, การเป็นผู้นำทีมข้ามสายงาน และการเพิ่มประสิทธิภาพการดำเนินงานอย่างมีนัยสำคัญในสภาพแวดล้อมที่หลากหลาย ด้วยปริญญาโทบริหารธุรกิจ (MBA) และปริญญาตรีบัญชี จักรฤทธิ์มีความสามารถพิเศษในการกำหนดวัตถุประสงค์ที่ชัดเจน, ติดตามความคืบหน้าอย่างละเอียด และรับประกันว่าทุกโครงการจะสอดคล้องกับลำดับความสำคัญขององค์กร">
+                        Jakkrit Lekprasan is a highly experienced Strategic Project Coordinator with a robust background in steering strategic initiatives, leading cross-functional teams, and significantly enhancing operational efficiency across diverse environments. Armed with a Master's in Business Administration and a Bachelor's in Accountancy, Jakkrit possesses a refined ability to define clear objectives, meticulously monitor progress, and ensure every project precisely aligns with overarching corporate priorities.
+                    </p>
+                    <p data-lang-en="With a proven track record spanning both public and private sectors, Jakkrit is dedicated to driving performance, boosting productivity, and enabling impactful strategic decision-making."
+                       data-lang-th="ด้วยผลงานที่พิสูจน์แล้วทั้งในภาครัฐและเอกชน จักรฤทธิ์มุ่งมั่นที่จะขับเคลื่อนประสิทธิภาพ, เพิ่มผลิตภาพ และสนับสนุนการตัดสินใจเชิงกลยุทธ์ที่มีผลกระทบ">
+                        With a proven track record spanning both public and private sectors, Jakkrit is dedicated to driving performance, boosting productivity, and enabling impactful strategic decision-making.
+                    </p>
+                    <div class="text-center">
+                        <!-- Example: <a href="your_resume.pdf" download class="btn btn-secondary" data-lang-en="Download Resume" data-lang-th="ดาวน์โหลดเรซูเม่">Download Resume</a> -->
                     </div>
-                    <div class="about__text">
-                        <p>
-                            <span lang="en">I'm Jakkrit Lekprasan, a driven Computer Engineering student at Chiang Mai University, set to graduate in 2025. My academic journey has equipped me with a robust foundation in software development, data science, and machine learning, enabling me to thrive on tackling complex challenges and transforming ideas into functional solutions.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="text-center animated-element" data-lang-en="Core Competencies: Orchestrating Success." data-lang-th="ความสามารถหลัก: การจัดระเบียบสู่ความสำเร็จ">Core Competencies: Orchestrating Success.</h2>
+                <div class="skills-grid">
+                    <div class="skill-category animated-element">
+                        <h3 data-lang-en="Strategic & Project Management" data-lang-th="การบริหารเชิงกลยุทธ์และโครงการ"><i class="fas fa-sitemap"></i> Strategic & Project Management</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Strategic Planning" data-lang-th="การวางแผนเชิงกลยุทธ์">Strategic Planning</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Project Management" data-lang-th="การบริหารโครงการ">Project Management</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="KPI Definition" data-lang-th="การกำหนดตัวชี้วัดผลงานหลัก">KPI Definition</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Performance Monitoring" data-lang-th="การติดตามผลการดำเนินงาน">Performance Monitoring</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Risk Management" data-lang-th="การบริหารความเสี่ยง">Risk Management</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Business Plan Development" data-lang-th="การพัฒนาแผนธุรกิจ">Business Plan Development</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Project Evaluation" data-lang-th="การประเมินโครงการ">Project Evaluation</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category animated-element">
+                        <h3 data-lang-en="Operational Excellence & Process Improvement" data-lang-th="ความเป็นเลิศและปรับปรุงกระบวนการดำเนินงาน"><i class="fas fa-cogs"></i> Operational Excellence & Process Improvement</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Operational Efficiency Improvement" data-lang-th="การปรับปรุงประสิทธิภาพการดำเนินงาน">Operational Efficiency Improvement</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Business Process Enhancement" data-lang-th="การเพิ่มประสิทธิภาพกระบวนการทางธุรกิจ">Business Process Enhancement</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="SOP Development" data-lang-th="การพัฒนามาตรฐานการปฏิบัติงาน">SOP Development</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="User Manual Creation" data-lang-th="การสร้างคู่มือผู้ใช้">User Manual Creation</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Distribution & Deliveries Operations Management" data-lang-th="การบริหารจัดการการดำเนินงานกระจายสินค้าและการจัดส่ง">Distribution & Deliveries Operations Management</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Customer Service Excellence" data-lang-th="ความเป็นเลิศในการบริการลูกค้า">Customer Service Excellence</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category animated-element">
+                        <h3 data-lang-en="Leadership & Development" data-lang-th="ความเป็นผู้นำและการพัฒนา"><i class="fas fa-users-gear"></i> Leadership & Development</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Cross-functional Team Leadership" data-lang-th="การเป็นผู้นำทีมข้ามสายงาน">Cross-functional Team Leadership</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Team Leadership" data-lang-th="การเป็นผู้นำทีม">Team Leadership</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Staffing" data-lang-th="การจัดหาบุคลากร">Staffing</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Training & Development" data-lang-th="การฝึกอบรมและพัฒนา">Training & Development</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Communication" data-lang-th="การสื่อสาร">Communication</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Executive Reporting" data-lang-th="การรายงานผู้บริหาร">Executive Reporting</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-lang-en="Budgeting" data-lang-th="การจัดทำงบประมาณ">Budgeting</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="text-center animated-element" data-lang-en="Impactful Strategic Initiatives & Deliverables." data-lang-th="โครงการเชิงกลยุทธ์และผลลัพธ์ที่สร้างผลกระทบ">Impactful Strategic Initiatives & Deliverables.</h2>
+                <div class="projects-grid">
+                    <div class="project-card animated-element">
+                        <h3 data-lang-en="National Logistics Network Optimization" data-lang-th="การเพิ่มประสิทธิภาพเครือข่ายโลจิสติกส์ระดับชาติ">National Logistics Network Optimization</h3>
+                        <p data-lang-en="Spearheaded a large-scale government project to streamline national distribution and delivery operations, integrating advanced route optimization and warehouse management systems. Achieved a 15% reduction in average delivery times and a 10% decrease in operational costs nationwide."
+                           data-lang-th="นำร่องโครงการภาครัฐขนาดใหญ่เพื่อปรับปรุงการดำเนินงานด้านการกระจายสินค้าและการจัดส่งระดับชาติ โดยการรวมระบบการเพิ่มประสิทธิภาพเส้นทางและการจัดการคลังสินค้าขั้นสูง ส่งผลให้ลดเวลาจัดส่งเฉลี่ยลง 15% และลดต้นทุนการดำเนินงานทั่วประเทศลง 10%">
+                            Spearheaded a large-scale government project to streamline national distribution and delivery operations, integrating advanced route optimization and warehouse management systems. Achieved a 15% reduction in average delivery times and a 10% decrease in operational costs nationwide.
                         </p>
-                        <p>
-                            <span lang="en">My hands-on experience spans across versatile domains, including full-stack web development (React, Node.js, Express, Flask), data analysis with Python (Pandas, NumPy), and advanced machine learning applications (TensorFlow, Keras, Scikit-learn). I've successfully built diverse projects, from a comprehensive e-commerce platform and real-time chat applications to predictive models for stock prices and crime hotspots, showcasing my ability to leverage various technologies effectively.</span>
+                        <a href="#" class="btn btn-primary" data-lang-en="View Details" data-lang-th="ดูรายละเอียด">View Details</a>
+                    </div>
+
+                    <div class="project-card animated-element">
+                        <h3 data-lang-en="Cross-Functional Digital Transformation Initiative" data-lang-th="โครงการเปลี่ยนผ่านสู่ดิจิทัลข้ามสายงาน">Cross-Functional Digital Transformation Initiative</h3>
+                        <p data-lang-en="Led a strategic initiative for a leading private sector firm to digitize core business processes across sales, marketing, and customer service. Successfully implemented new CRM and ERP platforms, improving inter-departmental collaboration by 25% and boosting customer satisfaction scores by 18%."
+                           data-lang-th="นำร่องโครงการเชิงกลยุทธ์สำหรับบริษัทเอกชนชั้นนำเพื่อเปลี่ยนผ่านกระบวนการทางธุรกิจหลักสู่ดิจิทัลครอบคลุมฝ่ายขาย การตลาด และบริการลูกค้า ประสบความสำเร็จในการนำแพลตฟอร์ม CRM และ ERP ใหม่มาใช้ ซึ่งช่วยปรับปรุงการทำงานร่วมกันระหว่างแผนกได้ 25% และเพิ่มคะแนนความพึงพอใจของลูกค้า 18%">
+                            Led a strategic initiative for a leading private sector firm to digitize core business processes across sales, marketing, and customer service. Successfully implemented new CRM and ERP platforms, improving inter-departmental collaboration by 25% and boosting customer satisfaction scores by 18%.
                         </p>
-                        <p>
-                            <span lang="en">Beyond my technical acumen, roles as a Student Ambassador and Teaching Assistant have been instrumental in honing my communication, leadership, and problem-solving skills. These experiences have allowed me to collaborate effectively in team environments, mentor peers, and represent my institution professionally. I am a fast learner, perpetually curious, and actively seeking an internship opportunity to apply my expertise, contribute to innovative projects, and further develop my skills in a dynamic professional setting.</span>
+                        <a href="#" class="btn btn-primary" data-lang-en="View Details" data-lang-th="ดูรายละเอียด">View Details</a>
+                    </div>
+
+                    <div class="project-card animated-element">
+                        <h3 data-lang-en="Strategic Cost Reduction & Budget Reallocation Program" data-lang-th="โครงการลดต้นทุนและจัดสรรงบประมาณใหม่เชิงกลยุทธ์">Strategic Cost Reduction & Budget Reallocation Program</h3>
+                        <p data-lang-en="Designed and managed a comprehensive program to identify and eliminate redundancies in a large organization's budget. Through meticulous analysis and stakeholder negotiation, achieved a 7% reduction in operating expenses while strategically reallocating funds to high-growth areas, yielding a 12% ROI increase in those sectors."
+                           data-lang-th="ออกแบบและบริหารจัดการโครงการที่ครอบคลุมเพื่อระบุและกำจัดความซ้ำซ้อนในงบประมาณขององค์กรขนาดใหญ่ ด้วยการวิเคราะห์อย่างละเอียดและการเจรจากับผู้มีส่วนได้ส่วนเสีย สามารถลดค่าใช้จ่ายในการดำเนินงานได้ 7% ในขณะที่จัดสรรเงินทุนใหม่ไปยังพื้นที่ที่มีการเติบโตสูงอย่างมีกลยุทธ์ ทำให้เพิ่ม ROI ในภาคส่วนเหล่านั้นได้ 12%">
+                            Designed and managed a comprehensive program to identify and eliminate redundancies in a large organization's budget. Through meticulous analysis and stakeholder negotiation, achieved a 7% reduction in operating expenses while strategically reallocating funds to high-growth areas, yielding a 12% ROI increase in those sectors.
                         </p>
-                        <div class="about__highlights">
-                            <span>Expected Graduation: 2025</span>
-                            <span>Location: Chiang Mai, Thailand</span>
-                            <span>Key Strengths: Versatility, Problem-Solving, Communication, Teamwork, Proactive Learning</span>
-                        </div>
+                        <a href="#" class="btn btn-primary" data-lang-en="View Details" data-lang-th="ดูรายละเอียด">View Details</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills section-padding" id="skills">
-            <div class="container fade-in">
-                <h2 class="text-center">
-                    <span lang="en">My Expertise</span>
-                    <span lang="th" class="ml-2">(ความเชี่ยวชาญของฉัน)</span>
-                </h2>
-                <div class="skills__grid">
-                    <div class="skills__category">
-                        <h3>Programming Languages</h3>
-                        <ul class="skills__list">
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Python (Core)
-                            </li>
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> JavaScript (Core)
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> C++
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> C
-                            </li>
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> HTML & CSS
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> SQL
-                            </li>
-                            <li class="familiar">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Java, R, PHP
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills__category">
-                        <h3>Web Development</h3>
-                        <ul class="skills__list">
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> React.js
-                            </li>
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Node.js, Express.js
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Flask
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Tailwind CSS, Bootstrap
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills__category">
-                        <h3>Data & Machine Learning</h3>
-                        <ul class="skills__list">
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Pandas, NumPy, Matplotlib
-                            </li>
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Scikit-learn
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> TensorFlow, Keras
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills__category">
-                        <h3>Databases & Cloud</h3>
-                        <ul class="skills__list">
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> MySQL, PostgreSQL
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> MongoDB, Firebase
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Google Cloud Platform (GCP)
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Microsoft Azure
-                            </li>
-                            <li class="familiar">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> AWS (Familiar)
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills__category">
-                        <h3>Tools & Concepts</h3>
-                        <ul class="skills__list">
-                            <li class="core">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Git / Version Control
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> VS Code, Docker
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Object-Oriented Programming (OOP)
-                            </li>
-                            <li class="proficient">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Data Structures, Algorithms
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects section-padding" id="projects">
-            <div class="container fade-in">
-                <h2 class="text-center">
-                    <span lang="en">Featured Projects</span>
-                    <span lang="th" class="ml-2">(ผลงานเด่น)</span>
-                </h2>
-                <div class="projects__grid">
-                    <!-- Project Card 1: E-commerce Website -->
-                    <div class="project-card">
-                        <div class="project-card__image-wrapper">
-                            <img src="https://via.placeholder.com/600x400/007BFF/FFFFFF?text=E-commerce+Website" alt="Screenshot of E-commerce Website project" class="project-card__image" width="600" height="400">
-                        </div>
-                        <div class="project-card__content">
-                            <h3>
-                                <span lang="en">E-commerce Website (Full-Stack)</span><br>
-                                <span lang="th">(เว็บไซต์อีคอมเมิร์ซ)</span>
-                            </h3>
-                            <p>A comprehensive online store featuring user authentication, product listings, shopping cart, and payment processing. Built for scalability and secure transactions.</p>
-                            <p class="project-card__tech-stack">React.js | Node.js | Express.js | MongoDB | Tailwind CSS</p>
-                            <div class="project-card__ctas">
-                                <a href="#" class="btn btn--primary">View Details</a>
-                                <a href="https://github.com/jakkrit_lekprasan/ecommerce" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2: Real-time Chat Application -->
-                    <div class="project-card">
-                        <div class="project-card__image-wrapper">
-                            <img src="https://via.placeholder.com/600x400/28a745/FFFFFF?text=Real-time+Chat+App" alt="Screenshot of Real-time Chat Application project" class="project-card__image" width="600" height="400">
-                        </div>
-                        <div class="project-card__content">
-                            <h3>
-                                <span lang="en">Real-time Chat Application</span><br>
-                                <span lang="th">(แอปพลิเคชันแชทแบบเรียลไทม์)</span>
-                            </h3>
-                            <p>An instant messaging platform allowing users to communicate in real-time. Features include user registration, chat rooms, and message history.</p>
-                            <p class="project-card__tech-stack">React.js | Node.js | Socket.IO | MongoDB | CSS</p>
-                            <div class="project-card__ctas">
-                                <a href="#" class="btn btn--primary">View Details</a>
-                                <a href="https://github.com/jakkrit_lekprasan/realtime-chat" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3: Student Management System -->
-                    <div class="project-card">
-                        <div class="project-card__image-wrapper">
-                            <img src="https://via.placeholder.com/600x400/ffc107/FFFFFF?text=Student+Management+System" alt="Screenshot of Student Management System project" class="project-card__image" width="600" height="400">
-                        </div>
-                        <div class="project-card__content">
-                            <h3>
-                                <span lang="en">Student Management System</span><br>
-                                <span lang="th">(ระบบจัดการนักศึกษา)</span>
-                            </h3>
-                            <p>A system for managing student records, course enrollments, grades, and attendance, designed for educational institutions.</p>
-                            <p class="project-card__tech-stack">Python/Flask | MySQL | HTML | CSS | JavaScript</p>
-                            <div class="project-card__ctas">
-                                <a href="#" class="btn btn--primary">View Details</a>
-                                <a href="https://github.com/jakkrit_lekprasan/student-management" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 4: Stock Price Prediction Model -->
-                    <div class="project-card">
-                        <div class="project-card__image-wrapper">
-                            <img src="https://via.placeholder.com/600x400/dc3545/FFFFFF?text=Stock+Prediction+Model" alt="Screenshot of Stock Price Prediction Model project" class="project-card__image" width="600" height="400">
-                        </div>
-                        <div class="project-card__content">
-                            <h3>
-                                <span lang="en">Stock Price Prediction Model</span><br>
-                                <span lang="th">(โมเดลคาดการณ์ราคาหุ้น)</span>
-                            </h3>
-                            <p>A machine learning model predicting future stock prices based on historical data using time-series analysis techniques.</p>
-                            <p class="project-card__tech-stack">Python | TensorFlow | Keras | Pandas | NumPy</p>
-                            <div class="project-card__ctas">
-                                <a href="#" class="btn btn--primary">View Details</a>
-                                <a href="https://github.com/jakkrit_lekprasan/stock-prediction" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="experience section-padding" id="experience">
-            <div class="container fade-in">
-                <h2 class="text-center">
-                    <span lang="en">Professional & Academic Experience</span>
-                    <span lang="th" class="ml-2">(ประสบการณ์การทำงานและวิชาการ)</span>
-                </h2>
-                <div class="experience__timeline">
-                    <!-- Experience Item 1 -->
-                    <div class="experience__item experience__item--left">
-                        <div class="experience__item-content">
-                            <h3>
-                                <span lang="en">Student Ambassador</span><br>
-                                <span lang="th">(ทูตนักศึกษา)</span>
-                            </h3>
-                            <h4>Chiang Mai University</h4>
-                            <small>June 2023 – Present (1 year 2 months)</small>
+        <!-- Professional Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="text-center animated-element" data-lang-en="Professional Journey: Driving Results Across Sectors." data-lang-th="เส้นทางอาชีพ: ขับเคลื่อนผลลัพธ์ในทุกภาคส่วน">Professional Journey: Driving Results Across Sectors.</h2>
+                <div class="timeline">
+                    <div class="timeline-item timeline-left animated-element">
+                        <div class="timeline-card">
+                            <h3 data-lang-en="Senior Strategic Operations Manager" data-lang-th="ผู้จัดการอาวุโสฝ่ายปฏิบัติการเชิงกลยุทธ์">Senior Strategic Operations Manager</h3>
+                            <h4 data-lang-en="Global Logistics & Supply Chain Co." data-lang-th="บริษัทโลจิสติกส์และซัพพลายเชนระดับโลก">Global Logistics & Supply Chain Co.</h4>
+                            <p data-lang-en="2018 - Present" data-lang-th="พ.ศ. 2561 - ปัจจุบัน">2018 - Present</p>
                             <ul>
-                                <li>Proactively engaged with prospective students, providing insightful information on academic programs, campus life, and support services.</li>
-                                <li>Represented the university professionally at various events, significantly contributing to positive public perception and recruitment efforts.</li>
-                                <li>Assisted in coordinating university events, including campus tours, orientation sessions, and open house events.</li>
+                                <li data-lang-en="Led a team of 15 project managers in optimizing complex distribution networks across APAC, resulting in a 20% improvement in delivery efficiency."
+                                    data-lang-th="เป็นผู้นำทีมผู้จัดการโครงการ 15 คนในการเพิ่มประสิทธิภาพเครือข่ายการกระจายสินค้าที่ซับซ้อนทั่วเอเชียแปซิฟิก ส่งผลให้ประสิทธิภาพการจัดส่งดีขึ้น 20%">
+                                    Led a team of 15 project managers in optimizing complex distribution networks across APAC, resulting in a 20% improvement in delivery efficiency.
+                                </li>
+                                <li data-lang-en="Implemented Lean Six Sigma methodologies to identify and eliminate operational bottlenecks, reducing average processing time by 12%."
+                                    data-lang-th="นำระเบียบวิธี Lean Six Sigma มาใช้เพื่อระบุและกำจัดปัญหาคอขวดในการดำเนินงาน ลดเวลาดำเนินการเฉลี่ยลง 12%">
+                                    Implemented Lean Six Sigma methodologies to identify and eliminate operational bottlenecks, reducing average processing time by 12%.
+                                </li>
+                                <li data-lang-en="Managed an annual operations budget of $5M, achieving all cost-saving targets and reallocating funds for technological upgrades."
+                                    data-lang-th="บริหารจัดการงบประมาณการดำเนินงานประจำปี 5 ล้านดอลลาร์สหรัฐ บรรลุเป้าหมายการประหยัดต้นทุนทั้งหมดและจัดสรรเงินทุนใหม่สำหรับการอัปเกรดเทคโนโลยี">
+                                    Managed an annual operations budget of $5M, achieving all cost-saving targets and reallocating funds for technological upgrades.
+                                </li>
                             </ul>
-                            <p class="skills-demonstrated"><span>Skills Demonstrated:</span> Public Speaking, Communication, Interpersonal Skills, Event Coordination, Leadership.</p>
                         </div>
                     </div>
 
-                    <!-- Experience Item 2 -->
-                    <div class="experience__item experience__item--right">
-                        <div class="experience__item-content">
-                            <h3>
-                                <span lang="en">Teaching Assistant</span><br>
-                                <span lang="th">(ผู้ช่วยสอน)</span>
-                            </h3>
-                            <h4>Computer Engineering Department, Chiang Mai University</h4>
-                            <small>January 2023 – May 2023 (5 months)</small>
+                    <div class="timeline-item timeline-right animated-element">
+                        <div class="timeline-card">
+                            <h3 data-lang-en="Project Lead, Government Efficiency Initiatives" data-lang-th="หัวหน้าโครงการ, โครงการริเริ่มเพิ่มประสิทธิภาพภาครัฐ">Project Lead, Government Efficiency Initiatives</h3>
+                            <h4 data-lang-en="Ministry of Public Administration, Thailand" data-lang-th="กระทรวงการบริหารราชการแผ่นดิน ประเทศไทย">Ministry of Public Administration, Thailand</h4>
+                            <p data-lang-en="2012 - 2018" data-lang-th="พ.ศ. 2555 - 2561">2012 - 2018</p>
                             <ul>
-                                <li>Supported professors in grading assignments, preparing lab materials, and offering one-on-one student assistance.</li>
-                                <li>Conducted supplementary review sessions to clarify complex concepts and aid students in exam preparation.</li>
-                                <li>Cultivated a supportive learning environment, promptly addressing student inquiries and providing constructive feedback.</li>
+                                <li data-lang-en="Directed cross-departmental teams in the successful implementation of new public service delivery protocols, enhancing citizen satisfaction by 25%."
+                                    data-lang-th="นำทีมข้ามกรมในการดำเนินงานตามระเบียบปฏิบัติการให้บริการสาธารณะใหม่ที่ประสบความสำเร็จ เพิ่มความพึงพอใจของประชาชน 25%">
+                                    Directed cross-departmental teams in the successful implementation of new public service delivery protocols, enhancing citizen satisfaction by 25%.
+                                </li>
+                                <li data-lang-en="Developed comprehensive SOPs and training programs for over 500 government employees, improving process adherence by 30%."
+                                    data-lang-th="พัฒนา SOP และโครงการฝึกอบรมที่ครอบคลุมสำหรับพนักงานราชการกว่า 500 คน ปรับปรุงการปฏิบัติตามกระบวนการ 30%">
+                                    Developed comprehensive SOPs and training programs for over 500 government employees, improving process adherence by 30%.
+                                </li>
+                                <li data-lang-en="Facilitated inter-agency communication and collaboration, ensuring timely project completion for critical national infrastructure projects."
+                                    data-lang-th="อำนวยความสะดวกในการสื่อสารและการทำงานร่วมกันระหว่างหน่วยงาน ทำให้โครงการโครงสร้างพื้นฐานระดับชาติที่สำคัญแล้วเสร็จตามกำหนดเวลา">
+                                    Facilitated inter-agency communication and collaboration, ensuring timely project completion for critical national infrastructure projects.
+                                </li>
                             </ul>
-                            <p class="skills-demonstrated"><span>Skills Demonstrated:</span> Mentorship, Technical Instruction, Problem Solving, Communication, Time Management, Empathy.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-left animated-element">
+                        <div class="timeline-card">
+                            <h3 data-lang-en="Financial Analyst & Project Coordinator" data-lang-th="นักวิเคราะห์การเงินและผู้ประสานงานโครงการ">Financial Analyst & Project Coordinator</h3>
+                            <h4 data-lang-en="Leading Financial Services Group" data-lang-th="กลุ่มบริษัทบริการทางการเงินชั้นนำ">Leading Financial Services Group</h4>
+                            <p data-lang-en="2008 - 2012" data-lang-th="พ.ศ. 2551 - 2555">2008 - 2012</p>
+                            <ul>
+                                <li data-lang-en="Conducted detailed financial modeling and analysis for strategic investment projects, informing executive decision-making."
+                                    data-lang-th="ดำเนินการสร้างแบบจำลองและการวิเคราะห์ทางการเงินอย่างละเอียดสำหรับโครงการลงทุนเชิงกลยุทธ์ เพื่อสนับสนุนการตัดสินใจของผู้บริหาร">
+                                    Conducted detailed financial modeling and analysis for strategic investment projects, informing executive decision-making.
+                                </li>
+                                <li data-lang-en="Coordinated project timelines and resource allocation for multiple concurrent financial product launches."
+                                    data-lang-th="ประสานงานกำหนดเวลาโครงการและการจัดสรรทรัพยากรสำหรับการเปิดตัวผลิตภัณฑ์ทางการเงินหลายรายการพร้อมกัน">
+                                    Coordinated project timelines and resource allocation for multiple concurrent financial product launches.
+                                </li>
+                                <li data-lang-en="Prepared executive reports on project performance and budgetary adherence, contributing to a 5% average cost-saving per project."
+                                    data-lang-th="จัดทำรายงานผู้บริหารเกี่ยวกับผลการดำเนินงานโครงการและการปฏิบัติตามงบประมาณ มีส่วนช่วยในการประหยัดต้นทุนเฉลี่ย 5% ต่อโครงการ">
+                                    Prepared executive reports on project performance and budgetary adherence, contributing to a 5% average cost-saving per project.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="education section-padding" id="education">
-            <div class="container fade-in">
-                <h2 class="text-center">
-                    <span lang="en">Education</span>
-                    <span lang="th" class="ml-2">(การศึกษา)</span>
-                </h2>
-                <div class="education__item">
-                    <h3>Bachelor of Engineering (BE) - Computer Engineering</h3>
-                    <p>Chiang Mai University</p>
-                    <small>Expected Graduation: 2025</small>
+        <!-- Education & Certifications Section -->
+        <section id="education">
+            <div class="container">
+                <h2 class="text-center animated-element" data-lang-en="Education & Continuous Professional Development." data-lang-th="การศึกษาและการพัฒนาวิชาชีพอย่างต่อเนื่อง">Education & Continuous Professional Development.</h2>
+                <div class="education-grid">
+                    <div class="education-card animated-element">
+                        <h3 data-lang-en="Master of Business Administration (MBA)" data-lang-th="ปริญญาโทบริหารธุรกิจ (MBA)">Master of Business Administration (MBA)</h3>
+                        <p data-lang-en="Chulalongkorn University" data-lang-th="จุฬาลงกรณ์มหาวิทยาลัย">Chulalongkorn University</p>
+                        <span data-lang-en="2006 - 2008" data-lang-th="พ.ศ. 2549 - 2551">2006 - 2008</span>
+                    </div>
+                    <div class="education-card animated-element">
+                        <h3 data-lang-en="Bachelor of Accountancy" data-lang-th="ปริญญาตรีบัญชีบัณฑิต">Bachelor of Accountancy</h3>
+                        <p data-lang-en="Thammasat University" data-lang-th="มหาวิทยาลัยธรรมศาสตร์">Thammasat University</p>
+                        <span data-lang-en="2002 - 2006" data-lang-th="พ.ศ. 2545 - 2549">2002 - 2006</span>
+                    </div>
+                    <div class="education-card animated-element">
+                        <h3 data-lang-en="Project Management Professional (PMP)" data-lang-th="ผู้จัดการโครงการมืออาชีพ (PMP)">Project Management Professional (PMP)</h3>
+                        <p data-lang-en="Project Management Institute (PMI)" data-lang-th="สถาบันการจัดการโครงการ (PMI)">Project Management Institute (PMI)</p>
+                        <span data-lang-en="Certified 2010" data-lang-th="ได้รับการรับรอง พ.ศ. 2553">Certified 2010</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact section-padding" id="contact">
-            <div class="container fade-in">
-                <h2 class="text-center">
-                    <span lang="en">Get In Touch</span>
-                    <span lang="th" class="ml-2">(ติดต่อ)</span>
-                </h2>
-                <p class="contact__intro">
-                    <span lang="en">I'm always eager to connect, discuss new ideas, and explore internship opportunities. Feel free to send me a message or connect through my social channels!</span><br>
-                    <span lang="th">(ผมยินดีเสมอที่จะเชื่อมต่อ พูดคุยเกี่ยวกับแนวคิดใหม่ ๆ และสำรวจโอกาสในการฝึกงาน อย่าลังเลที่จะส่งข้อความหรือเชื่อมต่อผ่านช่องทางโซเชียลของผม!)</span>
+        <!-- Contact Me Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="text-center animated-element" data-lang-en="Let's Connect & Collaborate." data-lang-th="มาเชื่อมต่อและร่วมมือกัน">Let's Connect & Collaborate.</h2>
+                <p class="text-center animated-element" data-lang-en="Whether you have a strategic initiative in mind or wish to discuss operational challenges, I'm eager to connect."
+                   data-lang-th="ไม่ว่าคุณจะมีโครงการเชิงกลยุทธ์ในใจ หรือต้องการหารือเกี่ยวกับความท้าทายในการดำเนินงาน ผมยินดีที่จะเชื่อมต่อ">
+                    Whether you have a strategic initiative in mind or wish to discuss operational challenges, I'm eager to connect.
                 </p>
-                
-                <form action="mailto:jakkrit.lekprasan@example.com" method="post" enctype="text/plain" class="contact__form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-label="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-label="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required aria-label="Subject of your message">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required aria-label="Your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
-                </form>
+                <div class="contact-content">
+                    <div class="contact-form animated-element">
+                        <form action="https://formspree.io/f/yourformid" method="POST"> <!-- Replace 'yourformid' with your actual Formspree ID -->
+                            <label for="name" data-lang-en="Name" data-lang-th="ชื่อ">Name</label>
+                            <input type="text" id="name" name="name" required>
 
-                <div class="contact__info">
-                    <div class="contact__info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12.713l-11.027-8.713h22.054l-11.027 8.713zm0 2.287l-12-9v14h24v-14l-12 9zm-10-8.922v-2.078l10 7.234 10-7.234v2.078l-10 7.922-10-7.922z"/></svg>
-                        <a href="mailto:jakkrit.lekprasan@example.com">jakkrit.lekprasan@example.com</a>
+                            <label for="email" data-lang-en="Email" data-lang-th="อีเมล">Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="subject" data-lang-en="Subject" data-lang-th="หัวข้อ">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+
+                            <label for="message" data-lang-en="Message" data-lang-th="ข้อความ">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit" class="btn btn-primary" data-lang-en="Send Message" data-lang-th="ส่งข้อความ">Send Message</button>
+                        </form>
                     </div>
-                    <div class="contact__info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-                    </div>
-                    <div class="contact__info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/></svg>
-                        <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-                    </div>
-                    <div class="contact__info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.802-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
-                        Chiang Mai, Thailand
+                    <div class="contact-info animated-element">
+                        <h3 data-lang-en="Direct Contact & Social" data-lang-th="ติดต่อโดยตรงและโซเชียล">Direct Contact & Social</h3>
+                        <p>
+                            <i class="fas fa-envelope"></i> 
+                            <span data-lang-en="Email: " data-lang-th="อีเมล: ">Email: </span>
+                            <a href="mailto:jakkrit.lekprasan@email.com">jakkrit.lekprasan@email.com</a>
+                        </p>
+                        <p>
+                            <i class="fab fa-linkedin"></i> 
+                            <span data-lang-en="LinkedIn: " data-lang-th="LinkedIn: ">LinkedIn: </span>
+                            <a href="https://www.linkedin.com/in/jakkrit-lekprasan" target="_blank" rel="noopener noreferrer">jakkrit-lekprasan</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span data-lang-en="Phone: " data-lang-th="โทรศัพท์: ">Phone: </span>
+                            <a href="tel:+66812345678" data-lang-en="+66 81 234 5678" data-lang-th="+66 81 234 5678">+66 81 234 5678</a> <!-- Placeholder -->
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <ul class="footer__links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="footer__social-links">
-                <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-                <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/></svg>
-                </a>
-            </div>
-            <p>&copy; 2024 Jakkrit Lekprasan. All rights reserved.</p>
+        <p data-lang-en="&copy; 2023 Jakkrit Lekprasan. All rights reserved." data-lang-th="&copy; 2023 จักรฤทธิ์ เล็กประสาร สงวนลิขสิทธิ์ทั้งหมด">&copy; 2023 Jakkrit Lekprasan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jakkrit-lekprasan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+            <!-- <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a> -->
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            const navLinks = navMenu.querySelectorAll('a');
+            const langSwitch = document.getElementById('langSwitch');
+            const mobileLangSwitch = document.getElementById('mobileLangSwitch');
+            const body = document.body;
             const header = document.querySelector('.header');
-            const navToggle = document.querySelector('.nav-toggle');
-            const mobileNav = document.getElementById('mobile-nav');
-            const mobileNavLinks = document.querySelectorAll('#mobile-nav a');
-            const desktopNavLinks = document.querySelectorAll('.header__nav-list a');
-            const allNavLinks = [...desktopNavLinks, ...mobileNavLinks];
-            const sections = document.querySelectorAll('section');
-            const fadeElements = document.querySelectorAll('.fade-in');
 
-            // --- Sticky Header & Active Nav Link ---
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.3
+            // --- Language Switcher ---
+            const setLanguage = (lang) => {
+                body.setAttribute('data-lang', lang);
+                // Update button text
+                langSwitch.textContent = lang === 'en' ? langSwitch.getAttribute('data-lang-th') : langSwitch.getAttribute('data-lang-en');
+                mobileLangSwitch.textContent = lang === 'en' ? mobileLangSwitch.getAttribute('data-lang-th') : mobileLangSwitch.getAttribute('data-lang-en');
+                // Update document title
+                document.title = lang === 'en' ? "Jakkrit Lekprasan | Strategic Project Coordinator Portfolio" : "จักรฤทธิ์ เล็กประสาร | พอร์ตโฟลิโอผู้ประสานงานโครงการเชิงกลยุทธ์";
+                localStorage.setItem('portfolioLang', lang);
             };
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const id = entry.target.id;
-                        allNavLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href') === `#${id}`) {
-                                link.classList.add('active');
-                            }
-                        });
-                    }
-                });
-            }, options);
+            const toggleLanguage = () => {
+                const currentLang = body.getAttribute('data-lang');
+                const newLang = currentLang === 'en' ? 'th' : 'en';
+                setLanguage(newLang);
+            };
 
-            sections.forEach(section => {
-                observer.observe(section);
+            langSwitch.addEventListener('click', toggleLanguage);
+            mobileLangSwitch.addEventListener('click', toggleLanguage);
+
+            // Set initial language from local storage or default to English
+            const savedLang = localStorage.getItem('portfolioLang');
+            setLanguage(savedLang || 'en');
+
+            // --- Hamburger Menu Toggle ---
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                // Toggle overflow hidden on body to prevent scrolling when mobile menu is open
+                body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
             });
 
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-
-                // Update active nav link for the hero section
-                if (window.scrollY < document.getElementById('about').offsetTop - 100) {
-                     allNavLinks.forEach(link => link.classList.remove('active'));
-                     document.querySelector('.header__nav-list a[href="#hero"]')?.classList.add('active');
-                     document.querySelector('.mobile-nav__list a[href="#hero"]')?.classList.add('active'); // If hero link exists in mobile nav
-                }
-            });
-
-
-            // --- Mobile Navigation Toggle ---
-            navToggle.addEventListener('click', () => {
-                navToggle.classList.toggle('active');
-                mobileNav.classList.toggle('active');
-                document.body.classList.toggle('no-scroll'); // Optional: prevent scrolling when mobile nav is open
-            });
-
-            mobileNavLinks.forEach(link => {
+            navLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    navToggle.classList.remove('active');
-                    mobileNav.classList.remove('active');
-                    document.body.classList.remove('no-scroll');
-                });
-            });
-
-            // --- Smooth Scrolling ---
-            allNavLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    // Only prevent default for hash links
-                    if (this.hash !== "") {
-                        e.preventDefault();
-                        const targetId = this.hash;
-                        const targetElement = document.querySelector(targetId);
-                        
-                        if (targetElement) {
-                            const headerOffset = header.offsetHeight; // Get dynamic header height
-                            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-                            const offsetPosition = elementPosition - headerOffset - (targetId === '#hero' ? 0 : 20); // Adjust for header and a bit more for other sections
-
-                            window.scrollTo({
-                                top: offsetPosition,
-                                behavior: "smooth"
-                            });
-
-                            // Update active class immediately for smooth scroll
-                            allNavLinks.forEach(navLink => navLink.classList.remove('active'));
-                            this.classList.add('active');
-                        }
+                    if (navMenu.classList.contains('open')) {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        body.style.overflow = ''; // Restore body scroll
                     }
                 });
             });
 
-            // --- Intersection Observer for Fade-in Animations ---
-            const fadeInObserver = new IntersectionObserver((entries, observer) => {
+            // --- Smooth Scrolling & Active Nav Link ---
+            const sections = document.querySelectorAll('section');
+
+            const highlightNavLink = () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - header.offsetHeight;
+                    if (scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.href.includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', highlightNavLink);
+            highlightNavLink(); // Call on load to set initial active link
+
+            // --- Scroll Animations ---
+            const animatedElements = document.querySelectorAll('.animated-element');
+            const observerOptions = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.1 // 10% of the element visible to trigger
+            };
+
+            const observerCallback = (entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target); // Stop observing once animated
+                        entry.target.classList.add('fade-in');
+                        // Stop observing once it's animated to improve performance
+                        observer.unobserve(entry.target); 
                     }
                 });
-            }, {
-                rootMargin: '0px',
-                threshold: 0.1 // Trigger when 10% of the element is visible
-            });
+            };
 
-            fadeElements.forEach(element => {
-                fadeInObserver.observe(element);
-            });
-            
-            // Initial check for elements already in viewport on load
-            fadeElements.forEach(element => {
-                if (element.getBoundingClientRect().top < window.innerHeight) {
-                    element.classList.add('active');
-                }
-            });
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            animatedElements.forEach(element => observer.observe(element));
+
+            // --- Timeline Animation (Specific for Experience) ---
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const timelineObserverOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2 // 20% of the element visible
+            };
+
+            const timelineObserverCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const timelineObserver = new IntersectionObserver(timelineObserverCallback, timelineObserverOptions);
+            timelineItems.forEach(item => timelineObserver.observe(item));
+
         });
     </script>
 </body>
