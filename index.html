@@ -1,53 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakkrit Lekprasan | Full-Stack Developer Portfolio</title>
-    <meta name="description" content="Jakkrit Lekprasan is a highly motivated Full-Stack Developer specializing in crafting efficient, scalable, and user-friendly web applications with .NET, React, Angular, and cloud-native architectures.">
-    <meta name="keywords" content="Jakkrit Lekprasan, Full-Stack Developer, .NET, React, Blazor, Angular, Spring Boot, Node.js, Microservices, Azure, AWS, Docker, Kubernetes, Web Developer, Bangkok, Thailand, Portfolio">
+    <meta name="description" content="Jakkrit Lekprasan's portfolio showcasing Full-Stack Web Development, Data Science, and Machine Learning skills. A Computer Engineering student seeking an internship.">
+    <meta name="keywords" content="Jakkrit Lekprasan, portfolio, full-stack developer, data scientist, machine learning, computer engineering, Chiang Mai University, React, Node.js, Python, internship, web development, software engineer">
     <meta name="author" content="Jakkrit Lekprasan">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.jakkritlekprasan.dev/"> <!-- Replace with actual domain -->
-    <meta property="og:title" content="Jakkrit Lekprasan | Full-Stack Developer Portfolio">
-    <meta property="og:description" content="Jakkrit Lekprasan is a highly motivated Full-Stack Developer specializing in crafting efficient, scalable, and user-friendly web applications with .NET, React, Angular, and cloud-native architectures.">
-    <meta property="og:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DAF.jpg"> <!-- Profile image -->
+    <meta property="og:url" content="https://yourportfolio.com/"> <!-- Replace with actual URL -->
+    <meta property="og:title" content="Jakkrit Lekprasan - Full-Stack Developer | Data Scientist Portfolio">
+    <meta property="og:description" content="Jakkrit Lekprasan's portfolio showcasing Full-Stack Web Development, Data Science, and Machine Learning skills. A Computer Engineering student seeking an internship.">
+    <meta property="og:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DA99.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.jakkritlekprasan.dev/"> <!-- Replace with actual domain -->
-    <meta property="twitter:title" content="Jakkrit Lekprasan | Full-Stack Developer Portfolio">
-    <meta property="twitter:description" content="Jakkrit Lekprasan is a highly motivated Full-Stack Developer specializing in crafting efficient, scalable, and user-friendly web applications with .NET, React, Angular, and cloud-native architectures.">
-    <meta property="twitter:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DAF.jpg"> <!-- Profile image -->
+    <meta property="twitter:url" content="https://yourportfolio.com/"> <!-- Replace with actual URL -->
+    <meta property="twitter:title" content="Jakkrit Lekprasan - Full-Stack Developer | Data Scientist Portfolio">
+    <meta property="twitter:description" content="Jakkrit Lekprasan's portfolio showcasing Full-Stack Web Development, Data Science, and Machine Learning skills. A Computer Engineering student seeking an internship.">
+    <meta property="twitter:image" content="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DA99.jpg">
+
+    <title>Jakkrit Lekprasan - Full-Stack Developer | Data Scientist Portfolio</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32"> <!-- Replace with actual favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 
-    <!-- Google Fonts: Poppins (headings), Inter (body) -->
+    <!-- Google Fonts: Inter for headings, Lato for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
     <style>
-        /* CSS Variables */
+        /* CSS Variables for Color Palette */
         :root {
-            --color-primary-bg: #1A202C; /* Dark Slate Blue/Charcoal */
-            --color-accent: #38B2AC; /* Vibrant Teal */
-            --color-text-main: #F7FAFC; /* Off-white / Near White */
-            --color-text-secondary: #A0AEC0; /* Light Gray */
-            --color-card-bg: #4A5568; /* Medium Gray */
-            --color-footer-bg: #111827; /* Even darker for footer */
+            --primary-blue: #007BFF;
+            --secondary-blue: #0056B3;
+            --dark-text: #343A40;
+            --light-gray-bg: #F8F9FA;
+            --white-bg: #FFFFFF;
+            --border-gray: #E9ECEF;
+            --gray-text: #6C757D;
 
-            --font-heading: 'Poppins', sans-serif;
-            --font-body: 'Inter', sans-serif;
-
-            --max-width-content: 1200px;
-            --header-height: 80px;
+            /* Font families */
+            --font-heading: 'Inter', sans-serif;
+            --font-body: 'Lato', sans-serif;
         }
 
         /* Base Styles & Reset */
@@ -63,1487 +60,1357 @@
 
         body {
             font-family: var(--font-body);
-            color: var(--color-text-main);
-            background-color: var(--color-primary-bg);
             line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--white-bg);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; }
+        h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 600; }
+        h4 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 500; }
+        p { font-size: clamp(1rem, 2vw, 1.125rem); margin-bottom: 1rem; }
+        small { font-size: 0.875rem; font-weight: 300; color: var(--gray-text); }
+
+        .text-primary { color: var(--primary-blue); }
+        .text-center { text-align: center; }
+        .ml-2 { margin-left: 0.5rem; }
+
+        /* Links & Buttons */
         a {
-            color: var(--color-accent);
+            color: var(--primary-blue);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #2CA69D; /* Slightly darker teal on hover */
+            color: var(--secondary-blue);
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+        .btn {
+            display: inline-block;
+            padding: 0.8em 1.5em;
+            border-radius: 5px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
+            border: 2px solid transparent;
         }
 
-        ul {
-            list-style: none;
+        .btn--primary {
+            background-color: var(--primary-blue);
+            color: var(--white-bg);
+            border-color: var(--primary-blue);
         }
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-heading);
-            color: var(--color-text-main);
-            margin-bottom: 0.8em;
-            line-height: 1.2;
+        .btn--primary:hover {
+            background-color: var(--secondary-blue);
+            border-color: var(--secondary-blue);
+            color: var(--white-bg);
         }
 
-        h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; }
-        h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; }
-        h3 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 500; }
-        p { font-size: clamp(1rem, 2vw, 1.125rem); margin-bottom: 1em; }
+        .btn--secondary {
+            background-color: var(--dark-text);
+            color: var(--white-bg);
+            border-color: var(--dark-text);
+        }
 
-        /* Utility Classes */
+        .btn--secondary:hover {
+            background-color: transparent;
+            color: var(--dark-text);
+            border-color: var(--dark-text);
+        }
+        
+        .btn--outline {
+            background-color: transparent;
+            color: var(--dark-text);
+            border-color: var(--dark-text);
+        }
+
+        .btn--outline:hover {
+            background-color: var(--dark-text);
+            color: var(--white-bg);
+        }
+
+        /* Utilities */
         .container {
-            max-width: var(--max-width-content);
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.5rem;
         }
 
         .section-padding {
-            padding: 5rem 0;
+            padding: 4rem 0;
         }
 
-        .text-center {
-            text-align: center;
-        }
-
-        .text-accent {
-            color: var(--color-accent);
-        }
-
-        .hidden {
-            display: none !important;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.8rem 1.8rem;
-            border-radius: 0.375rem;
-            font-family: var(--font-heading);
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            border: none;
-        }
-
-        .btn-primary {
-            background-color: var(--color-accent);
-            color: var(--color-primary-bg);
-        }
-
-        .btn-primary:hover {
-            background-color: #2CA69D; /* Slightly darker teal */
-            color: var(--color-primary-bg);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--color-accent);
-            border: 2px solid var(--color-accent);
-            padding: 0.7rem 1.7rem;
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--color-accent);
-            color: var(--color-primary-bg);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-icon {
-            margin-right: 0.5rem;
-        }
-
-        /* Header */
-        .header {
-            background-color: var(--color-primary-bg);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: var(--header-height);
-        }
-
-        .logo {
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--color-accent);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: var(--color-text-secondary);
-            font-family: var(--font-heading);
-            font-weight: 500;
-            font-size: 1.05rem;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 0;
-            height: 2px;
-            background-color: var(--color-accent);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
-        }
-
-        .nav-actions {
-            display: flex;
-            align-items: center;
+        .grid {
+            display: grid;
             gap: 1.5rem;
         }
 
-        .social-icons {
+        .flex {
             display: flex;
+            align-items: center;
             gap: 1rem;
         }
 
-        .social-icons a {
-            font-size: 1.2rem;
-            color: var(--color-text-secondary);
+        .flex--column {
+            flex-direction: column;
         }
 
-        .social-icons a:hover {
-            color: var(--color-accent);
-        }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .items-center { align-items: center; }
 
-        .language-switcher {
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .language-switcher button {
-            background: none;
-            border: none;
-            color: var(--color-text-secondary);
-            font-family: var(--font-body);
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: color 0.3s ease;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-        }
-
-        .language-switcher button:hover,
-        .language-switcher button.active {
-            color: var(--color-accent);
-            background-color: var(--color-card-bg); /* Subtle background for active/hover */
-        }
-        
-        .hamburger {
-            display: none;
-            font-size: 1.8rem;
-            background: none;
-            border: none;
-            color: var(--color-text-main);
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        /* Mobile Nav Menu */
-        .mobile-nav-menu {
-            display: none; /* Hidden by default, shown by JS */
+        /* Header */
+        .header {
             position: fixed;
             top: 0;
-            right: -100%; /* Off-screen */
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            background-color: transparent;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header__logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-text);
+        }
+
+        .header__logo .text-primary {
+            font-size: 1.8rem; /* Maintain size */
+        }
+
+        .header__nav-list {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header__nav-list a {
+            font-weight: 500;
+            color: var(--dark-text);
+            transition: color 0.3s ease;
+        }
+
+        .header__nav-list a:hover,
+        .header__nav-list a.active {
+            color: var(--primary-blue);
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            z-index: 1001;
+            padding: 0;
+            background: none;
+            border: none;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--dark-text);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+        .nav-toggle.active span:nth-child(2) { opacity: 0; }
+        .nav-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            background-color: var(--color-primary-bg);
-            z-index: 999;
+            background-color: rgba(255, 255, 255, 0.98);
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 2rem;
-            transition: right 0.4s ease-out;
-            padding-top: var(--header-height);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
         }
 
-        .mobile-nav-menu.active {
-            right: 0;
-            display: flex;
+        .mobile-nav.active {
+            opacity: 1;
+            visibility: visible;
         }
 
-        .mobile-nav-menu a {
-            color: var(--color-text-main);
-            font-family: var(--font-heading);
+        .mobile-nav__list {
+            list-style: none;
+            text-align: center;
+        }
+
+        .mobile-nav__list li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-nav__list a {
             font-size: 1.8rem;
             font-weight: 600;
+            color: var(--dark-text);
             transition: color 0.3s ease;
         }
 
-        .mobile-nav-menu a:hover {
-            color: var(--color-accent);
-        }
-
-        .mobile-nav-menu .nav-actions {
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        
-        .mobile-nav-menu .social-icons {
-            margin-top: 1rem;
-        }
-        .mobile-nav-menu .social-icons a {
-            font-size: 1.8rem;
-        }
-        .mobile-nav-menu .language-switcher {
-            margin-top: 1rem;
-            font-size: 1.2rem;
+        .mobile-nav__list a:hover {
+            color: var(--primary-blue);
         }
 
         /* Hero Section */
         .hero {
-            background-color: var(--color-primary-bg);
-            padding: 8rem 0;
-            min-height: calc(100vh - var(--header-height));
+            background-color: var(--light-gray-bg);
+            text-align: center;
+            padding: 8rem 0 6rem;
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            text-align: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            flex-direction: column; /* For proper alignment with padding */
         }
 
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-            animation: fadeIn 1s ease-out forwards;
+        .hero__content {
+            max-width: 800px;
+            z-index: 1;
         }
 
-        .hero-content p {
-            color: var(--color-text-secondary);
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            margin-bottom: 2rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-content .name {
-            color: var(--color-accent);
-            font-weight: 700;
-            font-size: clamp(3rem, 8vw, 5rem);
-            margin-bottom: 0.2em;
-        }
-
-        .hero-content .title {
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            color: var(--color-text-main);
+        .hero__title {
             margin-bottom: 1rem;
+            color: var(--dark-text);
+            font-size: clamp(2.8rem, 7vw, 4.5rem);
+        }
+        .hero__title span[lang="th"] {
+             font-size: clamp(1.5rem, 3vw, 2.5rem); /* Smaller for Thai name */
+             font-weight: 500;
+             color: var(--gray-text);
         }
 
-        .hero-actions {
+        .hero__subtitle {
+            font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+            font-weight: 400;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+        .hero__subtitle span[lang="th"] {
+             font-size: clamp(1rem, 2vw, 1.5rem); /* Smaller for Thai name */
+             font-weight: 300;
+             color: var(--gray-text);
+        }
+
+        .hero__tagline {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            margin-bottom: 2rem;
+            color: var(--gray-text);
+            font-weight: 300;
+        }
+
+        .hero__ctas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .hero__social-links {
+            margin-top: 2.5rem;
             display: flex;
             justify-content: center;
             gap: 1.5rem;
-            flex-wrap: wrap;
+        }
+
+        .hero__social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--dark-text);
+            color: var(--white-bg);
+            font-size: 1.5rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .hero__social-links a:hover {
+            background-color: var(--primary-blue);
+            transform: translateY(-3px);
         }
 
         /* About Section */
-        .about-section {
-            background-color: var(--color-card-bg);
+        .about {
+            background-color: var(--white-bg);
         }
 
-        .about-content {
+        .about__content {
             display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
+            flex-direction: column;
+            gap: 2rem;
             align-items: center;
         }
 
-        .about-text {
-            flex: 2;
-            min-width: 300px;
-        }
-
-        .about-image {
-            flex: 1;
-            min-width: 200px;
-            max-width: 300px;
-            margin: 0 auto;
+        .about__image-wrapper {
+            flex-shrink: 0;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             overflow: hidden;
-            border: 5px solid var(--color-accent);
-            box-shadow: 0 0 0 10px rgba(56, 178, 172, 0.2);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            border: 5px solid var(--primary-blue);
             transition: transform 0.3s ease;
         }
-        .about-image:hover {
+
+        .about__image-wrapper:hover {
             transform: scale(1.03);
         }
 
-        /* Skills Section */
-        .skills-section {
-            background-color: var(--color-primary-bg);
+        .about__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .skill-category {
-            background-color: var(--color-card-bg);
-            border-radius: 0.5rem;
-            padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-5px);
-        }
-
-        .skill-category h3 {
-            color: var(--color-accent);
-            margin-bottom: 1.5rem;
+        .about__text {
+            max-width: 700px;
             text-align: center;
         }
+        
+        .about__text p {
+            font-weight: 300;
+            color: var(--dark-text);
+        }
 
-        .skill-list {
+        .about__highlights {
+            margin-top: 1.5rem;
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
             justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--gray-text);
         }
 
-        .skill-item {
-            background-color: var(--color-primary-bg);
-            color: var(--color-text-secondary);
-            padding: 0.6rem 1rem;
-            border-radius: 0.3rem;
-            font-size: 0.9rem;
+        .about__highlights span {
+            background-color: var(--light-gray-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-gray);
+            font-weight: 500;
+        }
+
+
+        /* Skills Section */
+        .skills {
+            background-color: var(--light-gray-bg);
+        }
+
+        .skills__grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-top: 2rem;
+        }
+
+        .skills__category {
+            background-color: var(--white-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skills__category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills__category h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .skills__list {
+            list-style: none;
+        }
+
+        .skills__list li {
+            padding: 0.5rem 0;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            gap: 0.75rem;
+            border-bottom: 1px dashed var(--border-gray);
+            font-weight: 400;
+            color: var(--dark-text);
         }
+        .skills__list li:last-child {
+            border-bottom: none;
+        }
+        .skills__list li svg {
+            color: var(--primary-blue);
+            width: 1.2em;
+            height: 1.2em;
+        }
+        .skills__list li.core svg { color: #28a745; } /* Green for core */
+        .skills__list li.proficient svg { color: #ffc107; } /* Yellow for proficient */
+        .skills__list li.familiar svg { color: #17a2b8; } /* Cyan for familiar */
 
-        .skill-item:hover {
-            background-color: var(--color-accent);
-            color: var(--color-primary-bg);
-        }
-        .skill-item i {
-            font-size: 1.1em;
-        }
 
         /* Projects Section */
-        .projects-section {
-            background-color: var(--color-card-bg);
+        .projects {
+            background-color: var(--white-bg);
         }
 
-        .projects-grid {
-            display: grid;
+        .projects__grid {
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
 
         .project-card {
-            background-color: var(--color-primary-bg);
-            border-radius: 0.5rem;
+            background-color: var(--white-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Ensure cards are same height in a row */
         }
 
         .project-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .project-image {
-            height: 220px;
+        .project-card__image-wrapper {
+            height: 200px;
             overflow: hidden;
-            position: relative;
         }
-        .project-image img {
+
+        .project-card__image {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        .project-card:hover .project-image img {
+
+        .project-card:hover .project-card__image {
             transform: scale(1.05);
         }
 
-        .project-content {
+        .project-card__content {
             padding: 1.5rem;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
-        .project-content h3 {
-            color: var(--color-text-main);
-            margin-bottom: 0.8rem;
-            font-size: 1.4rem;
+        .project-card__content h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.6rem;
+        }
+        .project-card__content h3 span[lang="th"] {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--gray-text);
         }
 
-        .project-content p {
-            color: var(--color-text-secondary);
+        .project-card__content p {
             font-size: 0.95rem;
+            color: var(--gray-text);
             margin-bottom: 1rem;
-            flex-grow: 1;
+            flex-grow: 1; /* Allow description to take space */
         }
 
-        .project-tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .tech-tag {
-            background-color: rgba(56, 178, 172, 0.2);
-            color: var(--color-accent);
-            padding: 0.4rem 0.8rem;
-            border-radius: 0.25rem;
+        .project-card__tech-stack {
             font-size: 0.85rem;
+            color: var(--primary-blue);
+            font-weight: 500;
+            margin-bottom: 1.2rem;
         }
 
-        .project-actions {
+        .project-card__ctas {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.8rem;
+            gap: 0.75rem;
             margin-top: 1rem;
         }
 
-        .project-actions .btn {
+        .project-card__ctas .btn {
+            padding: 0.6em 1em;
             font-size: 0.9rem;
-            padding: 0.6rem 1.2rem;
-        }
-        
-        /* Experience Section */
-        .experience-section {
-            background-color: var(--color-primary-bg);
         }
 
-        .experience-timeline {
+        /* Experience Section */
+        .experience {
+            background-color: var(--light-gray-bg);
+        }
+
+        .experience__timeline {
             position: relative;
             max-width: 900px;
-            margin: 3rem auto 0 auto;
-            padding: 0 1rem;
+            margin: 2rem auto;
         }
 
-        .experience-timeline::before {
+        .experience__timeline::after {
             content: '';
             position: absolute;
             width: 4px;
-            background-color: var(--color-accent);
+            background-color: var(--border-gray);
             top: 0;
             bottom: 0;
             left: 50%;
-            transform: translateX(-50%);
+            margin-left: -2px;
         }
 
-        .timeline-item {
-            padding: 1.5rem 0;
+        .experience__item {
+            padding: 10px 40px;
             position: relative;
-            background-color: var(--color-card-bg);
-            border-radius: 0.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .timeline-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            background-color: inherit;
+            width: 50%;
         }
 
-        .timeline-item::before {
+        .experience__item::after {
             content: '';
             position: absolute;
-            width: 14px;
-            height: 14px;
-            background-color: var(--color-accent);
-            border: 2px solid var(--color-primary-bg);
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: var(--primary-blue);
+            border: 4px solid var(--white-bg);
+            top: 15px;
             border-radius: 50%;
             z-index: 1;
+        }
+
+        .experience__item--left {
+            left: 0;
+        }
+
+        .experience__item--right {
             left: 50%;
-            transform: translate(-50%, -50%); /* Center vertically on the dot */
-            top: 2rem; /* Position at the top of the item */
+        }
+
+        .experience__item--left::after {
+            left: unset;
+            right: -12px; /* Adjusted from -17px for correct alignment */
+        }
+        .experience__item--right::after {
+            left: -12px; /* Adjusted from -17px for correct alignment */
+        }
+
+        .experience__item-content {
+            padding: 20px 30px;
+            background-color: var(--white-bg);
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .timeline-item-content {
-            padding: 1rem 2rem;
-            color: var(--color-text-secondary);
+        .experience__item-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .timeline-item h3 {
-            color: var(--color-text-main);
-            margin-bottom: 0.2rem;
-            font-size: 1.5rem;
+        .experience__item-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+        .experience__item-content h3 span[lang="th"] {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--gray-text);
         }
 
-        .timeline-item .company-title {
-            color: var(--color-accent);
+        .experience__item-content h4 {
+            font-size: 1.1rem;
             font-weight: 500;
             margin-bottom: 0.5rem;
-            font-size: 1.1rem;
         }
 
-        .timeline-item .duration {
-            font-size: 0.9rem;
-            color: var(--color-text-secondary);
-            margin-bottom: 1rem;
+        .experience__item-content small {
             display: block;
+            margin-bottom: 0.75rem;
+            color: var(--gray-text);
         }
 
-        .timeline-item ul {
+        .experience__item-content ul {
             list-style: disc;
-            margin-left: 1.5rem;
-        }
-        .timeline-item li {
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
-        }
-        
-        /* Education Section */
-        .education-section {
-            background-color: var(--color-card-bg);
-        }
-
-        .education-item {
-            background-color: var(--color-primary-bg);
-            border-radius: 0.5rem;
-            padding: 2rem;
-            margin-top: 3rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .education-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .education-item h3 {
-            color: var(--color-accent);
-            margin-bottom: 0.5rem;
-        }
-
-        .education-item p {
-            color: var(--color-text-secondary);
-            font-size: 1rem;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background-color: var(--color-primary-bg);
-        }
-
-        .contact-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .contact-info {
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .contact-info p {
-            margin-bottom: 1.5rem;
-            color: var(--color-text-secondary);
-        }
-
-        .contact-details {
-            margin-top: 2rem;
-        }
-
-        .contact-details div {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            color: var(--color-text-main);
-        }
-
-        .contact-details i {
-            font-size: 1.5rem;
-            color: var(--color-accent);
-        }
-
-        .contact-details a {
-            color: var(--color-text-secondary);
-            font-size: 1.1rem;
-        }
-
-        .contact-form-wrapper {
-            flex: 2;
-            min-width: 300px;
-            background-color: var(--color-card-bg);
-            padding: 2.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--color-text-secondary);
+            margin-left: 1.2rem;
+            color: var(--dark-text);
             font-size: 0.95rem;
         }
 
-        .contact-form input,
-        .contact-form textarea {
+        .experience__item-content ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .experience__item-content .skills-demonstrated {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-text);
+            margin-top: 1rem;
+        }
+        
+        .experience__item-content .skills-demonstrated span {
+            color: var(--primary-blue);
+        }
+
+        /* Education Section */
+        .education {
+            background-color: var(--white-bg);
+            text-align: center;
+        }
+
+        .education__item {
+            background-color: var(--light-gray-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 2rem auto 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .education__item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .education__item h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .education__item p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .education__item small {
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--light-gray-bg);
+            text-align: center;
+        }
+
+        .contact__intro {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            color: var(--dark-text);
+        }
+
+        .contact__form {
+            background-color: var(--white-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact__form .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact__form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark-text);
+        }
+
+        .contact__form input[type="text"],
+        .contact__form input[type="email"],
+        .contact__form textarea {
             width: 100%;
             padding: 0.8rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #667587;
-            border-radius: 0.3rem;
-            background-color: var(--color-primary-bg);
-            color: var(--color-text-main);
+            border: 1px solid var(--border-gray);
+            border-radius: 5px;
             font-family: var(--font-body);
             font-size: 1rem;
+            color: var(--dark-text);
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .contact-form input:focus,
-        .contact-form textarea:focus {
+        .contact__form input:focus,
+        .contact__form textarea:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
             outline: none;
-            border-color: var(--color-accent);
-            box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.3);
         }
 
-        .contact-form textarea {
+        .contact__form textarea {
             min-height: 120px;
             resize: vertical;
         }
 
+        .contact__info {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem 3rem;
+            font-size: 1rem;
+        }
+
+        .contact__info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--dark-text);
+            font-weight: 500;
+        }
+        
+        .contact__info-item a {
+            color: var(--dark-text);
+        }
+        
+        .contact__info-item a:hover {
+            color: var(--primary-blue);
+        }
+
+        .contact__info-item svg {
+            color: var(--primary-blue);
+            width: 1.2em;
+            height: 1.2em;
+            flex-shrink: 0;
+        }
+
+
         /* Footer */
         .footer {
-            background-color: var(--color-footer-bg);
-            color: var(--color-text-secondary);
+            background-color: var(--dark-text);
+            color: var(--white-bg);
             padding: 2.5rem 0;
             text-align: center;
             font-size: 0.9rem;
         }
 
-        .footer .social-icons {
+        .footer__links {
+            list-style: none;
+            display: flex;
             justify-content: center;
+            gap: 1.5rem;
             margin-bottom: 1rem;
         }
 
-        .footer .social-icons a {
-            font-size: 1.5rem;
-            color: var(--color-text-secondary);
-        }
-        .footer .social-icons a:hover {
-            color: var(--color-accent);
+        .footer__links a {
+            color: var(--white-bg);
+            transition: color 0.3s ease;
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .footer__links a:hover {
+            color: var(--primary-blue);
         }
 
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .nav-links, .nav-actions {
+        .footer__social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer__social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid var(--white-bg);
+            color: var(--white-bg);
+            font-size: 1.2rem;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .footer__social-links a:hover {
+            border-color: var(--primary-blue);
+            background-color: var(--primary-blue);
+        }
+
+
+        /* Accessibility (Keyboard Focus) */
+        :focus-visible {
+            outline: 3px solid var(--primary-blue);
+            outline-offset: 2px;
+            border-radius: 3px;
+        }
+        .btn:focus-visible {
+            outline-offset: 1px;
+        }
+
+        /* Fade-in Animation for Sections */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .header__nav-list,
+            .header .btn--secondary { /* Hide desktop nav and resume button */
                 display: none;
             }
-            .hamburger {
-                display: block;
+
+            .nav-toggle {
+                display: flex;
             }
 
-            .navbar {
-                justify-content: space-between;
-            }
-            .logo {
-                font-size: 1.5rem;
+            .hero {
+                padding-top: 6rem;
+                min-height: auto;
+                height: auto; /* Allow content to dictate height */
             }
 
-            .about-content {
+            .hero__title {
+                font-size: clamp(2rem, 9vw, 3rem);
+            }
+            .hero__title span[lang="th"] {
+                font-size: clamp(1.2rem, 5vw, 1.8rem);
+            }
+
+            .hero__subtitle {
+                font-size: clamp(1.2rem, 4.5vw, 1.8rem);
+            }
+             .hero__subtitle span[lang="th"] {
+                font-size: clamp(0.9rem, 3vw, 1.2rem);
+            }
+
+            .hero__ctas {
                 flex-direction: column;
-                text-align: center;
+                gap: 0.8rem;
             }
-            .about-image {
-                order: -1; /* Image above text on mobile */
-                margin-bottom: 2rem;
+            .hero__ctas .btn {
+                width: 80%; /* Make buttons wider on mobile */
+                margin: 0 auto;
             }
 
-            .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            }
-            
-            .experience-timeline::before {
-                left: 1rem; /* Move timeline line to the left for mobile */
-                transform: translateX(0);
-            }
-            .timeline-item {
-                margin-left: 2rem; /* Give space for the line */
-                margin-right: 0;
-                width: calc(100% - 2rem);
-            }
-            .timeline-item::before {
-                left: 1rem; /* Align dot with the line */
-                transform: translate(-50%, -50%);
-            }
-            
-            .contact-content {
-                flex-direction: column;
-            }
-            .contact-info, .contact-form-wrapper {
-                min-width: unset;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 768px) {
             .section-padding {
                 padding: 3rem 0;
             }
-            .hero-content h1 {
-                font-size: clamp(2rem, 8vw, 3.5rem);
+
+            .about__content {
+                flex-direction: column;
+                text-align: center;
             }
-            .hero-content h2 {
-                font-size: clamp(1.5rem, 6vw, 2rem);
+            .about__text {
+                padding: 0 1rem;
             }
-            .hero-actions {
+
+            .skills__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience__timeline::after {
+                left: 18px; /* Adjust timeline line position */
+            }
+
+            .experience__item {
+                width: 100%;
+                padding-left: 50px; /* Space for the line and dot */
+                padding-right: 10px;
+            }
+
+            .experience__item--left,
+            .experience__item--right {
+                left: 0;
+            }
+
+            .experience__item--left::after,
+            .experience__item--right::after {
+                left: 10px; /* Position dot on the left line */
+                right: unset;
+            }
+            
+            .experience__item-content {
+                padding: 15px;
+            }
+
+            .experience__item-content h3 {
+                font-size: 1.2rem;
+            }
+            .experience__item-content h3 span[lang="th"] {
+                font-size: 0.95rem;
+            }
+            
+            .experience__item-content h4 {
+                font-size: 1rem;
+            }
+
+            .contact__form {
+                padding: 1.5rem;
+            }
+            
+            .contact__info {
                 flex-direction: column;
                 gap: 1rem;
             }
-            .btn {
-                width: 80%;
-                margin: 0 auto;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            .project-card {
-                margin: 0 auto;
-                max-width: 450px;
-            }
-            .project-content h3 {
-                font-size: 1.25rem;
-            }
-            .project-content p {
-                font-size: 0.9rem;
-            }
         }
 
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 1rem;
-            }
-            .logo {
-                font-size: 1.2rem;
-            }
-            .hero {
-                padding-top: 6rem;
-                padding-bottom: 4rem;
-            }
-            .hero-content p {
-                font-size: 1rem;
-            }
-            .skill-item {
-                font-size: 0.8rem;
-                padding: 0.5rem 0.8rem;
-            }
-            .timeline-item-content {
-                padding: 0.8rem 1.5rem;
-            }
-            .timeline-item h3 {
-                font-size: 1.3rem;
-            }
-            .timeline-item .company-title {
-                font-size: 1rem;
-            }
-            .timeline-item li {
-                font-size: 0.9rem;
-            }
-            .contact-form-wrapper {
-                padding: 1.5rem;
-            }
-            .contact-details a, .contact-details span {
-                font-size: 0.95rem;
+        @media (min-width: 769px) {
+            .mobile-nav {
+                display: none !important; /* Hide mobile nav on larger screens */
             }
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container navbar">
-            <a href="#" class="logo" data-lang-key="logo">
-                <span data-lang="en">Jakkrit Lekprasan</span>
-                <span data-lang="th" class="hidden">จักรพฤกษ์ เล็กประเสริฐ</span>
+    <header class="header" id="home">
+        <div class="container header__nav">
+            <a href="#home" class="header__logo" aria-label="Jakkrit Lekprasan's Portfolio Home">
+                Jakkrit<span class="text-primary">.</span>
             </a>
-
-            <nav class="nav-links">
-                <a href="#hero" class="active" data-lang-key="home">
-                    <span data-lang="en">Home</span>
-                    <span data-lang="th" class="hidden">หน้าแรก</span>
-                </a>
-                <a href="#about" data-lang-key="about">
-                    <span data-lang="en">About</span>
-                    <span data-lang="th" class="hidden">เกี่ยวกับฉัน</span>
-                </a>
-                <a href="#skills" data-lang-key="skills">
-                    <span data-lang="en">Skills</span>
-                    <span data-lang="th" class="hidden">ทักษะ</span>
-                </a>
-                <a href="#projects" data-lang-key="projects">
-                    <span data-lang="en">Projects</span>
-                    <span data-lang="th" class="hidden">ผลงาน</span>
-                </a>
-                <a href="#experience" data-lang-key="experience">
-                    <span data-lang="en">Experience</span>
-                    <span data-lang="th" class="hidden">ประสบการณ์</span>
-                </a>
-                <a href="#education" data-lang-key="education">
-                    <span data-lang="en">Education</span>
-                    <span data-lang="th" class="hidden">การศึกษา</span>
-                </a>
-                <a href="#contact" data-lang-key="contact">
-                    <span data-lang="en">Contact</span>
-                    <span data-lang="th" class="hidden">ติดต่อ</span>
-                </a>
+            <nav>
+                <ul class="header__nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
-
-            <div class="nav-actions">
-                <a href="jakkrit_lekprasan_resume.pdf" download class="btn btn-secondary" data-lang-key="download_resume">
-                    <span data-lang="en">Download Resume</span>
-                    <span data-lang="th" class="hidden">ดาวน์โหลดเรซูเม่</span>
-                </a>
-                <div class="language-switcher">
-                    <button id="lang-en" class="active">EN</button>
-                    <span>/</span>
-                    <button id="lang-th">TH</button>
-                </div>
-            </div>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+            <a href="#" class="btn btn--secondary header__btn-resume" download="Jakkrit_Lekprasan_Resume.pdf">
+                Download Resume
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
     </header>
 
-    <!-- Mobile Navigation Menu -->
-    <div class="mobile-nav-menu" id="mobile-nav-menu">
-        <a href="#hero" data-lang-key="home">
-            <span data-lang="en">Home</span>
-            <span data-lang="th" class="hidden">หน้าแรก</span>
-        </a>
-        <a href="#about" data-lang-key="about">
-            <span data-lang="en">About</span>
-            <span data-lang="th" class="hidden">เกี่ยวกับฉัน</span>
-        </a>
-        <a href="#skills" data-lang-key="skills">
-            <span data-lang="en">Skills</span>
-            <span data-lang="th" class="hidden">ทักษะ</span>
-        </a>
-        <a href="#projects" data-lang-key="projects">
-            <span data-lang="en">Projects</span>
-            <span data-lang="th" class="hidden">ผลงาน</span>
-        </a>
-        <a href="#experience" data-lang-key="experience">
-            <span data-lang="en">Experience</span>
-            <span data-lang="th" class="hidden">ประสบการณ์</span>
-        </a>
-        <a href="#education" data-lang-key="education">
-            <span data-lang="en">Education</span>
-            <span data-lang="th" class="hidden">การศึกษา</span>
-        </a>
-        <a href="#contact" data-lang-key="contact">
-            <span data-lang="en">Contact</span>
-            <span data-lang="th" class="hidden">ติดต่อ</span>
-        </a>
-        <div class="nav-actions">
-            <a href="jakkrit_lekprasan_resume.pdf" download class="btn btn-secondary" data-lang-key="download_resume">
-                <span data-lang="en">Download Resume</span>
-                <span data-lang="th" class="hidden">ดาวน์โหลดเรซูเม่</span>
-            </a>
-            <div class="language-switcher">
-                <button id="mobile-lang-en" class="active">EN</button>
-                <span>/</span>
-                <button id="mobile-lang-th">TH</button>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/jakkritdev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="btn btn--primary mt-4" download="Jakkrit_Lekprasan_Resume.pdf">Download Resume</a></li>
+        </ul>
     </div>
 
     <main>
-        <section id="hero" class="hero section-padding">
-            <div class="container hero-content">
-                <h1 class="name">
-                    <span data-lang="en">Jakkrit Lekprasan</span>
-                    <span data-lang="th" class="hidden">จักรพฤกษ์ เล็กประเสริฐ</span>
+        <section class="hero section-padding" id="hero">
+            <div class="container hero__content fade-in">
+                <h1 class="hero__title">
+                    <span lang="en">Jakkrit Lekprasan</span>
+                    <span lang="th" class="ml-2">(จักรฤทธิ์ เล็กประสาร)</span>
                 </h1>
-                <h2 class="title">
-                    <span data-lang="en">Full-Stack Developer</span>
-                    <span data-lang="th" class="hidden">นักพัฒนา Full-Stack</span>
+                <h2 class="hero__subtitle">
+                    <span lang="en">Computer Engineering Student | Aspiring Full-Stack Developer & Data Scientist</span><br>
+                    <span lang="th" class="ml-2">(นักศึกษาวิศวกรรมคอมพิวเตอร์ | นักพัฒนา Full-Stack และ นักวิทยาศาสตร์ข้อมูล)</span>
                 </h2>
+                <p class="hero__tagline">
+                    <span lang="en">Transforming Complex Challenges into Functional, Impactful Solutions.</span><br>
+                    <span lang="th">(เปลี่ยนความท้าทายที่ซับซ้อนให้เป็นโซลูชั่นที่มีประโยชน์และสร้างผลกระทบ)</span>
+                </p>
                 <p>
-                    <span data-lang="en">Crafting Scalable, User-Friendly Web Applications with .NET, React, and Cloud-Native Architectures.</span>
-                    <span data-lang="th" class="hidden">สร้างสรรค์เว็บแอปพลิเคชันที่ปรับขนาดได้ ใช้งานง่าย ด้วย .NET, React และสถาปัตยกรรมคลาวด์เนทีฟ</span>
+                    <span lang="en">A highly motivated Computer Engineering student at Chiang Mai University, graduating in 2025. I am passionate about leveraging diverse technical skills – from robust full-stack development to insightful data analysis and machine learning – to build innovative and practical solutions. I'm actively seeking an internship opportunity to contribute to dynamic projects and further my growth.</span><br>
+                    <span lang="th">(นักศึกษาวิศวกรรมคอมพิวเตอร์ที่มหาวิทยาลัยเชียงใหม่ กำลังจะสำเร็จการศึกษาในปี 2025 ผมมีความมุ่งมั่นที่จะใช้ทักษะทางเทคนิคที่หลากหลาย ตั้งแต่การพัฒนา Full-Stack ไปจนถึงการวิเคราะห์ข้อมูลเชิงลึกและการเรียนรู้ของเครื่องจักร เพื่อสร้างสรรค์โซลูชั่นที่เป็นนวัตกรรมและใช้งานได้จริง ผมกำลังมองหาโอกาสในการฝึกงานเพื่อร่วมสร้างโปรเจกต์ที่มีพลวัตและพัฒนาตนเองต่อไป)</span>
                 </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary" data-lang-key="view_work">
-                        <span data-lang="en">View My Work</span>
-                        <span data-lang="th" class="hidden">ดูผลงานของฉัน</span>
+                <div class="hero__ctas">
+                    <a href="#projects" class="btn btn--primary">Explore My Projects</a>
+                    <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Connect on LinkedIn</a>
+                </div>
+                <div class="hero__social-links">
+                    <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" class="btn btn-secondary" data-lang-key="connect_linkedin">
-                        <i class="fab fa-linkedin btn-icon"></i>
-                        <span data-lang="en">Connect on LinkedIn</span>
-                        <span data-lang="th" class="hidden">เชื่อมต่อบน LinkedIn</span>
+                    <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/></svg>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section section-padding">
-            <div class="container">
+        <section class="about section-padding" id="about">
+            <div class="container fade-in">
                 <h2 class="text-center">
-                    <span data-lang="en">About <span class="text-accent">Me</span></span>
-                    <span data-lang="th" class="hidden">เกี่ยวกับ<span class="text-accent">ฉัน</span></span>
+                    <span lang="en">About Me</span>
+                    <span lang="th" class="ml-2">(เกี่ยวกับฉัน)</span>
                 </h2>
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DA5F.jpg" alt="Jakkrit Lekprasan Profile Picture" loading="lazy">
+                <div class="about__content">
+                    <div class="about__image-wrapper">
+                        <img src="https://i.postimg.cc/0ySxtzyP/59850AE9-B1CF-4C55-B7EF-3291B034DA99.jpg" alt="Jakkrit Lekprasan's professional profile picture" class="about__image" width="250" height="250">
                     </div>
-                    <div class="about-text">
+                    <div class="about__text">
                         <p>
-                            <span data-lang="en">Hello, I'm Jakkrit Lekprasan, a highly motivated Full-Stack Developer based in the Bangkok Metropolitan Area, with over a year of dedicated professional experience. I specialize in building robust, efficient, and user-friendly web applications that solve real-world problems and drive tangible impact.</span>
-                            <span data-lang="th" class="hidden">สวัสดีครับ ผมจักรพฤกษ์ เล็กประเสริฐ นักพัฒนา Full-Stack ผู้กระตือรือร้นและมุ่งมั่นจากกรุงเทพมหานคร มีประสบการณ์การทำงานมืออาชีพมากกว่าหนึ่งปี ผมเชี่ยวชาญในการสร้างเว็บแอปพลิเคชันที่แข็งแกร่ง มีประสิทธิภาพ และใช้งานง่าย ที่สามารถแก้ปัญหาในโลกจริงและสร้างผลกระทบที่จับต้องได้</span>
+                            <span lang="en">I'm Jakkrit Lekprasan, a driven Computer Engineering student at Chiang Mai University, set to graduate in 2025. My academic journey has equipped me with a robust foundation in software development, data science, and machine learning, enabling me to thrive on tackling complex challenges and transforming ideas into functional solutions.</span>
                         </p>
                         <p>
-                            <span data-lang="en">My expertise spans across the full software development lifecycle, from architecting scalable backend services using <strong>.NET Core, Spring Boot, and Node.js</strong>, to crafting dynamic front-end experiences with <strong>React, Angular, and Blazor</strong>. I possess a strong foundation in modern cloud platforms like <strong>Azure</strong> and embrace containerization technologies such as <strong>Docker and Kubernetes</strong> to deliver resilient, high-performance solutions.</span>
-                            <span data-lang="th" class="hidden">ความเชี่ยวชาญของผมครอบคลุมวงจรการพัฒนาซอฟต์แวร์เต็มรูปแบบ ตั้งแต่การออกแบบสถาปัตยกรรมบริการแบ็คเอนด์ที่ปรับขนาดได้โดยใช้ <strong>.NET Core, Spring Boot และ Node.js</strong> ไปจนถึงการสร้างประสบการณ์ฟรอนต์เอนด์แบบไดนามิกด้วย <strong>React, Angular และ Blazor</strong> ผมมีพื้นฐานที่แข็งแกร่งในแพลตฟอร์มคลาวด์ที่ทันสมัยเช่น <strong>Azure</strong> และใช้เทคโนโลยี Containerization เช่น <strong>Docker และ Kubernetes</strong> เพื่อส่งมอบโซลูชันที่มีประสิทธิภาพสูงและยืดหยุ่น</span>
+                            <span lang="en">My hands-on experience spans across versatile domains, including full-stack web development (React, Node.js, Express, Flask), data analysis with Python (Pandas, NumPy), and advanced machine learning applications (TensorFlow, Keras, Scikit-learn). I've successfully built diverse projects, from a comprehensive e-commerce platform and real-time chat applications to predictive models for stock prices and crime hotspots, showcasing my ability to leverage various technologies effectively.</span>
                         </p>
                         <p>
-                            <span data-lang="en">I thrive in dynamic environments, constantly expanding my technical acumen and applying modern methodologies like Microservices, RESTful APIs, and Agile. My passion lies in transforming complex challenges into elegant, high-quality software solutions that exceed expectations. Let's connect and build something innovative together!</span>
-                            <span data-lang="th" class="hidden">ผมเติบโตได้ดีในสภาพแวดล้อมที่มีพลวัต พัฒนาความรู้ทางเทคนิคอย่างต่อเนื่องและประยุกต์ใช้วิธีการที่ทันสมัย เช่น Microservices, RESTful APIs และ Agile ความมุ่งมั่นของผมคือการเปลี่ยนความท้าทายที่ซับซ้อนให้เป็นโซลูชันซอฟต์แวร์คุณภาพสูงที่เหนือความคาดหมาย มาเชื่อมต่อและสร้างสรรค์นวัตกรรมร่วมกันเถอะครับ!</span>
+                            <span lang="en">Beyond my technical acumen, roles as a Student Ambassador and Teaching Assistant have been instrumental in honing my communication, leadership, and problem-solving skills. These experiences have allowed me to collaborate effectively in team environments, mentor peers, and represent my institution professionally. I am a fast learner, perpetually curious, and actively seeking an internship opportunity to apply my expertise, contribute to innovative projects, and further develop my skills in a dynamic professional setting.</span>
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section section-padding">
-            <div class="container">
-                <h2 class="text-center">
-                    <span data-lang="en">My <span class="text-accent">Expertise</span></span>
-                    <span data-lang="th" class="hidden">ความ<span class="text-accent">เชี่ยวชาญ</span>ของฉัน</span>
-                </h2>
-                <p class="text-center" style="color: var(--color-text-secondary); margin-bottom: 3rem;">
-                    <span data-lang="en">A comprehensive and adaptable skill set for modern web development.</span>
-                    <span data-lang="th" class="hidden">ชุดทักษะที่ครอบคลุมและปรับตัวได้สำหรับการพัฒนาเว็บที่ทันสมัย</span>
-                </p>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>
-                            <span data-lang="en">Programming Languages</span>
-                            <span data-lang="th" class="hidden">ภาษาโปรแกรม</span>
-                        </h3>
-                        <div class="skill-list">
-                            <span class="skill-item"><i class="fa-solid fa-c"></i> C#</span>
-                            <span class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</span>
-                            <span class="skill-item"><i class="fa-brands fa-js"></i> TypeScript</span>
-                            <span class="skill-item"><i class="fa-brands fa-java"></i> Java</span>
-                            <span class="skill-item"><i class="fa-brands fa-python"></i> Python</span>
-                            <span class="skill-item"><i class="fa-brands fa-html5"></i> HTML</span>
-                            <span class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                            <span class="skill-item"><i class="fa-brands fa-php"></i> PHP</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>
-                            <span data-lang="en">Front-End Frameworks</span>
-                            <span data-lang="th" class="hidden">เฟรมเวิร์กฟรอนต์เอนด์</span>
-                        </h3>
-                        <div class="skill-list">
-                            <span class="skill-item"><i class="fa-brands fa-react"></i> React</span>
-                            <span class="skill-item"><i class="fa-brands fa-angular"></i> Angular</span>
-                            <span class="skill-item"><i class="fa-solid fa-b"></i> Blazor</span>
-                            <span class="skill-item"><i class="fa-brands fa-react"></i> Next.js</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>
-                            <span data-lang="en">Back-End Frameworks</span>
-                            <span data-lang="th" class="hidden">เฟรมเวิร์กแบ็คเอนด์</span>
-                        </h3>
-                        <div class="skill-list">
-                            <span class="skill-item"><i class="fa-solid fa-n"></i> .NET Core</span>
-                            <span class="skill-item"><i class="fa-solid fa-a"></i> ASP.NET</span>
-                            <span class="skill-item"><i class="fa-solid fa-s"></i> Spring Boot</span>
-                            <span class="skill-item"><i class="fa-brands fa-node-js"></i> Node.js (Express)</span>
-                            <span class="skill-item"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>
-                            <span data-lang="en">Databases</span>
-                            <span data-lang="th" class="hidden">ฐานข้อมูล</span>
-                        </h3>
-                        <div class="skill-list">
-                            <span class="skill-item"><i class="fa-solid fa-database"></i> SQL Server</span>
-                            <span class="skill-item"><i class="fa-solid fa-database"></i> MySQL</span>
-                            <span class="skill-item"><i class="fa-solid fa-database"></i> PostgreSQL</span>
-                            <span class="skill-item"><i class="fa-solid fa-database"></i> MongoDB</span>
-                            <span class="skill-item"><i class="fa-solid fa-database"></i> Oracle</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>
-                            <span data-lang="en">Cloud Platforms</span>
-                            <span data-lang="th" class="hidden">แพลตฟอร์มคลาวด์</span>
-                        </h3>
-                        <div class="skill-list">
-                            <span class="skill-item"><i class="fa-brands fa-windows"></i> Azure</span>
-                            <span class="skill-item"><i class="fa-brands fa-aws"></i> AWS</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>
-                            <span data-lang="en">DevOps & Tools</span>
-                            <span data-lang="th" class="hidden">DevOps และเครื่องมือ</span>
-                        </h3>
-                        <div class="skill-list">
-                            <span class="skill-item"><i class="fa-brands fa-git-alt"></i> Git</span>
-                            <span class="skill-item"><i class="fa-brands fa-docker"></i> Docker</span>
-                            <span class="skill-item"><i class="fa-solid fa-cube"></i> Kubernetes</span>
-                            <span class="skill-item"><i class="fa-solid fa-gear"></i> CI/CD</span>
-                            <span class="skill-item"><i class="fa-brands fa-jira"></i> Jira</span>
-                            <span class="skill-item"><i class="fa-solid fa-paper-plane"></i> Postman</span>
-                            <span class="skill-item"><i class="fa-solid fa-code"></i> VS Code</span>
-                            <span class="skill-item"><i class="fa-brands fa-figma"></i> Figma</span>
-                            <span class="skill-item"><i class="fa-solid fa-file-code"></i> Swagger</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>
-                            <span data-lang="en">Architecture & Methodologies</span>
-                            <span data-lang="th" class="hidden">สถาปัตยกรรมและระเบียบวิธี</span>
-                        </h3>
-                        <div class="skill-list">
-                            <span class="skill-item"><i class="fa-solid fa-microchip"></i> Microservices</span>
-                            <span class="skill-item"><i class="fa-solid fa-api"></i> RESTful API</span>
-                            <span class="skill-item"><i class="fa-solid fa-object-group"></i> OOP</span>
-                            <span class="skill-item"><i class="fa-solid fa-puzzle-piece"></i> Design Patterns</span>
-                            <span class="skill-item"><i class="fa-solid fa-wave-square"></i> WebSockets</span>
-                            <span class="skill-item"><i class="fa-solid fa-people-arrows"></i> Agile</span>
+                        <div class="about__highlights">
+                            <span>Expected Graduation: 2025</span>
+                            <span>Location: Chiang Mai, Thailand</span>
+                            <span>Key Strengths: Versatility, Problem-Solving, Communication, Teamwork, Proactive Learning</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects-section section-padding">
-            <div class="container">
+        <section class="skills section-padding" id="skills">
+            <div class="container fade-in">
                 <h2 class="text-center">
-                    <span data-lang="en">My <span class="text-accent">Work</span></span>
-                    <span data-lang="th" class="hidden">ผลงาน<span class="text-accent">ของฉัน</span></span>
+                    <span lang="en">My Expertise</span>
+                    <span lang="th" class="ml-2">(ความเชี่ยวชาญของฉัน)</span>
                 </h2>
-                <p class="text-center" style="color: var(--color-text-secondary); margin-bottom: 3rem;">
-                    <span data-lang="en">Impactful Solutions Across Diverse Domains.</span>
-                    <span data-lang="th" class="hidden">โซลูชันที่สร้างผลกระทบในหลากหลายโดเมน</span>
-                </p>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/600x400/38B2AC/1A202C?text=Customer+Platform" alt="Digital Customer Service Platform" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>
-                                <span data-lang="en">Digital Customer Service Platform</span>
-                                <span data-lang="th" class="hidden">แพลตฟอร์มบริการลูกค้าดิจิทัล</span>
-                            </h3>
-                            <p>
-                                <span data-lang="en">Developed and maintained a critical customer service platform for a public company, streamlining service delivery.</span>
-                                <span data-lang="th" class="hidden">พัฒนาและดูแลแพลตฟอร์มบริการลูกค้าที่สำคัญสำหรับบริษัทมหาชน ช่วยเพิ่มประสิทธิภาพในการส่งมอบบริการ</span>
-                            </p>
-                            <div class="project-tech-tags">
-                                <span class="tech-tag">Blazor</span>
-                                <span class="tech-tag">.NET 8</span>
-                                <span class="tech-tag">SQL Server</span>
-                                <span class="tech-tag">Azure</span>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" class="btn btn-primary" data-lang-key="view_details">
-                                    <span data-lang="en">View Details</span>
-                                    <span data-lang="th" class="hidden">ดูรายละเอียด</span>
-                                </a>
-                                <a href="https://github.com/jakkritdev/customer-platform-placeholder" target="_blank" class="btn btn-secondary" data-lang-key="github_repo">
-                                    <i class="fab fa-github btn-icon"></i>
-                                    <span data-lang="en">GitHub Repo</span>
-                                    <span data-lang="th" class="hidden">โค้ด GitHub</span>
-                                </a>
-                            </div>
-                        </div>
+                <div class="skills__grid">
+                    <div class="skills__category">
+                        <h3>Programming Languages</h3>
+                        <ul class="skills__list">
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Python (Core)
+                            </li>
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> JavaScript (Core)
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> C++
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> C
+                            </li>
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> HTML & CSS
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> SQL
+                            </li>
+                            <li class="familiar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Java, R, PHP
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/600x400/4A5568/F7FAFC?text=E-commerce+Backend" alt="E-commerce Backend Service" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>
-                                <span data-lang="en">E-commerce Backend Service</span>
-                                <span data-lang="th" class="hidden">บริการแบ็คเอนด์ E-commerce</span>
-                            </h3>
-                            <p>
-                                <span data-lang="en">Designed and implemented robust, high-performance backend microservices for an e-commerce application.</span>
-                                <span data-lang="th" class="hidden">ออกแบบและพัฒนาบริการไมโครเซอร์วิสแบ็คเอนด์ที่มีประสิทธิภาพสูงและแข็งแกร่งสำหรับแอปพลิเคชัน E-commerce</span>
-                            </p>
-                            <div class="project-tech-tags">
-                                <span class="tech-tag">Spring Boot</span>
-                                <span class="tech-tag">Microservices</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Docker</span>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" class="btn btn-primary" data-lang-key="view_details">
-                                    <span data-lang="en">View Details</span>
-                                    <span data-lang="th" class="hidden">ดูรายละเอียด</span>
-                                </a>
-                                <a href="https://github.com/jakkritdev/ecommerce-backend-placeholder" target="_blank" class="btn btn-secondary" data-lang-key="github_repo">
-                                    <i class="fab fa-github btn-icon"></i>
-                                    <span data-lang="en">GitHub Repo</span>
-                                    <span data-lang="th" class="hidden">โค้ด GitHub</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="skills__category">
+                        <h3>Web Development</h3>
+                        <ul class="skills__list">
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> React.js
+                            </li>
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Node.js, Express.js
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Flask
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Tailwind CSS, Bootstrap
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/600x400/A0AEC0/1A202C?text=AI+Chatbot" alt="AI-driven Chatbot Integration" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>
-                                <span data-lang="en">AI-driven Chatbot Integration</span>
-                                <span data-lang="th" class="hidden">การรวม Chatbot ที่ขับเคลื่อนด้วย AI</span>
-                            </h3>
-                            <p>
-                                <span data-lang="en">Integrated an intelligent AI chatbot into an existing system to automate and improve customer support.</span>
-                                <span data-lang="th" class="hidden">รวม Chatbot AI อัจฉริยะเข้ากับระบบที่มีอยู่เพื่อทำให้การสนับสนุนลูกค้าเป็นไปโดยอัตโนมัติและมีประสิทธิภาพยิ่งขึ้น</span>
-                            </p>
-                            <div class="project-tech-tags">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">OpenAI API</span>
-                                <span class="tech-tag">RESTful API</span>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" class="btn btn-primary" data-lang-key="view_details">
-                                    <span data-lang="en">View Details</span>
-                                    <span data-lang="th" class="hidden">ดูรายละเอียด</span>
-                                </a>
-                                <a href="https://github.com/jakkritdev/chatbot-integration-placeholder" target="_blank" class="btn btn-secondary" data-lang-key="github_repo">
-                                    <i class="fab fa-github btn-icon"></i>
-                                    <span data-lang="en">GitHub Repo</span>
-                                    <span data-lang="th" class="hidden">โค้ด GitHub</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="skills__category">
+                        <h3>Data & Machine Learning</h3>
+                        <ul class="skills__list">
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Pandas, NumPy, Matplotlib
+                            </li>
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Scikit-learn
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> TensorFlow, Keras
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/600x400/38B2AC/1A202C?text=Realtime+Dashboard" alt="Real-time Data Dashboard" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>
-                                <span data-lang="en">Real-time Data Dashboard</span>
-                                <span data-lang="th" class="hidden">แดชบอร์ดข้อมูลแบบเรียลไทม์</span>
-                            </h3>
-                            <p>
-                                <span data-lang="en">Designed and implemented a dynamic, real-time data dashboard for advanced analytics and monitoring.</span>
-                                <span data-lang="th" class="hidden">ออกแบบและพัฒนาแดชบอร์ดข้อมูลแบบไดนามิกและเรียลไทม์สำหรับการวิเคราะห์และตรวจสอบขั้นสูง</span>
-                            </p>
-                            <div class="project-tech-tags">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">WebSockets</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" class="btn btn-primary" data-lang-key="view_details">
-                                    <span data-lang="en">View Details</span>
-                                    <span data-lang="th" class="hidden">ดูรายละเอียด</span>
-                                </a>
-                                <a href="https://github.com/jakkritdev/dashboard-realtime-placeholder" target="_blank" class="btn btn-secondary" data-lang-key="github_repo">
-                                    <i class="fab fa-github btn-icon"></i>
-                                    <span data-lang="en">GitHub Repo</span>
-                                    <span data-lang="th" class="hidden">โค้ด GitHub</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="skills__category">
+                        <h3>Databases & Cloud</h3>
+                        <ul class="skills__list">
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> MySQL, PostgreSQL
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> MongoDB, Firebase
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Google Cloud Platform (GCP)
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Microsoft Azure
+                            </li>
+                            <li class="familiar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> AWS (Familiar)
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- Project 5 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/600x400/4A5568/F7FAFC?text=Cloud-Native+ERP" alt="Cloud-native ERP System" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>
-                                <span data-lang="en">Cloud-native ERP System</span>
-                                <span data-lang="th" class="hidden">ระบบ ERP แบบ Cloud-native</span>
-                            </h3>
-                            <p>
-                                <span data-lang="en">Actively involved in the migration and development of an Enterprise Resource Planning (ERP) system to a cloud-native architecture.</span>
-                                <span data-lang="th" class="hidden">มีส่วนร่วมอย่างแข็งขันในการย้ายและพัฒนาระบบ Enterprise Resource Planning (ERP) ไปยังสถาปัตยกรรมแบบ Cloud-native</span>
-                            </p>
-                            <div class="project-tech-tags">
-                                <span class="tech-tag">.NET Core</span>
-                                <span class="tech-tag">Azure</span>
-                                <span class="tech-tag">Microservices</span>
-                                <span class="tech-tag">SQL Server</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Kubernetes</span>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" class="btn btn-primary" data-lang-key="view_details">
-                                    <span data-lang="en">View Details</span>
-                                    <span data-lang="th" class="hidden">ดูรายละเอียด</span>
-                                </a>
-                                <a href="https://github.com/jakkritdev/erp-cloudnative-placeholder" target="_blank" class="btn btn-secondary" data-lang-key="github_repo">
-                                    <i class="fab fa-github btn-icon"></i>
-                                    <span data-lang="en">GitHub Repo</span>
-                                    <span data-lang="th" class="hidden">โค้ด GitHub</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="skills__category">
+                        <h3>Tools & Concepts</h3>
+                        <ul class="skills__list">
+                            <li class="core">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Git / Version Control
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> VS Code, Docker
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Object-Oriented Programming (OOP)
+                            </li>
+                            <li class="proficient">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Data Structures, Algorithms
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="experience-section section-padding">
-            <div class="container">
+        <section class="projects section-padding" id="projects">
+            <div class="container fade-in">
                 <h2 class="text-center">
-                    <span data-lang="en">Professional <span class="text-accent">Experience</span></span>
-                    <span data-lang="th" class="hidden">ประสบการณ์<span class="text-accent">ทำงาน</span></span>
+                    <span lang="en">Featured Projects</span>
+                    <span lang="th" class="ml-2">(ผลงานเด่น)</span>
                 </h2>
-                <div class="experience-timeline">
-                    <!-- Experience 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-item-content">
+                <div class="projects__grid">
+                    <!-- Project Card 1: E-commerce Website -->
+                    <div class="project-card">
+                        <div class="project-card__image-wrapper">
+                            <img src="https://via.placeholder.com/600x400/007BFF/FFFFFF?text=E-commerce+Website" alt="Screenshot of E-commerce Website project" class="project-card__image" width="600" height="400">
+                        </div>
+                        <div class="project-card__content">
                             <h3>
-                                <span data-lang="en">Full-Stack Developer</span>
-                                <span data-lang="th" class="hidden">นักพัฒนา Full-Stack</span>
+                                <span lang="en">E-commerce Website (Full-Stack)</span><br>
+                                <span lang="th">(เว็บไซต์อีคอมเมิร์ซ)</span>
                             </h3>
-                            <p class="company-title">Xpert Digital</p>
-                            <span class="duration">
-                                <span data-lang="en">March 2023 – Present (1 year 2 months)</span>
-                                <span data-lang="th" class="hidden">มีนาคม 2566 – ปัจจุบัน (1 ปี 2 เดือน)</span>
-                            </span>
+                            <p>A comprehensive online store featuring user authentication, product listings, shopping cart, and payment processing. Built for scalability and secure transactions.</p>
+                            <p class="project-card__tech-stack">React.js | Node.js | Express.js | MongoDB | Tailwind CSS</p>
+                            <div class="project-card__ctas">
+                                <a href="#" class="btn btn--primary">View Details</a>
+                                <a href="https://github.com/jakkrit_lekprasan/ecommerce" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Real-time Chat Application -->
+                    <div class="project-card">
+                        <div class="project-card__image-wrapper">
+                            <img src="https://via.placeholder.com/600x400/28a745/FFFFFF?text=Real-time+Chat+App" alt="Screenshot of Real-time Chat Application project" class="project-card__image" width="600" height="400">
+                        </div>
+                        <div class="project-card__content">
+                            <h3>
+                                <span lang="en">Real-time Chat Application</span><br>
+                                <span lang="th">(แอปพลิเคชันแชทแบบเรียลไทม์)</span>
+                            </h3>
+                            <p>An instant messaging platform allowing users to communicate in real-time. Features include user registration, chat rooms, and message history.</p>
+                            <p class="project-card__tech-stack">React.js | Node.js | Socket.IO | MongoDB | CSS</p>
+                            <div class="project-card__ctas">
+                                <a href="#" class="btn btn--primary">View Details</a>
+                                <a href="https://github.com/jakkrit_lekprasan/realtime-chat" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Student Management System -->
+                    <div class="project-card">
+                        <div class="project-card__image-wrapper">
+                            <img src="https://via.placeholder.com/600x400/ffc107/FFFFFF?text=Student+Management+System" alt="Screenshot of Student Management System project" class="project-card__image" width="600" height="400">
+                        </div>
+                        <div class="project-card__content">
+                            <h3>
+                                <span lang="en">Student Management System</span><br>
+                                <span lang="th">(ระบบจัดการนักศึกษา)</span>
+                            </h3>
+                            <p>A system for managing student records, course enrollments, grades, and attendance, designed for educational institutions.</p>
+                            <p class="project-card__tech-stack">Python/Flask | MySQL | HTML | CSS | JavaScript</p>
+                            <div class="project-card__ctas">
+                                <a href="#" class="btn btn--primary">View Details</a>
+                                <a href="https://github.com/jakkrit_lekprasan/student-management" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4: Stock Price Prediction Model -->
+                    <div class="project-card">
+                        <div class="project-card__image-wrapper">
+                            <img src="https://via.placeholder.com/600x400/dc3545/FFFFFF?text=Stock+Prediction+Model" alt="Screenshot of Stock Price Prediction Model project" class="project-card__image" width="600" height="400">
+                        </div>
+                        <div class="project-card__content">
+                            <h3>
+                                <span lang="en">Stock Price Prediction Model</span><br>
+                                <span lang="th">(โมเดลคาดการณ์ราคาหุ้น)</span>
+                            </h3>
+                            <p>A machine learning model predicting future stock prices based on historical data using time-series analysis techniques.</p>
+                            <p class="project-card__tech-stack">Python | TensorFlow | Keras | Pandas | NumPy</p>
+                            <div class="project-card__ctas">
+                                <a href="#" class="btn btn--primary">View Details</a>
+                                <a href="https://github.com/jakkrit_lekprasan/stock-prediction" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section-padding" id="experience">
+            <div class="container fade-in">
+                <h2 class="text-center">
+                    <span lang="en">Professional & Academic Experience</span>
+                    <span lang="th" class="ml-2">(ประสบการณ์การทำงานและวิชาการ)</span>
+                </h2>
+                <div class="experience__timeline">
+                    <!-- Experience Item 1 -->
+                    <div class="experience__item experience__item--left">
+                        <div class="experience__item-content">
+                            <h3>
+                                <span lang="en">Student Ambassador</span><br>
+                                <span lang="th">(ทูตนักศึกษา)</span>
+                            </h3>
+                            <h4>Chiang Mai University</h4>
+                            <small>June 2023 – Present (1 year 2 months)</small>
                             <ul>
-                                <li>
-                                    <span data-lang="en">Spearheaded the development and maintenance of robust web applications using <strong>.NET Core, React, and SQL Server</strong>, contributing across the full software development lifecycle.</span>
-                                    <span data-lang="th" class="hidden">เป็นหัวหอกในการพัฒนาและดูแลเว็บแอปพลิเคชันที่แข็งแกร่งโดยใช้ <strong>.NET Core, React และ SQL Server</strong> มีส่วนร่วมตลอดวงจรการพัฒนาซอฟต์แวร์เต็มรูปแบบ</span>
-                                </li>
-                                <li>
-                                    <span data-lang="en">Designed and implemented highly efficient <strong>RESTful APIs</strong>, ensuring seamless integration with various third-party services and internal systems.</span>
-                                    <span data-lang="th" class="hidden">ออกแบบและพัฒนา <strong>RESTful APIs</strong> ที่มีประสิทธิภาพสูง เพื่อให้มั่นใจถึงการรวมระบบที่ราบรื่นกับบริการภายนอกและระบบภายในต่างๆ</span>
-                                </li>
-                                <li>
-                                    <span data-lang="en">Actively participated in all phases of the SDLC, from requirement gathering and architectural design to development, testing, and deployment, adhering to <strong>agile methodologies</strong>.</span>
-                                    <span data-lang="th" class="hidden">มีส่วนร่วมอย่างแข็งขันในทุกขั้นตอนของ SDLC ตั้งแต่การรวบรวมข้อกำหนดและการออกแบบสถาปัตยกรรม ไปจนถึงการพัฒนา การทดสอบ และการนำไปใช้งาน โดยยึดถือ <strong>ระเบียบวิธี Agile</strong></span>
-                                </li>
-                                <li>
-                                    <span data-lang="en">Collaborated effectively within cross-functional teams, translating business requirements into high-quality, scalable software solutions delivered on schedule.</span>
-                                    <span data-lang="th" class="hidden">ทำงานร่วมกับทีมข้ามสายงานอย่างมีประสิทธิภาพ แปลความต้องการทางธุรกิจให้เป็นโซลูชันซอฟต์แวร์คุณภาพสูงที่ปรับขนาดได้และส่งมอบตามกำหนดเวลา</span>
-                                </li>
-                                <li>
-                                    <span data-lang="en">Gained practical experience with cloud deployments (Azure) and modern <strong>CI/CD pipelines</strong>.</span>
-                                    <span data-lang="th" class="hidden">ได้รับประสบการณ์จริงกับการปรับใช้บนคลาวด์ (Azure) และ <strong>CI/CD pipelines</strong> ที่ทันสมัย</span>
-                                </li>
+                                <li>Proactively engaged with prospective students, providing insightful information on academic programs, campus life, and support services.</li>
+                                <li>Represented the university professionally at various events, significantly contributing to positive public perception and recruitment efforts.</li>
+                                <li>Assisted in coordinating university events, including campus tours, orientation sessions, and open house events.</li>
                             </ul>
+                            <p class="skills-demonstrated"><span>Skills Demonstrated:</span> Public Speaking, Communication, Interpersonal Skills, Event Coordination, Leadership.</p>
                         </div>
                     </div>
-                    <!-- Experience 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-item-content">
+
+                    <!-- Experience Item 2 -->
+                    <div class="experience__item experience__item--right">
+                        <div class="experience__item-content">
                             <h3>
-                                <span data-lang="en">Software Developer Intern</span>
-                                <span data-lang="th" class="hidden">นักศึกษาฝึกงานด้านพัฒนาซอฟต์แวร์</span>
+                                <span lang="en">Teaching Assistant</span><br>
+                                <span lang="th">(ผู้ช่วยสอน)</span>
                             </h3>
-                            <p class="company-title">Tech Solutions</p>
-                            <span class="duration">
-                                <span data-lang="en">June 2022 – December 2022 (7 months)</span>
-                                <span data-lang="th" class="hidden">มิถุนายน 2565 – ธันวาคม 2565 (7 เดือน)</span>
-                            </span>
+                            <h4>Computer Engineering Department, Chiang Mai University</h4>
+                            <small>January 2023 – May 2023 (5 months)</small>
                             <ul>
-                                <li>
-                                    <span data-lang="en">Assisted in the development of dynamic front-end components using <strong>Angular and TypeScript</strong>, enhancing user interfaces and overall user experience.</span>
-                                    <span data-lang="th" class="hidden">ช่วยในการพัฒนาส่วนประกอบฟรอนต์เอนด์แบบไดนามิกโดยใช้ <strong>Angular และ TypeScript</strong> ช่วยเพิ่มประสิทธิภาพอินเทอร์เฟซผู้ใช้และประสบการณ์ผู้ใช้โดยรวม</span>
-                                </li>
-                                <li>
-                                    <span data-lang="en">Contributed to database design, optimization, and query tuning for <strong>MySQL databases</strong>, leading to improved application performance.</span>
-                                    <span data-lang="th" class="hidden">มีส่วนร่วมในการออกแบบฐานข้อมูล การเพิ่มประสิทธิภาพ และการปรับแต่งคิวรีสำหรับ <strong>ฐานข้อมูล MySQL</strong> ซึ่งนำไปสู่ประสิทธิภาพของแอปพลิเคชันที่ดีขึ้น</span>
-                                </li>
-                                <li>
-                                    <span data-lang="en">Gained valuable hands-on experience with version control (<strong>Git</strong>), project management tools (<strong>Jira</strong>), and foundational agile development methodologies.</span>
-                                    <span data-lang="th" class="hidden">ได้รับประสบการณ์ตรงที่มีค่าในการควบคุมเวอร์ชัน (<strong>Git</strong>), เครื่องมือจัดการโปรเจกต์ (<strong>Jira</strong>) และระเบียบวิธีพัฒนา Agile พื้นฐาน</span>
-                                </li>
-                                <li>
-                                    <span data-lang="en">Supported senior developers in debugging, testing, and documentation tasks, building a strong foundation in professional development practices.</span>
-                                    <span data-lang="th" class="hidden">สนับสนุนนักพัฒนาระดับสูงในงานดีบัก ทดสอบ และจัดทำเอกสาร สร้างรากฐานที่แข็งแกร่งในการปฏิบัติงานพัฒนามืออาชีพ</span>
-                                </li>
+                                <li>Supported professors in grading assignments, preparing lab materials, and offering one-on-one student assistance.</li>
+                                <li>Conducted supplementary review sessions to clarify complex concepts and aid students in exam preparation.</li>
+                                <li>Cultivated a supportive learning environment, promptly addressing student inquiries and providing constructive feedback.</li>
                             </ul>
+                            <p class="skills-demonstrated"><span>Skills Demonstrated:</span> Mentorship, Technical Instruction, Problem Solving, Communication, Time Management, Empathy.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="education-section section-padding">
-            <div class="container">
+        <section class="education section-padding" id="education">
+            <div class="container fade-in">
                 <h2 class="text-center">
-                    <span data-lang="en"><span class="text-accent">Education</span> & Certifications</span>
-                    <span data-lang="th" class="hidden">การ<span class="text-accent">ศึกษา</span>และใบรับรอง</span>
+                    <span lang="en">Education</span>
+                    <span lang="th" class="ml-2">(การศึกษา)</span>
                 </h2>
-                <div class="education-item">
-                    <h3>
-                        <span data-lang="en">Bachelor's Degree in Computer Science</span>
-                        <span data-lang="th" class="hidden">ปริญญาตรีวิทยาการคอมพิวเตอร์</span>
-                    </h3>
-                    <p>
-                        <span data-lang="en">University of Technology | 2019 – 2023</span>
-                        <span data-lang="th" class="hidden">มหาวิทยาลัยเทคโนโลยี | 2562 – 2566</span>
-                    </p>
-                </div>
-                <!-- Add certifications here if available -->
-                <div class="education-item" style="margin-top: 2rem;">
-                    <h3>
-                        <span data-lang="en">Certifications</span>
-                        <span data-lang="th" class="hidden">ใบรับรอง</span>
-                    </h3>
-                    <p>
-                        <span data-lang="en">None explicitly listed. (Highly recommended to pursue industry-relevant certifications like Microsoft Certified: Azure Developer Associate).</span>
-                        <span data-lang="th" class="hidden">ยังไม่มีรายการใบรับรองที่ระบุอย่างชัดเจน (ขอแนะนำอย่างยิ่งให้พิจารณาใบรับรองที่เกี่ยวข้องกับอุตสาหกรรม เช่น Microsoft Certified: Azure Developer Associate)</span>
-                    </p>
+                <div class="education__item">
+                    <h3>Bachelor of Engineering (BE) - Computer Engineering</h3>
+                    <p>Chiang Mai University</p>
+                    <small>Expected Graduation: 2025</small>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding">
-            <div class="container">
+        <section class="contact section-padding" id="contact">
+            <div class="container fade-in">
                 <h2 class="text-center">
-                    <span data-lang="en">Let's <span class="text-accent">Connect</span></span>
-                    <span data-lang="th" class="hidden">มา<span class="text-accent">เชื่อมต่อ</span>กันเถอะ</span>
+                    <span lang="en">Get In Touch</span>
+                    <span lang="th" class="ml-2">(ติดต่อ)</span>
                 </h2>
-                <p class="text-center" style="color: var(--color-text-secondary); margin-bottom: 3rem;">
-                    <span data-lang="en">I'm always open to discussing new projects, collaboration opportunities, or general development inquiries.</span>
-                    <span data-lang="th" class="hidden">ผมยินดีเสมอที่จะพูดคุยเกี่ยวกับโปรเจกต์ใหม่ๆ โอกาสในการทำงานร่วมกัน หรือข้อสงสัยเกี่ยวกับการพัฒนาทั่วไป</span>
+                <p class="contact__intro">
+                    <span lang="en">I'm always eager to connect, discuss new ideas, and explore internship opportunities. Feel free to send me a message or connect through my social channels!</span><br>
+                    <span lang="th">(ผมยินดีเสมอที่จะเชื่อมต่อ พูดคุยเกี่ยวกับแนวคิดใหม่ ๆ และสำรวจโอกาสในการฝึกงาน อย่าลังเลที่จะส่งข้อความหรือเชื่อมต่อผ่านช่องทางโซเชียลของผม!)</span>
                 </p>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <p>
-                            <span data-lang="en">Reach out via email or connect with me on LinkedIn and GitHub.</span>
-                            <span data-lang="th" class="hidden">ติดต่อได้ทางอีเมล หรือเชื่อมต่อกับผมบน LinkedIn และ GitHub</span>
-                        </p>
-                        <div class="contact-details">
-                            <div>
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:jakkrit.dev@email.com">jakkrit.dev@email.com</a>
-                            </div>
-                            <div>
-                                <i class="fab fa-linkedin"></i>
-                                <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank">linkedin.com/in/jakkrit-lekprasan</a>
-                            </div>
-                            <div>
-                                <i class="fab fa-github"></i>
-                                <a href="https://github.com/jakkritdev" target="_blank">github.com/jakkritdev</a>
-                            </div>
-                            <div>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>
-                                    <span data-lang="en">Bangkok Metropolitan Area, Thailand</span>
-                                    <span data-lang="th" class="hidden">กรุงเทพมหานคร, ประเทศไทย</span>
-                                </span>
-                            </div>
-                        </div>
+                
+                <form action="mailto:jakkrit.lekprasan@example.com" method="post" enctype="text/plain" class="contact__form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-label="Your Name">
                     </div>
-                    <div class="contact-form-wrapper">
-                        <form class="contact-form" id="contactForm">
-                            <label for="name">
-                                <span data-lang="en">Name</span>
-                                <span data-lang="th" class="hidden">ชื่อ</span>
-                            </label>
-                            <input type="text" id="name" name="name" required>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-label="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required aria-label="Subject of your message">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required aria-label="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
 
-                            <label for="email">
-                                <span data-lang="en">Email</span>
-                                <span data-lang="th" class="hidden">อีเมล</span>
-                            </label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="subject">
-                                <span data-lang="en">Subject</span>
-                                <span data-lang="th" class="hidden">หัวข้อ</span>
-                            </label>
-                            <input type="text" id="subject" name="subject" required>
-
-                            <label for="message">
-                                <span data-lang="en">Message</span>
-                                <span data-lang="th" class="hidden">ข้อความ</span>
-                            </label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-
-                            <button type="submit" class="btn btn-primary">
-                                <span data-lang="en">Send Message</span>
-                                <span data-lang="th" class="hidden">ส่งข้อความ</span>
-                            </button>
-                        </form>
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12.713l-11.027-8.713h22.054l-11.027 8.713zm0 2.287l-12-9v14h24v-14l-12 9zm-10-8.922v-2.078l10 7.234 10-7.234v2.078l-10 7.922-10-7.922z"/></svg>
+                        <a href="mailto:jakkrit.lekprasan@example.com">jakkrit.lekprasan@example.com</a>
+                    </div>
+                    <div class="contact__info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact__info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/></svg>
+                        <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                    </div>
+                    <div class="contact__info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.802-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                        Chiang Mai, Thailand
                     </div>
                 </div>
             </div>
@@ -1552,54 +1419,48 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/jakkritdev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <ul class="footer__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer__social-links">
+                <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/></svg>
+                </a>
             </div>
-            <p>
-                <span data-lang="en">&copy; <span id="current-year"></span> Jakkrit Lekprasan. All rights reserved.</span>
-                <span data-lang="th" class="hidden">&copy; <span id="current-year-th"></span> จักรพฤกษ์ เล็กประเสริฐ สงวนลิขสิทธิ์.</span>
-            </p>
+            <p>&copy; 2024 Jakkrit Lekprasan. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-
-                    // Close mobile menu after clicking a link
-                    if (mobileNavMenu.classList.contains('active')) {
-                        mobileNavMenu.classList.remove('active');
-                        hamburger.classList.remove('active');
-                        hamburger.querySelector('i').classList.remove('fa-times');
-                        hamburger.querySelector('i').classList.add('fa-bars');
-                    }
-                });
-            });
-
-            // Active navigation link on scroll
+            const header = document.querySelector('.header');
+            const navToggle = document.querySelector('.nav-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            const mobileNavLinks = document.querySelectorAll('#mobile-nav a');
+            const desktopNavLinks = document.querySelectorAll('.header__nav-list a');
+            const allNavLinks = [...desktopNavLinks, ...mobileNavLinks];
             const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-menu a');
+            const fadeElements = document.querySelectorAll('.fade-in');
 
+            // --- Sticky Header & Active Nav Link ---
             const options = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.7
+                threshold: 0.3
             };
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        navLinks.forEach(link => {
+                        const id = entry.target.id;
+                        allNavLinks.forEach(link => {
                             link.classList.remove('active');
-                            if (link.getAttribute('href').includes(entry.target.id)) {
+                            if (link.getAttribute('href') === `#${id}`) {
                                 link.classList.add('active');
                             }
                         });
@@ -1611,84 +1472,87 @@
                 observer.observe(section);
             });
 
-            // Hamburger menu functionality
-            const hamburger = document.querySelector('.hamburger');
-            const mobileNavMenu = document.getElementById('mobile-nav-menu');
-
-            hamburger.addEventListener('click', () => {
-                mobileNavMenu.classList.toggle('active');
-                hamburger.classList.toggle('active');
-                if (mobileNavMenu.classList.contains('active')) {
-                    hamburger.querySelector('i').classList.remove('fa-bars');
-                    hamburger.querySelector('i').classList.add('fa-times');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
                 } else {
-                    hamburger.querySelector('i').classList.remove('fa-times');
-                    hamburger.querySelector('i').classList.add('fa-bars');
+                    header.classList.remove('scrolled');
+                }
+
+                // Update active nav link for the hero section
+                if (window.scrollY < document.getElementById('about').offsetTop - 100) {
+                     allNavLinks.forEach(link => link.classList.remove('active'));
+                     document.querySelector('.header__nav-list a[href="#hero"]')?.classList.add('active');
+                     document.querySelector('.mobile-nav__list a[href="#hero"]')?.classList.add('active'); // If hero link exists in mobile nav
                 }
             });
 
-            // Language Switcher
-            const langButtons = document.querySelectorAll('.language-switcher button');
-            const allLangElements = document.querySelectorAll('[data-lang-key]');
-            let currentLang = localStorage.getItem('portfolioLang') || 'en';
 
-            function setLanguage(lang) {
-                document.querySelectorAll('[data-lang]').forEach(el => {
-                    if (el.dataset.lang === lang) {
-                        el.classList.remove('hidden');
-                    } else {
-                        el.classList.add('hidden');
-                    }
-                });
+            // --- Mobile Navigation Toggle ---
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                document.body.classList.toggle('no-scroll'); // Optional: prevent scrolling when mobile nav is open
+            });
 
-                langButtons.forEach(button => {
-                    button.classList.remove('active');
-                    if (button.id === `lang-${lang}` || button.id === `mobile-lang-${lang}`) {
-                        button.classList.add('active');
-                    }
-                });
-                currentLang = lang;
-                localStorage.setItem('portfolioLang', lang);
-                document.documentElement.lang = lang; // Set HTML lang attribute
-            }
-
-            langButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const lang = button.id.includes('mobile-lang') ? button.id.replace('mobile-lang-', '') : button.id.replace('lang-', '');
-                    setLanguage(lang);
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
                 });
             });
 
-            // Initialize language on load
-            setLanguage(currentLang);
+            // --- Smooth Scrolling ---
+            allNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Only prevent default for hash links
+                    if (this.hash !== "") {
+                        e.preventDefault();
+                        const targetId = this.hash;
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            const headerOffset = header.offsetHeight; // Get dynamic header height
+                            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                            const offsetPosition = elementPosition - headerOffset - (targetId === '#hero' ? 0 : 20); // Adjust for header and a bit more for other sections
 
-            // Contact Form Submission (Placeholder)
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const formData = new FormData(this);
-                    const name = formData.get('name');
-                    const email = formData.get('email');
-                    const subject = formData.get('subject');
-                    const message = formData.get('message');
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: "smooth"
+                            });
 
-                    let alertMessageEN = `Thank you, ${name}! Your message has been sent.\n\nSubject: ${subject}\nMessage: ${message}\n(This is a simulated submission.)`;
-                    let alertMessageTH = `ขอบคุณครับ/ค่ะ, ${name}! ข้อความของคุณถูกส่งแล้ว.\n\nหัวข้อ: ${subject}\nข้อความ: ${message}\n(นี่คือการส่งแบบจำลอง)`;
-
-                    if (currentLang === 'th') {
-                        alert(alertMessageTH);
-                    } else {
-                        alert(alertMessageEN);
+                            // Update active class immediately for smooth scroll
+                            allNavLinks.forEach(navLink => navLink.classList.remove('active'));
+                            this.classList.add('active');
+                        }
                     }
-                    this.reset();
                 });
-            }
+            });
 
-            // Set current year in footer
-            const year = new Date().getFullYear();
-            document.getElementById('current-year').textContent = year;
-            document.getElementById('current-year-th').textContent = year + 543; // Buddhist era for Thai
+            // --- Intersection Observer for Fade-in Animations ---
+            const fadeInObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+            
+            // Initial check for elements already in viewport on load
+            fadeElements.forEach(element => {
+                if (element.getBoundingClientRect().top < window.innerHeight) {
+                    element.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
