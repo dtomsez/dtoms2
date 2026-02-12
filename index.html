@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jakkrit Lekprasan's Full-Stack Developer Portfolio showcasing expertise in MERN stack, database management, and building dynamic web applications.">
+    <meta name="keywords" content="Jakkrit Lekprasan, Full-Stack Developer, Web Developer, MERN Stack, React.js, Node.js, Express.js, MongoDB, SQL, Portfolio, Thailand">
+    <meta name="author" content="Jakkrit Lekprasan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jakkrit.dev/"> <!-- Replace with your actual URL -->
+    <meta property="og:title" content="Jakkrit Lekprasan | Full-Stack Developer">
+    <meta property="og:description" content="Jakkrit Lekprasan's Full-Stack Developer Portfolio showcasing expertise in MERN stack, database management, and building dynamic web applications.">
+    <meta property="og:image" content="https://i.postimg.cc/JsR904X2/Jakkrit-Lekprasan.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.jakkrit.dev/"> <!-- Replace with your actual URL -->
+    <meta property="twitter:title" content="Jakkrit Lekprasan | Full-Stack Developer">
+    <meta property="twitter:description" content="Jakkrit Lekprasan's Full-Stack Developer Portfolio showcasing expertise in MERN stack, database management, and building dynamic web applications.">
+    <meta property="twitter:image" content="https://i.postimg.cc/JsR904X2/Jakkrit-Lekprasan.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <title>Jakkrit Lekprasan | Full-Stack Developer</title>
+
+    <!-- Google Fonts - Inter for headings, Roboto for body, Fira Code for code, Noto Sans Thai for Thai script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500&family=Fira+Code:wght@400&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Variables for Color Palette */
+        :root {
+            --primary-accent: #3B82F6; /* Vibrant professional blue */
+            --secondary-accent: #60A5FA; /* Lighter shade for hover */
+            --text-primary: #1F2937; /* Dark Slate Gray for main text */
+            --text-secondary: #4B5563; /* Medium Gray for descriptions */
+            --bg-white: #FFFFFF; /* Pure White background */
+            --bg-light: #F9FAFB; /* Off-White/Light Gray for sections */
+            --border-color: #D1D5DB; /* Light Gray for borders */
+            --shadow-light: rgba(0, 0, 0, 0.05);
+            --shadow-medium: rgba(0, 0, 0, 0.1);
+
+            /* Font Families */
+            --font-heading: 'Inter', 'Noto Sans Thai', sans-serif;
+            --font-body: 'Roboto', 'Noto Sans Thai', sans-serif;
+            --font-monospace: 'Fira Code', 'Noto Sans Thai', monospace;
+
+            /* Font Sizes (Responsive via rem/vw) */
+            --fs-h1: 3rem; /* 48px */
+            --fs-h2: 2.25rem; /* 36px */
+            --fs-h3: 1.5rem; /* 24px */
+            --fs-body: 1rem; /* 16px */
+            --fs-small: 0.875rem; /* 14px */
+
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-xxl: 4rem;
+        }
+
+        /* Base Styles & Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-white);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+        }
+
+        /* Prevent body scroll when mobile nav or modal is open */
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+        }
+
+        h1 { font-size: var(--fs-h1); font-weight: 700; }
+        h2 { font-size: var(--fs-h2); font-weight: 700; }
+        h3 { font-size: var(--fs-h3); font-weight: 600; }
+        p { margin-bottom: var(--spacing-md); }
+        small { font-size: var(--fs-small); color: var(--text-secondary); }
+
+        a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-accent);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .text-center { text-align: center; }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: var(--fs-body);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 2px solid transparent;
+            min-width: 120px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-accent);
+            color: var(--bg-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-accent);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-accent);
+            border-color: var(--primary-accent);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-accent);
+            color: var(--bg-white);
+        }
+
+        .btn + .btn {
+            margin-left: var(--spacing-sm);
+        }
+
+        /* Section Styling */
+        section {
+            padding: var(--spacing-xxl) 0;
+            opacity: 0; /* For scroll animations */
+            transform: translateY(20px); /* For scroll animations */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section:nth-of-type(even) {
+            background-color: var(--bg-light);
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            position: relative;
+        }
+
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-accent);
+            margin: var(--spacing-sm) auto var(--spacing-lg) auto;
+            border-radius: 2px;
+        }
+
+        /* Header & Navigation */
+        .header-top {
+            background-color: var(--bg-white);
+            padding: var(--spacing-md) 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px var(--shadow-light);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .header-top.scrolled {
+            box-shadow: 0 4px 15px var(--shadow-medium);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .logo span {
+            color: var(--primary-accent);
+        }
+
+        .nav-links {
+            display: none; /* Hidden by default on mobile */
+            gap: var(--spacing-lg);
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: var(--spacing-xs) 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: flex; /* Show on mobile */
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 1001; /* Ensure it's above the menu when open */
+            position: relative;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .nav-toggle.active span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+        .nav-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle.active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+        
+        .lang-toggle-container {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .lang-button {
+            padding: 0.3rem 0.6rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.3rem;
+            background-color: transparent;
+            cursor: pointer;
+            font-family: var(--font-body);
+            font-size: var(--fs-small);
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .lang-button.active {
+            background-color: var(--primary-accent);
+            color: var(--bg-white);
+            border-color: var(--primary-accent);
+        }
+        .lang-button:hover:not(.active) {
+            background-color: var(--bg-light);
+            color: var(--primary-accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--bg-white);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: var(--spacing-xxl) 0;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-accent);
+            box-shadow: 0 10px 30px var(--shadow-medium);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, var(--fs-h1));
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .hero h2 {
+            font-size: clamp(1.5rem, 4vw, var(--fs-h2));
+            color: var(--primary-accent);
+            margin-bottom: var(--spacing-md);
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, var(--fs-body));
+            max-width: 800px;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+
+        .about-text {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+            justify-items: center;
+        }
+
+        .skill-category {
+            width: 100%;
+            max-width: 250px;
+            background-color: var(--bg-white);
+            border-radius: 0.5rem;
+            padding: var(--spacing-md);
+            box-shadow: 0 4px 10px var(--shadow-light);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px var(--shadow-medium);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-accent);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .skill-category ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--spacing-xs);
+        }
+
+        .skill-item {
+            background-color: var(--bg-light);
+            color: var(--text-secondary);
+            padding: 0.4rem var(--spacing-sm);
+            border-radius: 0.3rem;
+            font-size: var(--fs-small);
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column on mobile */
+            gap: var(--spacing-xl);
+        }
+
+        .project-card {
+            background-color: var(--bg-white);
+            border-radius: 0.8rem;
+            box-shadow: 0 5px 15px var(--shadow-light);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px var(--shadow-medium);
+            cursor: pointer;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px; /* Fixed height for consistency */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.03);
+        }
+
+        .project-info {
+            padding: var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            font-size: var(--fs-body);
+            flex-grow: 1;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+            margin-bottom: var(--spacing-md);
+            font-family: var(--font-monospace);
+            font-size: var(--fs-small);
+            color: var(--primary-accent);
+        }
+
+        .project-tech span {
+            background-color: var(--bg-light);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .project-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-top: auto; /* Push actions to bottom */
+        }
+        .project-actions .btn {
+            min-width: 100px;
+            font-size: var(--fs-small);
+            padding: 0.6rem 1rem;
+        }
+
+        /* Project Modal (Hidden by default) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 2000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            padding: var(--spacing-md);
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .modal-content {
+            background-color: var(--bg-white);
+            margin: 5% auto; /* 5% from the top and centered */
+            padding: var(--spacing-lg);
+            border-radius: 0.8rem;
+            max-width: 900px;
+            width: 90%;
+            box-shadow: 0 10px 30px var(--shadow-medium);
+            position: relative;
+            transform: translateY(-20px);
+            opacity: 0;
+            animation: slideIn 0.3s ease-out forwards;
+            max-height: 90vh; /* Limit height to prevent overflow */
+            overflow-y: auto; /* Enable scroll within modal content */
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: var(--fs-h3);
+        }
+
+        .close-button {
+            color: var(--text-secondary);
+            font-size: 2.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: var(--primary-accent);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .modal-features ul {
+            list-style: disc;
+            margin-left: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-secondary);
+        }
+
+        .modal-features ul li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .modal-tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+            font-family: var(--font-monospace);
+            font-size: var(--fs-small);
+        }
+        .modal-tech-list span {
+            background-color: var(--bg-light);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.3rem;
+            border: 1px solid var(--border-color);
+            color: var(--primary-accent);
+        }
+
+        .modal-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+            justify-content: flex-end; /* Align buttons to the right */
+        }
+
+        /* Experience Section */
+        .experience-timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-md) 0;
+        }
+
+        .experience-timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--border-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            padding: var(--spacing-xl) var(--spacing-md);
+            position: relative;
+            width: 100%; /* Full width on mobile */
+            text-align: center; /* Center content on mobile */
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: calc(50% - 10px); /* Center on mobile timeline */
+            background-color: var(--primary-accent);
+            border: 4px solid var(--bg-white);
+            top: 40px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 0 3px var(--primary-accent);
+        }
+
+        .timeline-content {
+            background-color: var(--bg-white);
+            padding: var(--spacing-lg);
+            border-radius: 0.8rem;
+            box-shadow: 0 4px 10px var(--shadow-light);
+            position: relative;
+            border-left: 4px solid var(--primary-accent); /* Default for mobile */
+            transform: translateY(15px); /* Animation for mobile */
+            opacity: 0;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        }
+        /* No right border for mobile, always left */
+
+        .timeline-item.is-visible .timeline-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .timeline-content h3 {
+            color: var(--primary-accent);
+            margin-bottom: var(--spacing-xs);
+        }
+        .timeline-content p {
+            font-weight: 500;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+
+        .timeline-content ul {
+            list-style: none; /* remove default disc */
+            padding-left: 0;
+            text-align: left; /* Default for mobile */
+        }
+
+        .timeline-content ul li {
+            margin-bottom: var(--spacing-xs);
+            position: relative;
+            padding-left: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+        .timeline-content ul li::before {
+            content: '•'; /* Custom bullet point */
+            color: var(--primary-accent);
+            position: absolute;
+            left: 0;
+        }
+
+
+        /* Education Section (Similar to experience but simpler) */
+        .education-item {
+            background-color: var(--bg-white);
+            padding: var(--spacing-lg);
+            border-radius: 0.8rem;
+            box-shadow: 0 4px 10px var(--shadow-light);
+            max-width: 600px;
+            margin: 0 auto var(--spacing-lg) auto;
+            text-align: center;
+            opacity: 0; /* For scroll animations */
+            transform: translateY(20px); /* For scroll animations */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .education-item.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .education-item h3 {
+            color: var(--primary-accent);
+        }
+        .education-item p {
+            color: var(--text-secondary);
+            margin: 0;
+            font-weight: 500;
+        }
+
+
+        /* Contact Section */
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+
+        .contact-intro {
+            max-width: 700px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: var(--fs-body);
+            color: var(--text-primary);
+        }
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary-accent);
+            min-width: 25px; /* Ensure icon has consistent space */
+            text-align: center;
+        }
+
+        .contact-form-wrapper {
+            background-color: var(--bg-white);
+            padding: var(--spacing-xl);
+            border-radius: 0.8rem;
+            box-shadow: 0 5px 15px var(--shadow-light);
+            width: 100%;
+            max-width: 600px;
+            margin-top: var(--spacing-lg); /* Add space if form is separate */
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-primary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: var(--spacing-sm);
+            border: 1px solid var(--border-color);
+            border-radius: 0.3rem;
+            font-family: var(--font-body);
+            font-size: var(--fs-body);
+            color: var(--text-primary);
+            background-color: var(--bg-white);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: var(--spacing-md);
+        }
+
+
+        /* Footer */
+        .footer {
+            background-color: var(--text-primary);
+            color: var(--bg-light);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .footer .logo {
+            color: var(--bg-white);
+            margin-bottom: var(--spacing-md);
+            display: inline-block; /* to apply margin-bottom */
+        }
+        .footer .logo span {
+             color: var(--primary-accent);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--bg-light);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-accent);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .social-link {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background-color: var(--bg-light);
+            color: var(--text-primary);
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--primary-accent);
+            color: var(--bg-white);
+        }
+
+        .footer p {
+            font-size: var(--fs-small);
+            margin: 0;
+            color: var(--border-color);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Scrollbar Styling (Optional, for better aesthetics) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-accent);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-accent);
+        }
+
+
+        /* Media Queries for Responsiveness */
+
+        /* Tablets and larger (>= 768px) */
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: none; /* Hide toggle on larger screens */
+            }
+
+            .hero-content {
+                flex-direction: row;
+                text-align: left;
+                gap: var(--spacing-xxl);
+            }
+
+            .hero-text {
+                flex: 1;
+            }
+
+            .hero-image-wrapper {
+                flex-shrink: 0;
+            }
+
+            .hero-actions {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: var(--spacing-lg);
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+            }
+
+            .experience-timeline::after {
+                left: 50%;
+            }
+
+            .timeline-item {
+                width: 50%;
+                padding-left: var(--spacing-xl); /* Adjusted for items on left side */
+                padding-right: var(--spacing-md);
+                text-align: right; /* Default for left side item */
+            }
+            /* Specific overrides for right-aligned items */
+            .timeline-item:nth-child(even) { /* Items on the right side */
+                left: 50%;
+                padding-right: var(--spacing-xl);
+                padding-left: var(--spacing-md);
+                text-align: left;
+            }
+
+            .timeline-item::after {
+                left: calc(50% - 10px); /* Center dot on timeline */
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content {
+                border-left: 4px solid var(--primary-accent);
+                border-right: none;
+                transform: translateX(-15px); /* Start off-center for animation */
+            }
+            .timeline-item:nth-child(even) .timeline-content {
+                border-left: none;
+                border-right: 4px solid var(--primary-accent);
+                transform: translateX(15px); /* Start off-center for animation */
+            }
+            .timeline-item.is-visible .timeline-content {
+                transform: translateX(0);
+            }
+            .timeline-content ul {
+                text-align: left; /* Keep bullet points aligned left */
+            }
+
+            .contact-content {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                gap: var(--spacing-xxl);
+            }
+
+            .contact-intro, .contact-details, .contact-form-wrapper {
+                flex: 1;
+                max-width: none; /* Allow flex to control width */
+            }
+            .contact-intro {
+                text-align: left;
+            }
+            .contact-form-wrapper {
+                margin-top: 0;
+            }
+        }
+
+        /* Desktops and larger (>= 1024px) */
+        @media (min-width: 1024px) {
+            h1 { font-size: var(--fs-h1); }
+            h2 { font-size: var(--fs-h2); }
+            h3 { font-size: var(--fs-h3); }
+            p { font-size: var(--fs-body); }
+
+            .hero h1 {
+                font-size: var(--fs-h1);
+            }
+            .hero h2 {
+                font-size: var(--fs-h2);
+            }
+            .hero p {
+                font-size: var(--fs-body);
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: var(--spacing-xl);
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(3, 1fr); /* Three columns on desktops */
+            }
+            .modal-content {
+                width: 80%;
+            }
+        }
+
+        /* Mobile navigation overlay */
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(100%); /* Start off-screen */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-nav-overlay.active {
+            transform: translateX(0); /* Slide in */
+        }
+
+        .mobile-nav-overlay .nav-links {
+            flex-direction: column;
+            text-align: center;
+            gap: var(--spacing-xxl);
+            display: flex; /* Override display:none from media query */
+        }
+
+        .mobile-nav-overlay .nav-links a {
+            font-size: var(--fs-h2); /* Larger links for mobile */
+            color: var(--bg-white);
+        }
+
+        .mobile-nav-overlay .nav-links a::after {
+            background-color: var(--secondary-accent);
+        }
+        /* Language Toggle Styling */
+        .lang-toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: auto; /* Push to the right if space allows */
+            margin-right: var(--spacing-md); /* Space from nav toggle */
+        }
+        @media (min-width: 768px) {
+            .lang-toggle-container {
+                margin-right: 0; /* No need for margin if nav is visible */
+                order: 2; /* Position after logo, before nav links */
+            }
+            .nav-content {
+                justify-content: flex-start;
+                gap: var(--spacing-lg);
+            }
+            .nav-links {
+                order: 3; /* Position after lang switcher */
+                flex-grow: 1; /* Take remaining space */
+                justify-content: flex-end; /* Push links to the right */
+            }
+        }
+        
+        /* Hide elements by language */
+        .lang-en { display: none; }
+        .lang-th { display: none; }
+
+        html[lang="en"] .lang-en { display: block; }
+        html[lang="th"] .lang-th { display: block; }
+
+        /* Specific override for flex containers */
+        html[lang="en"] .flex-lang-en { display: flex; }
+        html[lang="th"] .flex-lang-th { display: flex; }
+
+        /* Override for block elements that are children of flex/grid */
+        html[lang="en"] .block-lang-en { display: block; }
+        html[lang="th"] .block-lang-th { display: block; }
+
+        /* Override for inline-block elements that are children of flex/grid */
+        html[lang="en"] .inline-block-lang-en { display: inline-block; }
+        html[lang="th"] .inline-block-lang-th { display: inline-block; }
+
+        /* For buttons and links which are inline-flex */
+        html[lang="en"] .btn.lang-en { display: inline-flex; }
+        html[lang="th"] .btn.lang-th { display: inline-flex; }
+        html[lang="en"] .lang-switcher button.lang-en { display: inline-block; }
+        html[lang="th"] .lang-switcher button.lang-th { display: inline-block; }
+
+
+    </style>
+</head>
+<body>
+    <header class="header-top">
+        <div class="container nav-content">
+            <a href="#" class="logo">Jakkrit<span>.dev</span></a>
+            <div class="lang-toggle-container">
+                <button class="lang-button active" data-lang-switcher="en">EN</button>
+                <button class="lang-button" data-lang-switcher="th">TH</button>
+            </div>
+            <nav class="nav-links">
+                <a href="#about" class="lang-en">About</a>
+                <a href="#about" class="lang-th">เกี่ยวกับ</a>
+                <a href="#skills" class="lang-en">Skills</a>
+                <a href="#skills" class="lang-th">ทักษะ</a>
+                <a href="#projects" class="lang-en">Projects</a>
+                <a href="#projects" class="lang-th">โปรเจกต์</a>
+                <a href="#experience" class="lang-en">Experience</a>
+                <a href="#experience" class="lang-th">ประสบการณ์</a>
+                <a href="#education" class="lang-en">Education</a>
+                <a href="#education" class="lang-th">การศึกษา</a>
+                <a href="#contact" class="lang-en">Contact</a>
+                <a href="#contact" class="lang-th">ติดต่อ</a>
+            </nav>
+            <div class="nav-toggle" role="button" aria-label="Toggle navigation" aria-controls="mobile-nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobile-nav">
+            <nav class="nav-links">
+                <a href="#about" class="lang-en">About</a>
+                <a href="#about" class="lang-th">เกี่ยวกับ</a>
+                <a href="#skills" class="lang-en">Skills</a>
+                <a href="#skills" class="lang-th">ทักษะ</a>
+                <a href="#projects" class="lang-en">Projects</a>
+                <a href="#projects" class="lang-th">โปรเจกต์</a>
+                <a href="#experience" class="lang-en">Experience</a>
+                <a href="#experience" class="lang-th">ประสบการณ์</a>
+                <a href="#education" class="lang-en">Education</a>
+                <a href="#education" class="lang-th">การศึกษา</a>
+                <a href="#contact" class="lang-en">Contact</a>
+                <a href="#contact" class="lang-th">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-content">
+                <div class="hero-image-wrapper">
+                    <img src="https://i.postimg.cc/JsR904X2/Jakkrit-Lekprasan.jpg" alt="Jakkrit Lekprasan Profile" class="profile-image" loading="eager">
+                </div>
+                <div class="hero-text">
+                    <h1 class="lang-en block-lang-en">Jakkrit Lekprasan</h1>
+                    <h1 class="lang-th block-lang-th">จักรพฤกษ์ เล็กประเสริฐ</h1>
+                    <h2 class="lang-en block-lang-en">Full-Stack Web Developer | Crafting Dynamic and Scalable Web Applications</h2>
+                    <h2 class="lang-th block-lang-th">นักพัฒนาเว็บ Full-Stack | สร้างเว็บแอปพลิเคชันแบบไดนามิกและปรับขนาดได้</h2>
+                    <p class="lang-en block-lang-en">Passionate about building intuitive user interfaces and robust backend systems, I transform complex ideas into efficient, user-friendly web solutions.</p>
+                    <p class="lang-th block-lang-th">ผมหลงใหลในการสร้างส่วนติดต่อผู้ใช้ที่ใช้งานง่ายและระบบแบ็กเอนด์ที่แข็งแกร่ง ผมเปลี่ยนแนวคิดที่ซับซ้อนให้เป็นโซลูชันเว็บที่มีประสิทธิภาพและใช้งานง่าย</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary btn-lang-en">View My Projects</a>
+                        <a href="#projects" class="btn btn-primary btn-lang-th">ดูโปรเจกต์ของฉัน</a>
+                        <a href="#contact" class="btn btn-secondary btn-lang-en">Contact Me</a>
+                        <a href="#contact" class="btn btn-secondary btn-lang-th">ติดต่อฉัน</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-heading lang-en block-lang-en">About Jakkrit Lekprasan</h2>
+                <h2 class="section-heading lang-th block-lang-th">เกี่ยวกับ จักรพฤกษ์ เล็กประเสริฐ</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lang-en block-lang-en">As a dedicated Full-Stack Developer, I specialize in leveraging modern web technologies like <strong>React.js, Node.js, Express.js</strong>, and a strong command over both <strong>SQL and NoSQL databases</strong> (MongoDB, SQL Server, MySQL).</p>
+                        <p class="lang-th block-lang-th">ในฐานะนักพัฒนา Full-Stack ที่ทุ่มเท ผมเชี่ยวชาญในการใช้ประโยชน์จากเทคโนโลยีเว็บสมัยใหม่ เช่น <strong>React.js, Node.js, Express.js</strong> และมีความเชี่ยวชาญใน <strong>ฐานข้อมูลทั้งแบบ SQL และ NoSQL</strong> (MongoDB, SQL Server, MySQL)</p>
+
+                        <p class="lang-en block-lang-en">My experience in developing and deploying dynamic web applications, from front-end design to API development and database integration, has equipped me to manage full application lifecycles efficiently.</p>
+                        <p class="lang-th block-lang-th">ประสบการณ์ของผมในการพัฒนาและปรับใช้เว็บแอปพลิเคชันแบบไดนามิก ตั้งแต่การออกแบบส่วนหน้า การพัฒนา API และการรวมฐานข้อมูล ทำให้ผมสามารถจัดการวงจรชีวิตของแอปพลิเคชันได้อย่างมีประสิทธิภาพ</p>
+
+                        <p class="lang-en block-lang-en">I thrive on transforming complex requirements into user-friendly and robust solutions, driven by a passion for continuous learning and problem-solving. I'm eager to contribute to innovative projects and collaborate with forward-thinking teams to build the next generation of web experiences.</p>
+                        <p class="lang-th block-lang-th">ผมมีความสุขกับการเปลี่ยนความต้องการที่ซับซ้อนให้เป็นโซลูชันที่ใช้งานง่ายและแข็งแกร่ง ด้วยความมุ่งมั่นในการเรียนรู้อย่างต่อเนื่องและการแก้ไขปัญหา ผมกระตือรือร้นที่จะมีส่วนร่วมในโครงการนวัตกรรมและร่วมมือกับทีมที่มีวิสัยทัศน์เพื่อสร้างประสบการณ์เว็บยุคใหม่</p>
+
+                        <p class="lang-en block-lang-en">My IT Support background at <strong>PTT ICT Solutions</strong> further hones my problem-solving skills and foundational understanding of IT infrastructure.</p>
+                        <p class="lang-th block-lang-th">ประสบการณ์ในการสนับสนุนด้าน IT ที่ <strong>PTT ICT Solutions</strong> ช่วยเสริมสร้างทักษะการแก้ไขปัญหาและความเข้าใจพื้นฐานเกี่ยวกับโครงสร้างพื้นฐานด้าน IT ของผม</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-heading lang-en block-lang-en">Technical Expertise</h2>
+                <h2 class="section-heading lang-th block-lang-th">ความเชี่ยวชาญด้านเทคนิค</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="lang-en block-lang-en">Frontend Development</h3>
+                        <h3 class="lang-th block-lang-th">การพัฒนาส่วนหน้า</h3>
+                        <ul>
+                            <li class="skill-item">React.js</li>
+                            <li class="skill-item">HTML5</li>
+                            <li class="skill-item">CSS3</li>
+                            <li class="skill-item">JavaScript (ES6+)</li>
+                            <li class="skill-item">Redux</li>
+                            <li class="skill-item">Tailwind CSS</li>
+                            <li class="skill-item">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="lang-en block-lang-en">Backend Development</h3>
+                        <h3 class="lang-th block-lang-th">การพัฒนาส่วนหลัง</h3>
+                        <ul>
+                            <li class="skill-item">Node.js</li>
+                            <li class="skill-item">Express.js</li>
+                            <li class="skill-item">RESTful APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="lang-en block-lang-en">Database Management</h3>
+                        <h3 class="lang-th block-lang-th">การจัดการฐานข้อมูล</h3>
+                        <ul>
+                            <li class="skill-item">MongoDB</li>
+                            <li class="skill-item">SQL Server</li>
+                            <li class="skill-item">MySQL</li>
+                            <li class="skill-item">SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="lang-en block-lang-en">Version Control & Tools</h3>
+                        <h3 class="lang-th block-lang-th">การควบคุมเวอร์ชันและเครื่องมือ</h3>
+                        <ul>
+                            <li class="skill-item">Git</li>
+                            <li class="skill-item">GitHub</li>
+                            <li class="skill-item">Postman</li>
+                            <li class="skill-item">Figma</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="lang-en block-lang-en">Cloud & Deployment</h3>
+                        <h3 class="lang-th block-lang-th">คลาวด์และการปรับใช้</h3>
+                        <ul>
+                            <li class="skill-item">Heroku</li>
+                            <li class="skill-item">Docker (Familiarity)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="lang-en block-lang-en">Other Technologies</h3>
+                        <h3 class="lang-th block-lang-th">เทคโนโลยีอื่นๆ</h3>
+                        <ul>
+                            <li class="skill-item">C# (Familiarity)</li>
+                            <li class="skill-item">PHP (Familiarity)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-heading lang-en block-lang-en">Featured Projects</h2>
+                <h2 class="section-heading lang-th block-lang-th">โปรเจกต์เด่น</h2>
+                <div class="projects-grid">
+
+                    <!-- Project 1: PIM System -->
+                    <div class="project-card" data-project-id="pim">
+                        <img src="https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=PIM+System" alt="PIM System Screenshot" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3 class="lang-en block-lang-en">PIM System (Product Information Management)</h3>
+                            <h3 class="lang-th block-lang-th">ระบบ PIM (การจัดการข้อมูลผลิตภัณฑ์)</h3>
+                            <p class="project-description lang-en block-lang-en">A robust system designed to centralize and manage product data, streamlining product information workflows for businesses.</p>
+                            <p class="project-description lang-th block-lang-th">ระบบที่แข็งแกร่งออกแบบมาเพื่อรวมศูนย์และจัดการข้อมูลผลิตภัณฑ์ ทำให้ขั้นตอนการทำงานของข้อมูลผลิตภัณฑ์สำหรับธุรกิจมีความคล่องตัว</p>
+                            <div class="project-tech">
+                                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-en" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-th" target="_blank" rel="noopener noreferrer">สาธิตสด</a>
+                                <a href="https://github.com/jakkrit_lekprasan/pim-system" class="btn btn-secondary btn-lang-en" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                <a href="https://github.com/jakkrit_lekprasan/pim-system" class="btn btn-secondary btn-lang-th" target="_blank" rel="noopener noreferrer">คลัง GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: E-commerce Website -->
+                    <div class="project-card" data-project-id="ecommerce">
+                        <img src="https://via.placeholder.com/600x400/60A5FA/FFFFFF?text=E-commerce+Website" alt="E-commerce Website Screenshot" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3 class="lang-en block-lang-en">E-commerce Website</h3>
+                            <h3 class="lang-th block-lang-th">เว็บไซต์อีคอมเมิร์ซ</h3>
+                            <p class="project-description lang-en block-lang-en">A fully functional online store platform facilitating product browsing, purchasing, and order management.</p>
+                            <p class="project-description lang-th block-lang-th">แพลตฟอร์มร้านค้าออนไลน์ที่ใช้งานได้เต็มรูปแบบ อำนวยความสะดวกในการเลือกดูสินค้า การซื้อ และการจัดการคำสั่งซื้อ</p>
+                            <div class="project-tech">
+                                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Redux</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-en" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-th" target="_blank" rel="noopener noreferrer">สาธิตสด</a>
+                                <a href="https://github.com/jakkrit_lekprasan/ecommerce" class="btn btn-secondary btn-lang-en" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                <a href="https://github.com/jakkrit_lekprasan/ecommerce" class="btn btn-secondary btn-lang-th" target="_blank" rel="noopener noreferrer">คลัง GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Student Management System -->
+                    <div class="project-card" data-project-id="student-management">
+                        <img src="https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Student+Management" alt="Student Management System Screenshot" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3 class="lang-en block-lang-en">Student Management System</h3>
+                            <h3 class="lang-th block-lang-th">ระบบจัดการนักศึกษา</h3>
+                            <p class="project-description lang-en block-lang-en">A web application for managing student records, courses, and academic performance within an educational institution.</p>
+                            <p class="project-description lang-th block-lang-th">เว็บแอปพลิเคชันสำหรับจัดการข้อมูลนักศึกษา รายวิชา และผลการเรียนภายในสถาบันการศึกษา</p>
+                            <div class="project-tech">
+                                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-en" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-th" target="_blank" rel="noopener noreferrer">สาธิตสด</a>
+                                <a href="https://github.com/jakkrit_lekprasan/student-management-system" class="btn btn-secondary btn-lang-en" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                <a href="https://github.com/jakkrit_lekprasan/student-management-system" class="btn btn-secondary btn-lang-th" target="_blank" rel="noopener noreferrer">คลัง GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Online Library -->
+                    <div class="project-card" data-project-id="online-library">
+                        <img src="https://via.placeholder.com/600x400/60A5FA/FFFFFF?text=Online+Library" alt="Online Library Screenshot" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3 class="lang-en block-lang-en">Online Library</h3>
+                            <h3 class="lang-th block-lang-th">ห้องสมุดออนไลน์</h3>
+                            <p class="project-description lang-en block-lang-en">A digital platform for managing library resources, allowing users to browse, search, and (potentially) borrow books virtually.</p>
+                            <p class="project-description lang-th block-lang-th">แพลตฟอร์มดิจิทัลสำหรับจัดการทรัพยากรห้องสมุด ช่วยให้ผู้ใช้สามารถเรียกดู ค้นหา และอาจยืมหนังสือได้เสมือนจริง</p>
+                            <div class="project-tech">
+                                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>SQL Server</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-en" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-th" target="_blank" rel="noopener noreferrer">สาธิตสด</a>
+                                <a href="https://github.com/jakkrit_lekprasan/online-library" class="btn btn-secondary btn-lang-en" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                <a href="https://github.com/jakkrit_lekprasan/online-library" class="btn btn-secondary btn-lang-th" target="_blank" rel="noopener noreferrer">คลัง GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Online Food Ordering -->
+                    <div class="project-card" data-project-id="food-ordering">
+                        <img src="https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Food+Ordering" alt="Online Food Ordering Screenshot" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3 class="lang-en block-lang-en">Online Food Ordering</h3>
+                            <h3 class="lang-th block-lang-th">การสั่งอาหารออนไลน์</h3>
+                            <p class="project-description lang-en block-lang-en">A web application enabling users to browse restaurant menus, place orders, and manage deliveries.</p>
+                            <p class="project-description lang-th block-lang-th">เว็บแอปพลิเคชันที่ช่วยให้ผู้ใช้สามารถเรียกดูเมนูร้านอาหาร สั่งซื้อ และจัดการการจัดส่งได้</p>
+                            <div class="project-tech">
+                                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-en" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="javascript:void(0);" class="btn btn-primary btn-lang-th" target="_blank" rel="noopener noreferrer">สาธิตสด</a>
+                                <a href="https://github.com/jakkrit_lekprasan/online-food-ordering" class="btn btn-secondary btn-lang-en" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                <a href="https://github.com/jakkrit_lekprasan/online-food-ordering" class="btn btn-secondary btn-lang-th" target="_blank" rel="noopener noreferrer">คลัง GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modal Structure -->
+        <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-project-title" class="lang-en">Project Title</h2>
+                    <h2 id="modal-project-title-th" class="lang-th">ชื่อโปรเจกต์</h2>
+                    <span class="close-button" aria-label="Close modal">&times;</span>
+                </div>
+                <img src="" alt="Project Image" id="modal-project-image" class="modal-image" loading="lazy">
+                <h3 class="lang-en block-lang-en">Overview</h3>
+                <h3 class="lang-th block-lang-th">ภาพรวม</h3>
+                <p id="modal-project-description" class="lang-en block-lang-en"></p>
+                <p id="modal-project-description-th" class="lang-th block-lang-th"></p>
+                <h3 class="lang-en block-lang-en">Key Features</h3>
+                <h3 class="lang-th block-lang-th">คุณสมบัติหลัก</h3>
+                <ul id="modal-project-features">
+                    <!-- Features will be dynamically loaded here -->
+                </ul>
+                <h3 class="lang-en block-lang-en">Technologies Used</h3>
+                <h3 class="lang-th block-lang-th">เทคโนโลยีที่ใช้</h3>
+                <div id="modal-project-tech" class="modal-tech-list">
+                    <!-- Technologies will be dynamically loaded here -->
+                </div>
+                <div class="modal-actions">
+                    <a href="#" id="modal-live-demo" class="btn btn-primary btn-lang-en" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a href="#" id="modal-live-demo-th" class="btn btn-primary btn-lang-th" target="_blank" rel="noopener noreferrer">สาธิตสด</a>
+                    <a href="#" id="modal-github-repo" class="btn btn-secondary btn-lang-en" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                    <a href="#" id="modal-github-repo-th" class="btn btn-secondary btn-lang-th" target="_blank" rel="noopener noreferrer">คลัง GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-heading lang-en block-lang-en">Professional Experience</h2>
+                <h2 class="section-heading lang-th block-lang-th">ประสบการณ์ทำงาน</h2>
+                <div class="experience-timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="lang-en block-lang-en">Web Developer</h3>
+                            <h3 class="lang-th block-lang-th">นักพัฒนาเว็บ</h3>
+                            <p class="lang-en block-lang-en">Thai-Nichi Institute of Technology (TNI) | March 2023 – August 2023 (6 months)</p>
+                            <p class="lang-th block-lang-th">สถาบันเทคโนโลยีไทย-ญี่ปุ่น (TNI) | มีนาคม 2566 – สิงหาคม 2566 (6 เดือน)</p>
+                            <ul>
+                                <li class="lang-en block-lang-en">Developed and maintained dynamic full-stack web applications utilizing React.js for intuitive user interfaces and Node.js/Express.js for robust backend systems.</li>
+                                <li class="lang-th block-lang-th">พัฒนาและดูแลเว็บแอปพลิเคชันแบบ Full-Stack ที่ใช้งานได้หลากหลาย โดยใช้ React.js สำหรับส่วนติดต่อผู้ใช้ที่ใช้งานง่าย และ Node.js/Express.js สำหรับระบบหลังบ้านที่แข็งแกร่ง</li>
+                                <li class="lang-en block-lang-en">Designed and implemented RESTful APIs, seamlessly integrating with MongoDB to manage complex database operations.</li>
+                                <li class="lang-th block-lang-th">ออกแบบและนำ RESTful API มาใช้งาน โดยผสานรวมกับ MongoDB อย่างราบรื่นเพื่อจัดการการทำงานของฐานข้อมูลที่ซับซ้อน</li>
+                                <li class="lang-en block-lang-en">Collaborated effectively with cross-functional teams, contributing to the definition, design, and successful deployment of new features.</li>
+                                <li class="lang-th block-lang-th">ร่วมมือกับทีมข้ามสายงานอย่างมีประสิทธิภาพ มีส่วนร่วมในการกำหนด ออกแบบ และปรับใช้คุณสมบัติใหม่ๆ ได้สำเร็จ</li>
+                                <li class="lang-en block-lang-en">Optimized application performance and ensured responsiveness across various devices, enhancing overall user experience.</li>
+                                <li class="lang-th block-lang-th">เพิ่มประสิทธิภาพของแอปพลิเคชันและรับรองการตอบสนองบนอุปกรณ์ต่างๆ ซึ่งช่วยปรับปรุงประสบการณ์ผู้ใช้โดยรวม</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="lang-en block-lang-en">IT Support</h3>
+                            <h3 class="lang-th block-lang-th">เจ้าหน้าที่สนับสนุนด้านไอที</h3>
+                            <p class="lang-en block-lang-en">PTT ICT Solutions | May 2022 – July 2022 (3 months)</p>
+                            <p class="lang-th block-lang-th">PTT ICT Solutions | พฤษภาคม 2565 – กรกฎาคม 2565 (3 เดือน)</p>
+                            <ul>
+                                <li class="lang-en block-lang-en">Provided timely technical assistance and support to users, troubleshooting issues related to computer systems, hardware, and software.</li>
+                                <li class="lang-th block-lang-th">ให้ความช่วยเหลือและสนับสนุนด้านเทคนิคแก่ผู้ใช้งานอย่างทันท่วงที แก้ไขปัญหาที่เกี่ยวข้องกับระบบคอมพิวเตอร์ ฮาร์ดแวร์ และซอฟต์แวร์</li>
+                                <li class="lang-en block-lang-en">Diagnosed and resolved network issues, ensuring the smooth operation and stability of critical IT infrastructure.</li>
+                                <li class="lang-th block-lang-th">วินิจฉัยและแก้ไขปัญหาเครือข่าย เพื่อให้มั่นใจถึงการทำงานที่ราบรื่นและเสถียรของโครงสร้างพื้นฐานด้านไอทีที่สำคัญ</li>
+                                <li class="lang-en block-lang-en">Maintained detailed and accurate records of support requests and resolutions, contributing to efficient IT service management.</li>
+                                <li class="lang-th block-lang-th">ดูแลบันทึกคำขอรับการสนับสนุนและการแก้ไขปัญหาอย่างละเอียดและถูกต้อง ซึ่งมีส่วนช่วยในการจัดการบริการไอทีอย่างมีประสิทธิภาพ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <h2 class="section-heading lang-en block-lang-en">Education</h2>
+                <h2 class="section-heading lang-th block-lang-th">การศึกษา</h2>
+                <div class="education-item">
+                    <h3 class="lang-en block-lang-en">Bachelor of Information Technology</h3>
+                    <h3 class="lang-th block-lang-th">ปริญญาตรีเทคโนโลยีสารสนเทศ</h3>
+                    <p class="lang-en block-lang-en">Thai-Nichi Institute of Technology | 2019 – 2023</p>
+                    <p class="lang-th block-lang-th">สถาบันเทคโนโลยีไทย-ญี่ปุ่น | 2562 – 2566</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container contact-content">
+                <div class="contact-intro">
+                    <h2 class="section-heading lang-en block-lang-en">Get in Touch</h2>
+                    <h2 class="section-heading lang-th block-lang-th">ติดต่อฉัน</h2>
+                    <p class="lang-en block-lang-en">I'm always open to discussing new projects, collaboration opportunities, or full-time roles. Feel free to reach out!</p>
+                    <p class="lang-th block-lang-th">ผมพร้อมเสมอที่จะพูดคุยเกี่ยวกับโปรเจกต์ใหม่ๆ โอกาสในการร่วมมือ หรือตำแหน่งงานเต็มเวลา โปรดอย่าลังเลที่จะติดต่อมา!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:jakkrit.lekprasan@email.com" class="lang-en block-lang-en">jakkrit.lekprasan@email.com</a>
+                            <a href="mailto:jakkrit.lekprasan@email.com" class="lang-th block-lang-th">jakkrit.lekprasan@email.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" class="lang-en block-lang-en">LinkedIn Profile</a>
+                            <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" class="lang-th block-lang-th">โปรไฟล์ LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer" class="lang-en block-lang-en">GitHub Profile</a>
+                            <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer" class="lang-th block-lang-th">โปรไฟล์ GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="#" method="POST"> <!-- Replace '#' with your form submission endpoint -->
+                        <div class="form-group">
+                            <label for="name" class="lang-en block-lang-en">Name</label>
+                            <label for="name" class="lang-th block-lang-th">ชื่อ</label>
+                            <input type="text" id="name" name="name" required class="lang-en" placeholder="Your Name">
+                            <input type="text" id="name-th" name="name" required class="lang-th" placeholder="ชื่อของคุณ">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="lang-en block-lang-en">Email</label>
+                            <label for="email" class="lang-th block-lang-th">อีเมล</label>
+                            <input type="email" id="email" name="email" required class="lang-en" placeholder="your.email@example.com">
+                            <input type="email" id="email-th" name="email" required class="lang-th" placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="lang-en block-lang-en">Subject</label>
+                            <label for="subject" class="lang-th block-lang-th">หัวข้อ</label>
+                            <input type="text" id="subject" name="subject" required class="lang-en" placeholder="Project Inquiry, Collaboration, etc.">
+                            <input type="text" id="subject-th" name="subject" required class="lang-th" placeholder="สอบถามโปรเจกต์, ความร่วมมือ, ฯลฯ">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="lang-en block-lang-en">Message</label>
+                            <label for="message" class="lang-th block-lang-th">ข้อความ</label>
+                            <textarea id="message" name="message" required class="lang-en" placeholder="Tell me about your project or opportunity..."></textarea>
+                            <textarea id="message-th" name="message" required class="lang-th" placeholder="เล่าให้ผมฟังเกี่ยวกับโปรเจกต์หรือโอกาสของคุณ..."></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-lang-en">Send Message</button>
+                            <button type="submit" class="btn btn-primary btn-lang-th">ส่งข้อความ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="logo">Jakkrit<span>.dev</span></a>
+            <div class="footer-links">
+                <a href="#about" class="lang-en">About</a>
+                <a href="#about" class="lang-th">เกี่ยวกับ</a>
+                <a href="#projects" class="lang-en">Projects</a>
+                <a href="#projects" class="lang-th">โปรเจกต์</a>
+                <a href="#contact" class="lang-en">Contact</a>
+                <a href="#contact" class="lang-th">ติดต่อ</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jakkrit-lekprasan-b04088243/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/jakkrit_lekprasan" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="lang-en block-lang-en">&copy; 2023 Jakkrit Lekprasan. All rights reserved.</p>
+            <p class="lang-th block-lang-th">&copy; 2566 จักรพฤกษ์ เล็กประเสริฐ. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <!-- FontAwesome for Icons (async load for performance) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" async></script>
+
+    <script>
+        // Project Data for Modal - Contains details for each project in both English and Thai
+        const projectsData = {
+            pim: {
+                en: {
+                    title: "PIM System (Product Information Management)",
+                    description: "Developed a comprehensive PIM system for centralized product data management. Key features include efficient CRUD operations, improved data consistency across platforms, and enhanced collaboration tools for product teams. Implemented robust user authentication and role-based access control to secure sensitive data. This project significantly reduces manual data entry errors and streamlines product lifecycle management.",
+                    features: [
+                        "Efficient data entry, updating, and retrieval of product details.",
+                        "Improved data consistency and reduced errors across platforms.",
+                        "Enhanced collaboration among product teams.",
+                        "User authentication and role-based access control.",
+                        "Centralized dashboard for product overview and management."
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Redux"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/pim-system", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/3B82F6/FFFFFF?text=PIM+System+Detail" // Replace with actual image
+                },
+                th: {
+                    title: "ระบบ PIM (การจัดการข้อมูลผลิตภัณฑ์)",
+                    description: "พัฒนาระบบ PIM ที่ครอบคลุมสำหรับการจัดการข้อมูลผลิตภัณฑ์แบบรวมศูนย์ คุณสมบัติหลักได้แก่ การดำเนินการ CRUD ที่มีประสิทธิภาพ การปรับปรุงความสอดคล้องของข้อมูลในแพลตฟอร์มต่างๆ และเครื่องมือการทำงานร่วมกันที่ดียิ่งขึ้นสำหรับทีมผลิตภัณฑ์ ได้นำการยืนยันตัวตนของผู้ใช้ที่แข็งแกร่งและการควบคุมการเข้าถึงตามบทบาทเพื่อรักษาความปลอดภัยของข้อมูลที่ละเอียดอ่อน โปรเจกต์นี้ช่วยลดข้อผิดพลาดในการป้อนข้อมูลด้วยมือได้อย่างมากและทำให้การจัดการวงจรชีวิตของผลิตภัณฑ์คล่องตัวขึ้น",
+                    features: [
+                        "การป้อนข้อมูล การอัปเดต และการดึงข้อมูลรายละเอียดผลิตภัณฑ์อย่างมีประสิทธิภาพ",
+                        "ปรับปรุงความสอดคล้องของข้อมูลและลดข้อผิดพลาดในแพลตฟอร์มต่างๆ",
+                        "เพิ่มประสิทธิภาพการทำงานร่วมกันระหว่างทีมผลิตภัณฑ์",
+                        "การยืนยันตัวตนผู้ใช้และการควบคุมการเข้าถึงตามบทบาท",
+                        "แดชบอร์ดแบบรวมศูนย์สำหรับภาพรวมและการจัดการผลิตภัณฑ์"
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Redux"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/pim-system", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/3B82F6/FFFFFF?text=PIM+System+Detail" // Replace with actual image
+                }
+            },
+            ecommerce: {
+                en: {
+                    title: "E-commerce Website",
+                    description: "Built a full-featured e-commerce platform with robust user authentication, product catalog, shopping cart functionality, and an admin panel. Implemented secure checkout processes and various product management tools. This project demonstrates end-to-end web application development, focusing on user experience and administrative control.",
+                    features: [
+                        "User authentication (signup, login, profile management).",
+                        "Dynamic product catalog with search, filter, and sorting options.",
+                        "Shopping cart and order placement functionality.",
+                        "Secure checkout process (placeholder for payment integration).",
+                        "Admin panel for product management, order processing, and user management."
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Redux"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/ecommerce", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/60A5FA/FFFFFF?text=E-commerce+Detail" // Replace with actual image
+                },
+                th: {
+                    title: "เว็บไซต์อีคอมเมิร์ซ",
+                    description: "สร้างแพลตฟอร์มอีคอมเมิร์ซแบบเต็มรูปแบบ พร้อมการยืนยันตัวตนผู้ใช้ที่แข็งแกร่ง, แค็ตตาล็อกผลิตภัณฑ์, ฟังก์ชันตะกร้าสินค้า และแผงควบคุมสำหรับผู้ดูแลระบบ ได้นำกระบวนการชำระเงินที่ปลอดภัยและเครื่องมือจัดการผลิตภัณฑ์ต่างๆ มาใช้ โปรเจกต์นี้แสดงให้เห็นถึงการพัฒนาเว็บแอปพลิเคชันแบบครบวงจร โดยเน้นที่ประสบการณ์ผู้ใช้และการควบคุมการบริหารจัดการ",
+                    features: [
+                        "การยืนยันตัวตนผู้ใช้ (ลงทะเบียน, เข้าสู่ระบบ, การจัดการโปรไฟล์)",
+                        "แค็ตตาล็อกผลิตภัณฑ์แบบไดนามิกพร้อมตัวเลือกการค้นหา กรอง และจัดเรียง",
+                        "ฟังก์ชันตะกร้าสินค้าและการสั่งซื้อ",
+                        "กระบวนการชำระเงินที่ปลอดภัย (ส่วนสำหรับรวมระบบการชำระเงิน)",
+                        "แผงควบคุมสำหรับผู้ดูแลระบบเพื่อจัดการผลิตภัณฑ์ การประมวลผลคำสั่งซื้อ และการจัดการผู้ใช้"
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Redux"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/ecommerce", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/60A5FA/FFFFFF?text=E-commerce+Detail" // Replace with actual image
+                }
+            },
+            "student-management": {
+                en: {
+                    title: "Student Management System",
+                    description: "A comprehensive web application designed to streamline student record management, course registration, and academic performance tracking within an educational institution. It features CRUD operations for student profiles, course enrollment, and grade management, ensuring efficient data retrieval and secure access for administrative staff and students.",
+                    features: [
+                        "CRUD operations for student profiles, course registration, and grades.",
+                        "Efficient data retrieval for administrative staff.",
+                        "Secure access for students to view their own records.",
+                        "Course catalog and enrollment management.",
+                        "Grade submission and viewing capabilities."
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/student-management-system", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/3B82F6/FFFFFF?text=Student+Management+Detail" // Replace with actual image
+                },
+                th: {
+                    title: "ระบบจัดการนักศึกษา",
+                    description: "เว็บแอปพลิเคชันที่ครอบคลุมซึ่งออกแบบมาเพื่อปรับปรุงการจัดการบันทึกนักศึกษา การลงทะเบียนเรียน และการติดตามผลการเรียนภายในสถาบันการศึกษา มีการดำเนินการ CRUD สำหรับโปรไฟล์นักศึกษา การลงทะเบียนเรียน และการจัดการเกรด ทำให้มั่นใจได้ถึงการดึงข้อมูลที่มีประสิทธิภาพและการเข้าถึงที่ปลอดภัยสำหรับเจ้าหน้าที่ธุรการและนักศึกษา",
+                    features: [
+                        "การดำเนินการ CRUD สำหรับโปรไฟล์นักศึกษา การลงทะเบียนเรียน และเกรด",
+                        "การดึงข้อมูลที่มีประสิทธิภาพสำหรับเจ้าหน้าที่ธุรการ",
+                        "การเข้าถึงที่ปลอดภัยสำหรับนักศึกษาเพื่อดูบันทึกของตนเอง",
+                        "การจัดการแค็ตตาล็อกหลักสูตรและการลงทะเบียน",
+                        "ความสามารถในการส่งและดูเกรด"
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/student-management-system", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/3B82F6/FFFFFF?text=Student+Management+Detail" // Replace with actual image
+                }
+            },
+            "online-library": {
+                en: {
+                    title: "Online Library",
+                    description: "A digital platform for managing library resources, allowing users to browse, search, and (potentially) borrow books virtually. This system enhances accessibility to library resources with user authentication for borrowing/reserving books and an admin panel for comprehensive management of books, users, and borrowing history.",
+                    features: [
+                        "Book catalog with advanced search and filter options.",
+                        "User authentication for borrowing/reserving books.",
+                        "Admin panel for managing books, users, and borrowing history.",
+                        "Improved accessibility to library resources.",
+                        "Responsive design for seamless access across devices."
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "SQL Server", "Tailwind CSS"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/online-library", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/60A5FA/FFFFFF?text=Online+Library+Detail" // Replace with actual image
+                },
+                th: {
+                    title: "ห้องสมุดออนไลน์",
+                    description: "แพลตฟอร์มดิจิทัลสำหรับการจัดการทรัพยากรห้องสมุด ช่วยให้ผู้ใช้สามารถเรียกดู ค้นหา และอาจยืมหนังสือได้เสมือนจริง ระบบนี้ช่วยเพิ่มการเข้าถึงทรัพยากรห้องสมุดด้วยการยืนยันตัวตนผู้ใช้สำหรับการยืม/จองหนังสือ และแผงควบคุมสำหรับผู้ดูแลระบบสำหรับการจัดการหนังสือ ผู้ใช้ และประวัติการยืมอย่างครอบคลุม",
+                    features: [
+                        "แค็ตตาล็อกหนังสือพร้อมตัวเลือกการค้นหาและตัวกรองขั้นสูง",
+                        "การยืนยันตัวตนผู้ใช้สำหรับการยืม/จองหนังสือ",
+                        "แผงควบคุมสำหรับผู้ดูแลระบบเพื่อจัดการหนังสือ ผู้ใช้ และประวัติการยืม",
+                        "ปรับปรุงการเข้าถึงทรัพยากรห้องสมุด",
+                        "การออกแบบที่ตอบสนองเพื่อให้เข้าถึงได้อย่างราบรื่นบนอุปกรณ์ต่างๆ"
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "SQL Server", "Tailwind CSS"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/online-library", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/60A5FA/FFFFFF?text=Online+Library+Detail" // Replace with actual image
+                }
+            },
+            "food-ordering": {
+                en: {
+                    title: "Online Food Ordering",
+                    description: "A dynamic web application enabling users to browse restaurant menus, place orders, and manage deliveries. It includes user authentication, a shopping cart, and a restaurant/admin panel for order management. This project highlights full-stack development for a real-world service application.",
+                    features: [
+                        "Restaurant and menu browsing with search functionality.",
+                        "Shopping cart and secure order placement.",
+                        "User authentication for personalized experience.",
+                        "Order tracking (optional feature, based on scope).",
+                        "Admin/Restaurant panel for managing orders, menus, and users."
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/online-food-ordering", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/3B82F6/FFFFFF?text=Food+Ordering+Detail" // Replace with actual image
+                },
+                th: {
+                    title: "การสั่งอาหารออนไลน์",
+                    description: "เว็บแอปพลิเคชันแบบไดนามิกที่ช่วยให้ผู้ใช้สามารถเรียกดูเมนูร้านอาหาร สั่งซื้อ และจัดการการจัดส่งได้ มีการยืนยันตัวตนผู้ใช้ ตะกร้าสินค้า และแผงควบคุมสำหรับร้านอาหาร/ผู้ดูแลระบบสำหรับการจัดการคำสั่งซื้อ โปรเจกต์นี้เน้นการพัฒนาแบบ Full-Stack สำหรับแอปพลิเคชันบริการในโลกแห่งความเป็นจริง",
+                    features: [
+                        "การเรียกดูร้านอาหารและเมนูพร้อมฟังก์ชันการค้นหา",
+                        "ตะกร้าสินค้าและการสั่งซื้อที่ปลอดภัย",
+                        "การยืนยันตัวตนผู้ใช้เพื่อประสบการณ์ส่วนบุคคล",
+                        "การติดตามคำสั่งซื้อ (คุณสมบัติเสริม ขึ้นอยู่กับขอบเขตงาน)",
+                        "แผงควบคุมสำหรับผู้ดูแลระบบ/ร้านอาหารเพื่อจัดการคำสั่งซื้อ เมนู และผู้ใช้"
+                    ],
+                    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
+                    liveDemo: "javascript:void(0);", // Replace with actual URL
+                    githubRepo: "https://github.com/jakkrit_lekprasan/online-food-ordering", // Replace with actual URL
+                    image: "https://via.placeholder.com/900x500/3B82F6/FFFFFF?text=Food+Ordering+Detail" // Replace with actual image
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Language Switcher Logic ---
+            const langButtons = document.querySelectorAll('[data-lang-switcher]');
+            const initialLang = localStorage.getItem('portfolioLang') || 'en';
+            setLanguage(initialLang);
+
+            langButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const lang = button.getAttribute('data-lang-switcher');
+                    setLanguage(lang);
+                    localStorage.setItem('portfolioLang', lang);
+                });
+            });
+
+            function setLanguage(lang) {
+                document.documentElement.setAttribute('lang', lang);
+                langButtons.forEach(button => {
+                    if (button.getAttribute('data-lang-switcher') === lang) {
+                        button.classList.add('active');
+                    } else {
+                        button.classList.remove('active');
+                    }
+                });
+                // Re-populate modal content if it's open, to update language
+                if (projectModal.style.display === 'block' && projectModal.dataset.currentProjectId) {
+                    populateModal(projectModal.dataset.currentProjectId);
+                }
+            }
+
+            // --- Smooth Scrolling for Navigation Links ---
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile nav if open
+                    if (mobileNavOverlay.classList.contains('active')) {
+                        toggleNav();
+                    }
+                });
+            });
+
+            // --- Sticky Navigation and Active Link Highlighting ---
+            const header = document.querySelector('.header-top');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const sections = document.querySelectorAll('main section');
+
+            window.addEventListener('scroll', () => {
+                // Toggle 'scrolled' class for header shadow
+                if (window.scrollY > 0) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Highlight active nav link
+                let currentActive = '';
+                sections.forEach(section => {
+                    // Offset sectionTop by header height to activate link slightly earlier
+                    const sectionTop = section.offsetTop - header.offsetHeight - 80;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                        currentActive = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(currentActive)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // --- Mobile Navigation Toggle ---
+            const navToggle = document.querySelector('.nav-toggle');
+            const mobileNavOverlay = document.getElementById('mobile-nav');
+
+            function toggleNav() {
+                navToggle.classList.toggle('active');
+                mobileNavOverlay.classList.toggle('active');
+                document.body.classList.toggle('no-scroll'); // Prevent background scroll
+                const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', !isExpanded);
+            }
+
+            navToggle.addEventListener('click', toggleNav);
+
+            // Close mobile nav when clicking on a link inside it
+            mobileNavOverlay.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', toggleNav);
+            });
+
+            // --- Project Modal Logic ---
+            const projectCards = document.querySelectorAll('.project-card');
+            const projectModal = document.getElementById('projectModal');
+            const closeModalBtn = projectModal.querySelector('.close-button');
+
+            projectCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    // Only open modal if click is not on a direct button/link within the card
+                    if (e.target.tagName === 'A' || e.target.closest('.project-actions')) {
+                        return;
+                    }
+                    const projectId = card.getAttribute('data-project-id');
+                    projectModal.dataset.currentProjectId = projectId; // Store current project ID
+                    populateModal(projectId);
+                    projectModal.style.display = 'block';
+                    document.body.classList.add('no-scroll'); // Prevent background scroll
+                    projectModal.setAttribute('aria-hidden', 'false');
+                });
+            });
+
+            closeModalBtn.addEventListener('click', closeProjectModal);
+            projectModal.addEventListener('click', (e) => {
+                if (e.target === projectModal) { // Close when clicking outside the modal content
+                    closeProjectModal();
+                }
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && projectModal.style.display === 'block') {
+                    closeProjectModal();
+                }
+            });
+
+            function closeProjectModal() {
+                projectModal.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+                projectModal.setAttribute('aria-hidden', 'true');
+                delete projectModal.dataset.currentProjectId; // Clear stored project ID
+            }
+
+            function populateModal(projectId) {
+                const lang = document.documentElement.getAttribute('lang') || 'en';
+                const projectContent = projectsData[projectId]; // Get both language versions
+
+                // Get elements that need updating
+                const modalTitleEn = document.getElementById('modal-project-title');
+                const modalTitleTh = document.getElementById('modal-project-title-th');
+                const modalDescriptionEn = document.getElementById('modal-project-description');
+                const modalDescriptionTh = document.getElementById('modal-project-description-th');
+                const modalFeaturesList = document.getElementById('modal-project-features');
+                const modalTechList = document.getElementById('modal-project-tech');
+                const modalImage = document.getElementById('modal-project-image');
+                const modalLiveDemoEn = document.getElementById('modal-live-demo');
+                const modalLiveDemoTh = document.getElementById('modal-live-demo-th');
+                const modalGithubRepoEn = document.getElementById('modal-github-repo');
+                const modalGithubRepoTh = document.getElementById('modal-github-repo-th');
+
+                // Update content based on current language
+                modalTitleEn.textContent = projectContent.en.title;
+                modalTitleTh.textContent = projectContent.th.title;
+                modalDescriptionEn.textContent = projectContent.en.description;
+                modalDescriptionTh.textContent = projectContent.th.description;
+                modalImage.src = projectContent.en.image; // Image path can be same for both
+
+                // Clear previous features and technologies
+                modalFeaturesList.innerHTML = '';
+                modalTechList.innerHTML = '';
+
+                // Populate features for the current language
+                projectContent[lang].features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.textContent = feature;
+                    modalFeaturesList.appendChild(li);
+                });
+
+                // Populate technologies (can be same list for both languages or separate if needed)
+                projectContent.en.technologies.forEach(tech => {
+                    const span = document.createElement('span');
+                    span.textContent = tech;
+                    modalTechList.appendChild(span);
+                });
+
+                // Update action links (using English links as canonical for now)
+                modalLiveDemoEn.href = projectContent.en.liveDemo;
+                modalLiveDemoTh.href = projectContent.en.liveDemo; // Use EN link for TH button
+                modalGithubRepoEn.href = projectContent.en.githubRepo;
+                modalGithubRepoTh.href = projectContent.en.githubRepo; // Use EN link for TH button
+
+                // Re-apply language specific display classes within the modal content
+                // This is crucial for elements inside the modal that also have lang-en/lang-th classes
+                // We do this by calling setLanguage again, which updates the html lang attribute
+                // and then CSS rules handle visibility.
+                setLanguage(lang); // This ensures visibility is updated correctly
+            }
+
+            // --- Scroll Reveal Animations for Sections and Timeline Items ---
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const educationItem = document.querySelector('.education-item'); // Select the single education item
+
+            const observerOptions = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            };
+
+            const sectionObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, observerOptions);
+
+            const timelineObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.3 // More threshold for timeline items
+            });
+
+            // Observe all main sections
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+            });
+
+            // Observe timeline items specifically
+            timelineItems.forEach(item => {
+                timelineObserver.observe(item);
+            });
+            // Observe education item
+            if (educationItem) {
+                sectionObserver.observe(educationItem);
+            }
+
+            // --- Contact Form Submission (Placeholder) ---
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevent default form submission
+                    // In a real application, you would send this data to a backend server or a service like Formspree
+                    alert('Thank you for your message! (Form submission is disabled in this demo)');
+                    // console.log('Form Submitted!', {
+                    //     name: document.getElementById('name').value,
+                    //     email: document.getElementById('email').value,
+                    //     subject: document.getElementById('subject').value,
+                    //     message: document.getElementById('message').value
+                    // });
+                    contactForm.reset(); // Clear the form after submission
+                });
+            }
+        });
+    </script>
+</body>
+</html>
